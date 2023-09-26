@@ -48,17 +48,7 @@ const Tables=(props)=> {
         },
       ];
       
-      const rows = [
-        { name: 'Variable in C', video: 'Declaration and Printing', code: 'Codeuses', assignment:'Assignment' ,quiz:'Quiz'},
-        { name: 'Variable in C', video: 'Declaration and Printing', code: 'Codeuses', assignment:'Assignment' ,quiz:'Quiz'},
-        { name: 'Variable in C', video: 'Declaration and Printing', code: 'Codeuses', assignment:'Assignment' ,quiz:'Quiz'},
-        { name: 'Variable in C', video: 'Declaration and Printing', code: 'Codeuses', assignment:'Assignment' ,quiz:'Quiz'},
-        { name: 'Variable in C', video: 'Declaration and Printing', code: 'Codeuses', assignment:'Assignment' ,quiz:'Quiz'},
-        { name: 'Variable in C', video: 'Declaration and Printing', code: 'Codeuses', assignment:'Assignment' ,quiz:'Quiz'},
-        { name: 'Variable in C', video: 'Declaration and Printing', code: 'Codeuses', assignment:'Assignment' ,quiz:'Quiz'},
-        { name: 'Variable in C', video: 'Declaration and Printing', code: 'Codeuses', assignment:'Assignment' ,quiz:'Quiz'},
-        
-      ];
+      const rows = props.data
       
 
   return (
