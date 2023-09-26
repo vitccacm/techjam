@@ -10,7 +10,6 @@ import TableRow from '@mui/material/TableRow';
 import { AlignCenterHorizontalSimple,CaretDown, CaretLeft } from "@phosphor-icons/react";
 
 
-
 const Tables=(props)=> {
     const [visible,setvisible]= React.useState(true)
     const columns = [
@@ -34,7 +33,7 @@ const Tables=(props)=> {
         },
         {
           id: 'assignment',
-          label: 'Assignment',
+          label: 'PPT',
           minWidth: 50,
           align: 'left',
           
@@ -49,7 +48,14 @@ const Tables=(props)=> {
       ];
       
       const rows = props.data
-      
+      const columnToLink = {
+        name: 0, 
+        video: 1,
+        code: 2,
+        assignment: 3, 
+        quiz: 4, 
+      };
+      const links = props.links
 
   return (
     <div>
@@ -67,6 +73,9 @@ const Tables=(props)=> {
             
         </div>
     {visible && (<Paper className='table' sx={{backgroundColor: 'black'}}>
+    <div style={{width:'100%',display:'flex',justifyContent:'center',backgroundColor:'#171717',paddingTop:'5px',paddingBottom:'30px'}}> 
+       <video src={props.vdlink} controls style={{width:'80%'}}></video>
+       </div>
       <TableContainer sx={{ maxHeight: 440 }}>
         <Table stickyHeader aria-label="sticky table">
           <TableHead>
@@ -83,28 +92,34 @@ const Tables=(props)=> {
             </TableRow>
           </TableHead>
           <TableBody>
-            {rows
-              .map((row) => {
-                return (
-                  <TableRow hover role="checkbox" tabIndex={-1} key={row.code}>
-                    {columns.map((column) => {
-                      const value = row[column.id];
-                      return (
-                        <TableCell key={column.id} align={column.align}>
-                          {column.format && typeof value === 'number'
-                            ? column.format(value)
-                            : value}
-                        </TableCell>
-                      );
-                    })}
-                  </TableRow>
-                );
-              })}
+          {rows.map((row, rowIndex) => {
+    return (
+      <TableRow hover role="checkbox" tabIndex={-1} key={row.code}>
+        {columns.map((column) => {
+          const value = row[column.id];
+          const linkIndex = columnToLink[column.id];
+          const link = links[linkIndex];
+          return (
+            <TableCell key={column.id} align={column.align}>
+              {column.format && typeof value === 'number'
+                ? column.format(value)
+                : link ? (
+                    <a href={link} target='_blank' style={{textDecoration:'none',color:'white'}}>{value}</a>
+                  ) : (
+                    value
+                  )}
+            </TableCell>
+          );
+        })}
+        </TableRow>
+    );
+  })}
           </TableBody>
         </Table>
       </TableContainer>
       
     </Paper>)}
+    
     </div>
   );
 }
