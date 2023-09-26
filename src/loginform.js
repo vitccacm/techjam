@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
+import { login } from './loginMockApi';
 
 function LoginForm() {
 
@@ -9,11 +9,14 @@ function LoginForm() {
   const navigate = useNavigate();
 
   const handleLoginClick = () => {
-    if (username === 'admin' && password === 'admin') {
+    const user = login(username, password);
+
+    if (user) {
       navigate('/content');
+
       console.log('Login successful');
     } else {
-      console.log("wrong Password")
+      console.log('Login failed');
     }
   };
 
