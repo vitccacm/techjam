@@ -4,8 +4,78 @@ import Modules from "./Modules";
 import Tables from "./Table";
 import vd1cp from './vd1cp.mp4'
 import vd1eh from './vd1eh.mp4'
+import Paper from '@mui/material/Paper';
+import Table from '@mui/material/Table';
+import TableBody from '@mui/material/TableBody';
+import TableCell from '@mui/material/TableCell';
+import TableContainer from '@mui/material/TableContainer';
+import TableHead from '@mui/material/TableHead';
+import TablePagination from '@mui/material/TablePagination';
+import TableRow from '@mui/material/TableRow';
+import { AlignCenterHorizontalSimple,CaretDown, CaretLeft } from "@phosphor-icons/react";
+
 
 const Content=()=>{
+    const [visible,setvisible]= React.useState(true)
+    const columns = [
+        {
+          id: 'name',
+          label: 'Topic Name',
+          minWidth: 50,
+          align: 'left',
+        },
+        {
+          id: 'video',
+          label: 'Video',
+          minWidth: 50,
+          align: 'left',
+        },
+        {
+          id: 'code',
+          label: 'Code',
+          minWidth: 50,
+          align: 'left',
+        },
+        {
+          id: 'assignment',
+          label: 'PPT',
+          minWidth: 50,
+          align: 'left',
+          
+        },
+        {
+          id: 'quiz',
+          label: 'Quiz',
+          minWidth: 50,
+          align: 'left',
+         
+        },
+      ];
+      
+      const rows =  [{ name: 'ja1', video: 'Video 1', code: 'Codeuses', assignment:'Click to Download PPT' ,quiz:'Quiz 1'},
+      { name: 'ja2', video: 'Video 1', code: 'Codeuses', assignment:'Click to Download PPT' ,quiz:'Quiz 1'}];
+      const columnToLink = {
+        name: 0, 
+        video: 1,
+        code: 2,
+        assignment: 3, 
+        quiz: 4, 
+      };
+      const links = [
+        ['',
+        'https://drive.google.com/file/d/1Q1eUqCZ0N7dnCANR-zfE4iOgEo9GbV0R/view?usp=sharing',
+        'https://drive.google.com/file/d/1-aobW-WEl34s1a_9pMwQyQsvrTnBCdxO/view?usp=drive_link',
+        'https://docs.google.com/presentation/d/1sYg-0UrGKijiP_HXyh3I_LE44Vl4VrPD/edit?usp=drive_link&ouid=109807022555841161079&rtpof=true&sd=true',
+        ''],
+        [
+            '',
+            'https://drive.google.com/file/d/10g3Xxf-0c_7lq3CaAEbG30qfoRTSKKcg/view?usp=drive_link',
+            '',
+            '',
+            ''
+        ]
+    ]
+    
     const links1 = [
         '',
         'https://drive.google.com/file/d/1Q1eUqCZ0N7dnCANR-zfE4iOgEo9GbV0R/view?usp=sharing',
@@ -58,7 +128,60 @@ const Content=()=>{
             </div>
             <div>
                 <div style={{color:'white',marginLeft:'52px',fontSize:'22px',marginTop:'35px'}}>Java</div>
-                <Tables head={'Day 1 - Basics of Java'} data={data4} links={links4}/>
+                <div>
+                {visible && (<Paper className='table' sx={{backgroundColor: 'black'}}>
+    <div style={{width:'100%',display:'flex',justifyContent:'center',backgroundColor:'#171717',paddingTop:'5px',paddingBottom:'30px'}}> 
+       
+       </div>
+      <TableContainer sx={{ maxHeight: 440 }}>
+        <Table stickyHeader aria-label="sticky table">
+          <TableHead>
+            <TableRow>
+              {columns.map((column) => (
+                <TableCell
+                  key={column.id}
+                  align={column.align}
+                  style={{ minWidth: column.minWidth }}
+                >
+                  {column.label}
+                </TableCell>
+              ))}
+            </TableRow>
+          </TableHead>
+          <TableBody>
+          {rows.map((row, rowIndex) => {
+    return (
+      <TableRow hover role="checkbox" tabIndex={-1} key={row.code}>
+        {columns.map((column) => {
+          const value = row[column.id];
+          const linkIndex = columnToLink[column.id];
+          const link = links[linkIndex];
+          return (
+            <TableCell key={column.id} align={column.align}>
+              {column.format && typeof value === 'number'
+                ? column.format(value)
+                : link ? (
+                    <a href={link} target='_blank' style={{textDecoration:'none',color:'white'}}>{value}</a>
+                  ) : (
+                    value
+                  )}
+                  
+            </TableCell>
+            
+          );
+        })}
+        
+        </TableRow>
+    );
+  })}
+          </TableBody>
+        </Table>
+      </TableContainer>
+      
+    </Paper>)}
+    
+    
+                </div>
             </div>
             
             

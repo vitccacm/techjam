@@ -119,8 +119,9 @@ body {
 
 .form {
   display: flex;
+  margin: 100px;
   flex-direction: column;
-  gap: 10px;
+  gap: 40px;
   padding-left: 2em;
   padding-right: 2em;
   padding-bottom: 0.4em;
@@ -256,8 +257,6 @@ body {
   display: none;
 }
 
-.nav-elements {
-}
 
 .nav-elements ul {
   display: flex;
@@ -327,5 +326,19 @@ body {
   .nav-elements ul li {
     margin-right: unset;
     margin-top: 22px;
+  }
+}
+
+
+@media only screen and (max-width: 880px) {
+  .hide{
+    display: none;
+  }
+  .form{
+    margin:50px;
+    
+  }
+  .signin{
+    width: 100%;
   }
 }
