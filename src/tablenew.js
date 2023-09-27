@@ -65,24 +65,24 @@ const TableNew = () => {
 		<div class="table-content">	
 			<div class="table-row">		
 				<div class="table-data">Basic of Java</div>
-				<div class="table-data"><a href="https://drive.google.com/file/d/19tcYi4ULCuPohVSFvObIoe-C7VSbn4eN/view" target='_blank'>Click here for Video</a></div>
+				<div class="table-data"><a href="https://youtu.be/rCZWduD_kIk" target='_blank'>Click here for Video</a></div>
 				<div class="table-data"><a href="https://github.com/acmtechjam/techjam2023" target='_blank'>Click here for Code</a></div>
 				<div class="table-data"><a href="https://docs.google.com/presentation/d/12BGZ4XSiri6ouBr0ZkelFWiGgOxqskuF/present?slide=id.p5" target='_blank'>Click here to view PPT</a></div>
 				<div class="table-data">-</div>
 			</div>
 			<div class="table-row">
 				<div class="table-data">Operators</div>
-				<div class="table-data"><a href="https://drive.google.com/file/d/1xQ71q_LsaUccc7fF2iM29F9PRa4jctWr/view" target='_blank'>Click here for Video</a></div>
+				<div class="table-data"><a href="https://www.youtube.com/watch?app=desktop&v=b5CEyhyralY&feature=youtu.be" target='_blank'>Click here for Video</a></div>
 				<div class="table-data"><a href="https://github.com/acmtechjam/techjam2023" target='_blank'>Click here for Code</a></div>
 				<div class="table-data"><a href="https://docs.google.com/presentation/d/1qDuQ9Xot5GTz7aLpYHoGB8Mug7kWGYc2/present?slide=id.p1" target='_blank'> Click here to view PPT</a></div>
 				<div class="table-data">-</div>
 			</div>
 			<div class="table-row">
 				<div class="table-data">Loop</div>
-				<div class="table-data"><a href="https://drive.google.com/file/d/1zG1hOEFpB5T2QsgmCWRiVCkyv9cz6Li-/view?usp=drive_open" target='_blank'>Click here for Video</a></div>
+				<div class="table-data"><a href="https://www.youtube.com/watch?app=desktop&v=QFLIvtKHq_4&feature=youtu.be" target='_blank'>Click here for Video</a></div>
 				<div class="table-data"><a href="https://github.com/acmtechjam/techjam2023" target='_blank'>Click here for Code</a></div>
 				<div class="table-data"><a href="https://docs.google.com/presentation/d/1OajT04KR63LYyYWt4O065lTxEze6BJk6/present?slide=id.p2" target='_blank'>Click here to view PPT</a></div>
-				<div class="table-data"><a href="https://www.hackerrank.com/java-basics-1695740161" target='_blank'>Hackerrank contest</a></div>
+				<div class="table-data"><a href="#" target='_blank'>Yet to be announced</a></div>
 			</div>
 		</div>	
 	</div>
