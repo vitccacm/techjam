@@ -1,6 +1,7 @@
 const users = [
     { id: 1, username: 'admin', password: 'admin' },
     { id: 2, username: 'user', password: 'password' },
+    
   ];
   
   let currentUser = null;

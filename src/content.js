@@ -13,7 +13,6 @@ import TableHead from '@mui/material/TableHead';
 import TablePagination from '@mui/material/TablePagination';
 import TableRow from '@mui/material/TableRow';
 import { AlignCenterHorizontalSimple,CaretDown, CaretLeft } from "@phosphor-icons/react";
-import opvd from './operators_day1.mp4'
 import { Grid } from "@mui/material";
 const Content=()=>{
     const [visible,setvisible]= React.useState(true)
@@ -140,9 +139,15 @@ const Content=()=>{
                 <div>
                 {visible && (<Paper className='table' sx={{backgroundColor: 'black'}}>
     <div style={{width:'100%',display:'flex',justifyContent:'center',backgroundColor:'#171717',paddingTop:'5px',paddingBottom:'30px'}}> 
-    <video src={opvd} controls style={{width:'80%'}}></video>
-
-       </div>
+    <iframe src="https://drive.google.com/file/d/19tcYi4ULCuPohVSFvObIoe-C7VSbn4eN/preview" width="900" height="480" allow="autoplay"></iframe>
+    </div>
+    <div style={{width:'100%',display:'flex',justifyContent:'center',backgroundColor:'#171717',paddingTop:'5px',paddingBottom:'30px'}}> 
+    <iframe src="https://drive.google.com/file/d/1xQ71q_LsaUccc7fF2iM29F9PRa4jctWr/preview" width="900" height="480" allow="autoplay"></iframe>
+    </div>
+    <div style={{width:'100%',display:'flex',justifyContent:'center',backgroundColor:'#171717',paddingTop:'5px',paddingBottom:'30px'}}> 
+    <iframe src="https://drive.google.com/file/d/1zG1hOEFpB5T2QsgmCWRiVCkyv9cz6Li-/preview" width="900" height="480" allow="autoplay"></iframe>
+    </div>
+    
       <TableContainer sx={{ maxHeight: 440 }}>
         <Table stickyHeader aria-label="sticky table">
           <TableHead>
