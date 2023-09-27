@@ -16,6 +16,7 @@ function LoginForm() {
 
       console.log('Login successful');
     } else {
+      navigate('/signin')
       console.log('Login failed');
     }
   };

@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700');
+
+/* Define variables (if needed) */
+/* $base-spacing-unit: 24px;
+$half-spacing-unit: $base-spacing-unit / 2;
+$color-alpha: #1772FF;
+$color-form-highlight: #EEEEEE; */
+
+/* Apply styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.containertable {
+  max-width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2f2f2f;
+
+}
+
+.tablesc {
+  width: 100%;
+   /* Use the desired color */
+}
+
+.table-header {
+  display: flex;
+  width: 100%;
+  background: #151718;
+  padding: 18px 0; /* Use the desired padding */
+}
+
+.table-row {
+  display: flex;
+  width: 100%;
+  padding: 18px 0; /* Use the desired padding */
+}
+
+.table-row {
+  background: #0b0909; /* Use the desired color */
+}
+
+.table-data,
+.header__item {
+  flex: 1 1 20%;
+  text-align: center;
+  color: whitesmoke;
+}
+
+.header__item {
+  text-transform: uppercase;
+}
+
+.filter__link {
+  color: white;
+  text-decoration: none;
+  /* Use the desired padding */
+
+  &::after {
+    content: '';
+     /* Use the desired value */
+    color: white;
+    font-size: 12px; /* Use the desired font size */
+  }
+
+  
+}

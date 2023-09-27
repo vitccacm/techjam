@@ -14,6 +14,7 @@ import TablePagination from '@mui/material/TablePagination';
 import TableRow from '@mui/material/TableRow';
 import { AlignCenterHorizontalSimple,CaretDown, CaretLeft } from "@phosphor-icons/react";
 import { Grid } from "@mui/material";
+import TableNew from "./tablenew";
 const Content=()=>{
     const [visible,setvisible]= React.useState(true)
     const columns = [
@@ -155,51 +156,7 @@ const Content=()=>{
     <iframe src="https://drive.google.com/file/d/1zG1hOEFpB5T2QsgmCWRiVCkyv9cz6Li-/preview" width="900" height="480" allow="autoplay"></iframe>
     </div> */}
           
-    
-      <TableContainer sx={{ maxHeight: 440 }}>
-        <Table stickyHeader aria-label="sticky table">
-          <TableHead>
-            <TableRow>
-              {columns.map((column) => (
-                <TableCell
-                  key={column.id}
-                  align={column.align}
-                  style={{ minWidth: column.minWidth }}
-                >
-                  {column.label}
-                </TableCell>
-              ))}
-            </TableRow>
-          </TableHead>
-          <TableBody>
-          {rows.map((row, rowIndex) => {
-    return (
-      <TableRow hover role="checkbox" tabIndex={-1} key={row.code}>
-        {columns.map((column) => {
-          const value = row[column.id];
-          const linkIndex = columnToLink[column.id];
-          const link = links[linkIndex];
-          return (
-            <TableCell key={column.id} align={column.align}>
-              {column.format && typeof value === 'number'
-                ? column.format(value)
-                : link ? (
-                    <a href={link} target='_blank' style={{textDecoration:'none',color:'white'}}>{value}</a>
-                  ) : (
-                    value
-                  )}
-                  
-            </TableCell>
-            
-          );
-        })}
-        
-        </TableRow>
-    );
-  })}
-          </TableBody>
-        </Table>
-      </TableContainer>
+          <TableNew/>
       <div container style={{color:'white',backgroundColor:'#171717',width:'100%',display:'flex',flexDirection:'column',gap:'13px',padding:'20px'}}>
         {/* <div className="links"><a href='https://drive.google.com/file/d/19tcYi4ULCuPohVSFvObIoe-C7VSbn4eN/view?usp=drive_link' target='_blank' style={{textDecoration:'none',color:'white'}} >Click to Learn Basics of Java</a></div>
         <div className="links"><a href='https://drive.google.com/file/d/1xQ71q_LsaUccc7fF2iM29F9PRa4jctWr/view?usp=drive_link' target='_blank' style={{textDecoration:'none',color:'white'}} >Click to Learn Operators</a></div>
