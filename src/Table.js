@@ -66,7 +66,7 @@ const Tables=(props)=> {
             </div>
             <div style={{display:'flex',marginLeft:'20px',justifyContent:'center',alignItems:'center'}}>{props.head}</div>
             </div>
-            <div style={{display:'flex', justifyContent:'center',alignItems:'center',cursor:''},nter'}} onClick={()=>setvisible(!visible)}>
+            <div style={{display:'flex', justifyContent:'center',alignItems:'center',cursor:'pointer'}} onClick={()=>setvisible(!visible)}>
             {visible ? (<CaretDown size={20} color="#4925cd" weight="bold" />) : (<CaretLeft size={20} color="#4925cd" weight="bold" />)}
             </div>
             

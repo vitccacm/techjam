@@ -3,7 +3,7 @@ so that it is smooth among other more minor things */
 
 .codepen-button {
     display: block;
-    cursor: '},nter;
+    cursor: pointer;
     color: white;
     margin: 0 auto;
     position: relative;
