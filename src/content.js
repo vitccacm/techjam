@@ -51,9 +51,9 @@ const Content=()=>{
         },
       ];
       
-      const rows =  [{ name: 'Basic of Java', video: 'Video 1', code: '-', assignment:'Click to Download PPT' ,quiz:'Hacker Rank contest'},
-      { name: 'Operators', video: 'Video 2', code: '-', assignment:'Click to Download PPT' ,quiz:'Hacker Rank contest'},
-      { name: 'Loop', video: 'Video 3', code: '-', assignment:'Click to Download PPT' ,quiz:'Hacker Rank contest'}];
+      const rows =  [{ name: 'Basic of Java', video: 'Click here', code: '-', assignment:'Click to view PPT' ,quiz:'Hacker Rank contest'},
+      { name: 'Operators', video: 'Click here', code: '-', assignment:'Click to View PPT' ,quiz:'Hacker Rank contest'},
+      { name: 'Loop', video: 'Click here', code: '-', assignment:'Click to View PPT' ,quiz:'Hacker Rank contest'}];
       const columnToLink = {
         name: 0, 
         video: 1,
@@ -63,27 +63,27 @@ const Content=()=>{
       };
       const links = [
         '',
+        'https://drive.google.com/file/d/19tcYi4ULCuPohVSFvObIoe-C7VSbn4eN/view',
         '',
-        '',
-        'https://drive.google.com/drive/folders/1iPLfdVl_AK1Iq4HFYZwZf2ATD30oYV1m?usp=drive_link',
+        'https://docs.google.com/presentation/d/12BGZ4XSiri6ouBr0ZkelFWiGgOxqskuF/present?slide=id.p1',
         'https://www.hackerrank.com/java-basics-1695740161'
         
     ]
     
     const links1 = [
         '',
-        'https://drive.google.com/file/d/1Q1eUqCZ0N7dnCANR-zfE4iOgEo9GbV0R/view?usp=sharing',
-        'https://drive.google.com/file/d/1-aobW-WEl34s1a_9pMwQyQsvrTnBCdxO/view?usp=drive_link',
-        'https://docs.google.com/presentation/d/1sYg-0UrGKijiP_HXyh3I_LE44Vl4VrPD/edit?usp=drive_link&ouid=109807022555841161079&rtpof=true&sd=true',
+        'https://drive.google.com/file/d/1xQ71q_LsaUccc7fF2iM29F9PRa4jctWr/view',
+        'https://docs.google.com/presentation/d/1qDuQ9Xot5GTz7aLpYHoGB8Mug7kWGYc2/present?slide=id.p1 ',
+        'https://www.hackerrank.com/java-basics-1695740161',
         ''
     ]
     const data1 = [{ name: 'Divide and Conquer', video: 'Video 1', code: 'Codeuses', assignment:'Click to Download PPT' ,quiz:'Quiz 1'},];
 
     const links2 = [
         '',
-        'https://drive.google.com/file/d/10g3Xxf-0c_7lq3CaAEbG30qfoRTSKKcg/view?usp=drive_link',
-        '',
-        '',
+        'https://drive.google.com/file/d/1zG1hOEFpB5T2QsgmCWRiVCkyv9cz6Li-/view',
+        'https://docs.google.com/presentation/d/1OajT04KR63LYyYWt4O065lTxEze6BJk6/present?slide=id.p1',
+        'https://www.hackerrank.com/java-basics-1695740161',
         ''
     ]
     const data2 = [{ name: 'Introduction To Linux', video: 'Video 1', code: '-', assignment:'-' ,quiz:'-'},];
@@ -138,7 +138,7 @@ const Content=()=>{
         </div>
                 <div>
                 {visible && (<Paper className='table' sx={{backgroundColor: 'black'}}>
-    <div style={{width:'100%',display:'flex',justifyContent:'center',backgroundColor:'#171717',paddingTop:'5px',paddingBottom:'30px'}}> 
+    {/* <div style={{width:'100%',display:'flex',justifyContent:'center',backgroundColor:'#171717',paddingTop:'5px',paddingBottom:'30px'}}> 
     <iframe src="https://drive.google.com/file/d/19tcYi4ULCuPohVSFvObIoe-C7VSbn4eN/preview" width="900" height="480" allow="autoplay"></iframe>
     </div>
     <div style={{width:'100%',display:'flex',justifyContent:'center',backgroundColor:'#171717',paddingTop:'5px',paddingBottom:'30px'}}> 
@@ -146,7 +146,7 @@ const Content=()=>{
     </div>
     <div style={{width:'100%',display:'flex',justifyContent:'center',backgroundColor:'#171717',paddingTop:'5px',paddingBottom:'30px'}}> 
     <iframe src="https://drive.google.com/file/d/1zG1hOEFpB5T2QsgmCWRiVCkyv9cz6Li-/preview" width="900" height="480" allow="autoplay"></iframe>
-    </div>
+    </div> */}
     
       <TableContainer sx={{ maxHeight: 440 }}>
         <Table stickyHeader aria-label="sticky table">
@@ -193,9 +193,9 @@ const Content=()=>{
         </Table>
       </TableContainer>
       <div container style={{color:'white',backgroundColor:'#171717',width:'100%',display:'flex',flexDirection:'column',gap:'13px',padding:'20px'}}>
-        <div className="links"><a href='https://drive.google.com/file/d/19tcYi4ULCuPohVSFvObIoe-C7VSbn4eN/view?usp=drive_link' target='_blank' style={{textDecoration:'none',color:'white'}} >Click to Learn Basics of Java</a></div>
+        {/* <div className="links"><a href='https://drive.google.com/file/d/19tcYi4ULCuPohVSFvObIoe-C7VSbn4eN/view?usp=drive_link' target='_blank' style={{textDecoration:'none',color:'white'}} >Click to Learn Basics of Java</a></div>
         <div className="links"><a href='https://drive.google.com/file/d/1xQ71q_LsaUccc7fF2iM29F9PRa4jctWr/view?usp=drive_link' target='_blank' style={{textDecoration:'none',color:'white'}} >Click to Learn Operators</a></div>
-        <div className="links"><a href='https://drive.google.com/file/d/1zG1hOEFpB5T2QsgmCWRiVCkyv9cz6Li-/view?usp=drive_link' target='_blank' style={{textDecoration:'none',color:'white'}} >Click to Learn Loop</a></div>
+        <div className="links"><a href='https://drive.google.com/file/d/1zG1hOEFpB5T2QsgmCWRiVCkyv9cz6Li-/view?usp=drive_link' target='_blank' style={{textDecoration:'none',color:'white'}} >Click to Learn Loop</a></div> */}
         </div>
       
     </Paper>)}
