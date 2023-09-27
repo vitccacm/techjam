@@ -51,9 +51,9 @@ const Content=()=>{
         },
       ];
       
-      const rows =  [{ name: 'Basic of Java', video: 'Click here', code: '-', assignment:'Click to view PPT' ,quiz:'Hacker Rank contest'},
-      { name: 'Operators', video: 'Click here', code: '-', assignment:'Click to View PPT' ,quiz:'Hacker Rank contest'},
-      { name: 'Loop', video: 'Click here', code: '-', assignment:'Click to View PPT' ,quiz:'Hacker Rank contest'}];
+      const rows =  [{ name: 'Basic of Java', video: 'Click here', code: 'Click here', assignment:'Click to view PPT' ,quiz:'-'},
+      { name: 'Operators', video: 'Click here', code: 'Click here', assignment:'Click to View PPT' ,quiz:'-'},
+      { name: 'Loop', video: 'Click here', code: 'Click here', assignment:'Click to View PPT' ,quiz:'Hacker Rank contest'}];
       const columnToLink = {
         name: 0, 
         video: 1,
@@ -63,18 +63,17 @@ const Content=()=>{
       };
       const links = [
         '',
-        'https://drive.google.com/file/d/19tcYi4ULCuPohVSFvObIoe-C7VSbn4eN/view',
-        '',
+        'htps://drive.google.com/file/d/19tcYi4ULCuPohVSFvObIoe-C7VSbn4eN/view',
+        'https://github.com/acmtechjam/techjam2023',
         'https://docs.google.com/presentation/d/12BGZ4XSiri6ouBr0ZkelFWiGgOxqskuF/present?slide=id.p1',
-        'https://www.hackerrank.com/java-basics-1695740161'
-        
+        ''
     ]
     
     const links1 = [
         '',
         'https://drive.google.com/file/d/1xQ71q_LsaUccc7fF2iM29F9PRa4jctWr/view',
-        'https://docs.google.com/presentation/d/1qDuQ9Xot5GTz7aLpYHoGB8Mug7kWGYc2/present?slide=id.p1 ',
-        'https://www.hackerrank.com/java-basics-1695740161',
+        'https://github.com/acmtechjam/techjam2023',
+        'https://docs.google.com/presentation/d/1qDuQ9Xot5GTz7aLpYHoGB8Mug7kWGYc2/present?slide=id.p1',
         ''
     ]
     const data1 = [{ name: 'Divide and Conquer', video: 'Video 1', code: 'Codeuses', assignment:'Click to Download PPT' ,quiz:'Quiz 1'},];
@@ -120,8 +119,16 @@ const Content=()=>{
                 <div style={{color:'white',marginLeft:'52px',fontSize:'22px',marginTop:'35px'}}>Machine Learning</div>
                 <Tables head={'Day 1 - Introduction'} data={data3} links={links3}/>
             </div> */}
-            
-            <div>
+
+          <div style={{width:'100%',display:'flex',justifyContent:'center',backgroundColor:'#171717',paddingTop:'5px',paddingBottom:'30px'}}> 
+          <iframe src="https://drive.google.com/file/d/15yZKCdvMj5eX6mDCArWZuKZVeIeDrHtT/preview" width="640" height="480" allow="autoplay"></iframe>              </div>
+
+        <div style={{width:'100%',display:'flex',justifyContent:'center',backgroundColor:'#171717',paddingTop:'5px',paddingBottom:'30px'}}> 
+            <iframe src="https://drive.google.com/file/d/1BYWJsBE8_rHLmKbMB2IT8Y6SMJygLWZE/preview" width="640" height="480" allow="autoplay"></iframe>
+          </div>
+          <div>
+
+          
                 <div style={{color:'white',marginLeft:'52px',fontSize:'22px',marginTop:'35px'}}>Java</div>
                 <div className='module'>
             <div style={{display:'flex',flexDirection:'row'}}>
@@ -147,6 +154,7 @@ const Content=()=>{
     <div style={{width:'100%',display:'flex',justifyContent:'center',backgroundColor:'#171717',paddingTop:'5px',paddingBottom:'30px'}}> 
     <iframe src="https://drive.google.com/file/d/1zG1hOEFpB5T2QsgmCWRiVCkyv9cz6Li-/preview" width="900" height="480" allow="autoplay"></iframe>
     </div> */}
+          
     
       <TableContainer sx={{ maxHeight: 440 }}>
         <Table stickyHeader aria-label="sticky table">
