@@ -114,7 +114,7 @@ const Content=()=>{
     return(
         <div>
             <Header/>
-            <div>
+            {/* <div>
                 <div style={{color:'white',marginLeft:'52px',fontSize:'22px',marginTop:'35px'}}>Competitive Programming</div>
                 <Tables head={'Day 1 - Divide and Conquer'} data={data1} links={links1} vdlink={vd1cp}/>
             </div>
@@ -125,7 +125,7 @@ const Content=()=>{
             <div>
                 <div style={{color:'white',marginLeft:'52px',fontSize:'22px',marginTop:'35px'}}>Machine Learning</div>
                 <Tables head={'Day 1 - Introduction'} data={data3} links={links3}/>
-            </div>
+            </div> */}
             <div>
                 <div style={{color:'white',marginLeft:'52px',fontSize:'22px',marginTop:'35px'}}>Java</div>
                 <div>

@@ -10,7 +10,7 @@ const Header=()=>{
   }
 
     return(
-        <div className='navbar' style={{color:'white'}}> 
+        <div className='navbar' style={{color:'white',backgroundColor:'#212121'}}> 
             {/* <List size={30} color='white'/> */}
             {/* <div style={{fontWeight:'500',fontSize:'1.3rem',marginLeft:'20px',color:'white'}}>C Programming Language</div> */}
             <div className="container">
@@ -23,19 +23,19 @@ const Header=()=>{
         <div className={`nav-elements  ${showNavbar && 'active'}`}>
           <ul>
             <li>
-              <NavLink class='active' to="/home">Competitive Programming</NavLink>
+              <NavLink to="">Competitive Programming</NavLink>
             </li>
             <li>
-              <NavLink to="/blog">Ethical Hacking</NavLink>
+              <NavLink to="">Ethical Hacking</NavLink>
             </li>
             <li>
-              <NavLink to="/projects">Machine Learning</NavLink>
+              <NavLink to="">Machine Learning</NavLink>
             </li>
             <li>
-              <NavLink to="/about">Java</NavLink>
+              <NavLink to="">Java</NavLink>
             </li>
             <li>
-              <NavLink to="/contact">Cloud</NavLink>
+              <NavLink to="">Cloud</NavLink>
             </li>
           </ul>
         </div>
