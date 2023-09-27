@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './table.css'
+import { Link } from 'react-router-dom';
 
 const Table2 = () => {
   const properties = [
@@ -65,30 +66,30 @@ const Table2 = () => {
 		<div class="table-content">	
 			<div class="table-row">		
 				<div class="table-data">Array</div>
-				<div class="table-data"><a href="https://youtu.be/rCZWduD_kIk" target='_blank'>Click here for Video</a></div>
-				<div class="table-data"><a href="https://github.com/acmtechjam/techjam2023" target='_blank'>Click here for Code</a></div>
-				<div class="table-data"><a href="https://docs.google.com/presentation/d/12BGZ4XSiri6ouBr0ZkelFWiGgOxqskuF/present?slide=id.p5" target='_blank'>Click here to view PPT</a></div>
+				<div class="table-data"><a href="https://www.youtube.com/watch?v=8XrTgXNrjkg" target='_blank'>Click here for Video</a></div>
+				<div class="table-data"><a href="https://github.com/ACMVITCC/techjam2023/tree/main/Day-2" target='_blank'>Click here for Code</a></div>
+        <div class="table-data"><a href="Documents/day1/Arrays.pptx" target='_blank' download="Arrays.pptx"> Click here to view PPT</a></div>
 				<div class="table-data">-</div>
 			</div>
 			<div class="table-row">
 				<div class="table-data">String Manipulation</div>
-				<div class="table-data"><a href="https://www.youtube.com/watch?app=desktop&v=b5CEyhyralY&feature=youtu.be" target='_blank'>Click here for Video</a></div>
-				<div class="table-data"><a href="https://github.com/acmtechjam/techjam2023" target='_blank'>Click here for Code</a></div>
-				<div class="table-data"><a href="https://docs.google.com/presentation/d/1qDuQ9Xot5GTz7aLpYHoGB8Mug7kWGYc2/present?slide=id.p1" target='_blank'> Click here to view PPT</a></div>
+				<div class="table-data"><a href="https://www.youtube.com/watch?v=38MWDM1TgwM" target='_blank'>Click here for Video</a></div>
+				<div class="table-data"><a href="https://github.com/ACMVITCC/techjam2023/tree/main/Day-2" target='_blank'>Click here for Code</a></div>
+				<div class="table-data"><a href="Documents/day1/Strings.pptx" target='_blank' download="Strings.pptx"> Click here to view PPT</a></div>
 				<div class="table-data">-</div>
 			</div>
 			<div class="table-row">
 				<div class="table-data">Functions</div>
-				<div class="table-data"><a href="https://www.youtube.com/watch?app=desktop&v=QFLIvtKHq_4&feature=youtu.be" target='_blank'>Click here for Video</a></div>
-				<div class="table-data"><a href="https://github.com/acmtechjam/techjam2023" target='_blank'>Click here for Code</a></div>
-				<div class="table-data"><a href="https://docs.google.com/presentation/d/1OajT04KR63LYyYWt4O065lTxEze6BJk6/present?slide=id.p2" target='_blank'>Click here to view PPT</a></div>
-				<div class="table-data"><a href="#" target='_blank'>Yet to be announced</a></div>
+				<div class="table-data"><a href="https://www.youtube.com/watch?v=5KslaodVm_c" target='_blank'>Click here for Video</a></div>
+				<div class="table-data"><a href="https://github.com/ACMVITCC/techjam2023/tree/main/Day-2" target='_blank'>Click here for Code</a></div>
+				<div class="table-data"><a href="Documents/day1/Functions.pptx" target='_blank' download="Functions.pptx">Click here to view PPT</a></div>
+				<div class="table-data"><a href="#" target='_blank'></a></div>
 			</div>
             <div class="table-row">
 				<div class="table-data">Inheritance</div>
-				<div class="table-data"><a href="https://www.youtube.com/watch?app=desktop&v=QFLIvtKHq_4&feature=youtu.be" target='_blank'>Click here for Video</a></div>
-				<div class="table-data"><a href="https://github.com/acmtechjam/techjam2023" target='_blank'>Click here for Code</a></div>
-				<div class="table-data"><a href="https://docs.google.com/presentation/d/1OajT04KR63LYyYWt4O065lTxEze6BJk6/present?slide=id.p2" target='_blank'>Click here to view PPT</a></div>
+				<div class="table-data"><a href="https://www.youtube.com/watch?v=2rF0Two5Cfs" target='_blank'>Click here for Video</a></div>
+				<div class="table-data"><a href="https://github.com/ACMVITCC/techjam2023/tree/main/Day-2" target='_blank'>Click here for Code</a></div>
+				<div class="table-data"><a href="Documents/day1/Inheritance.pptx" target='_blank' download="Inheritance.pptx">Click here to view PPT</a></div>
 				<div class="table-data"><a href="#" target='_blank'>Yet to be announced</a></div>
 			</div>
 		</div>	
