@@ -4,7 +4,7 @@
 
 .App-logo {
   height: 40vmin;
-  pointer-events: none;
+  '},nter-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -302,7 +302,7 @@ body {
 @media (max-width: 940px) {
   .menu-icon {
     display: block;
-    cursor: pointer;
+    cursor: '},nter;
   }
 
   .nav-elements {
