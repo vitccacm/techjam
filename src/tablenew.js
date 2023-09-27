@@ -53,7 +53,6 @@ const TableNew = () => {
   return (
     <div style={{backgroundColor:'#171717'}}>
 <div class="containertable">
-	
 	<div class="tablesc">
 		<div class="table-header">
 			<div class="header__item"><a id="name" class="filter__link" href="#">Topic Name</a></div>
@@ -86,7 +85,10 @@ const TableNew = () => {
 			</div>
 		</div>	
 	</div>
-</div>
+      </div>
+      
+      
+
     </div>
   );
 };

@@ -130,20 +130,20 @@ const Content=()=>{
           <div>
 
           
-                <div style={{color:'white',marginLeft:'52px',fontSize:'22px',marginTop:'35px'}}>Java</div>
-                <div className='module'>
-            <div style={{display:'flex',flexDirection:'row'}}>
-            <div  className="glassStyle" >
-            <AlignCenterHorizontalSimple size={25} color="#4925cd" style={{margin:'5px',marginRight:'8px',marginLeft:'8px'}}/>
-            </div>
-            <div style={{display:'flex',marginLeft:'20px',justifyContent:'center',alignItems:'center'}}>Day 1 - Introduction</div>
-            </div>
-            <div style={{display:'flex', justifyContent:'center',alignItems:'center',cursor:'pointer'}} onClick={()=>setvisible(!visible)}>
-            {visible ? (<CaretDown size={20} color="#4925cd" weight="bold" />) : (<CaretLeft size={20} color="#4925cd" weight="bold" />)}
-            </div>
-            
-            
-        </div>
+            <div style={{color:'white',marginLeft:'52px',fontSize:'22px',marginTop:'35px'}}>Java</div>
+            <div className='module'>
+              <div style={{display:'flex',flexDirection:'row'}}>
+                <div  className="glassStyle" >
+                  <AlignCenterHorizontalSimple size={25} color="#4925cd" style={{margin:'5px',marginRight:'8px',marginLeft:'8px'}}/>
+                </div>
+                <div style={{ display: 'flex', marginLeft: '20px', justifyContent: 'center', alignItems: 'center' }}>Day 1 - Introduction
+                </div>
+              </div>
+              <div style={{display:'flex', justifyContent:'center',alignItems:'center',cursor:'pointer'}} onClick={()=>setvisible(!visible)}>
+              {visible ? (<CaretDown size={20} color="#4925cd" weight="bold" />) : (<CaretLeft size={20} color="#4925cd" weight="bold" />)}
+              </div>
+          </div>
+          
                 <div>
                 {visible && (<Paper className='table' sx={{backgroundColor: 'black'}}>
     {/* <div style={{width:'100%',display:'flex',justifyContent:'center',backgroundColor:'#171717',paddingTop:'5px',paddingBottom:'30px'}}> 
@@ -168,8 +168,6 @@ const Content=()=>{
     
                 </div>
             </div>
-            
-            
         </div>
     )
 }

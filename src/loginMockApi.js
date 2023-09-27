@@ -40,7 +40,7 @@ const users = [
   { id: 	37	, username: 'arunima.paul2023@vitstudent.ac.in', password: '9935696511'},
   { id: 	38	, username: 'achintya.agnihotri2023@vitstudent.ac.in', password: '6392339126'},
   { id: 	39	, username: 'yahmini.h2023@vitstudent.ac.in', password: '9606700263'},
-  { id: 	40	, username: 'kadirineha.reddy2023@vitstudent.ac.in', password: '9543589002'},
+  { id: 	40	, username: 'kadirineha.reddy2023@vitstudent.ac.in', password: '9398842118'},
   { id: 	41	, username: 'rohit.aruna2023@vitstudent.ac.in', password: '7200856032'},
   { id: 	42	, username: 'shivamrajan.rane2023@vitstudent.ac.in', password: '9579643916'},
   { id: 	43	, username: 'sebabrat.sahoo2023@vitstudent.ac.in', password: '8777218145'},
