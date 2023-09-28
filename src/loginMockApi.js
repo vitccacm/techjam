@@ -1,5 +1,6 @@
 const users = [
-  { id: 1000, username: 'vitacm', password: 'vitacm' },
+  { id: 1000, username: 'acmtechjam@gmail.com', password: 'vitacmtechjam' },
+  { id: 1001, username: 'tech', password: 'tech'},
 
   { id: 	1	, username: 'charviupreti@gmail.com', password: '9899112792'},
   { id: 	3	, username: 'prathyuma.v2020@vitstudent.ac.in', password: '9600188603'},
@@ -66,7 +67,14 @@ const users = [
   { id: 	63	, username: 'abee.teddy2023@vitstudent.ac.in', password: '6304856733'},
   { id: 	64	, username: 'chebrolurakesh.karthik2021@vitstudent.ac.in', password: '9502053544'},
   { id: 	65	, username: 'lakshmana.mahanand2021@vitstudent.ac.in', password: '6302604785'},
-  { id: 	66	, username: 'pjjoseph510@gmail.com', password: '9495107111'},
+  { id:   66  , username: 'pjjoseph510@gmail.com', password: '9495107111' },
+  
+  { id:   67  , username: 'abee.teddy2023@vitstudent.ac.in', password: '6304856733' },
+  { id:   68  , username: 'chebrolurakesh.karthik2021@vitstudent.ac.in', password: '9502053544' },
+  { id:   69  , username: 'lakshmana.mahanand2021@vitstudent.ac.in', password: '6302604785' },
+  { id:   70 , username: 'pjjoseph510@gmail.com', password: '9495107111' },
+  { id:   71  , username: 'pjjoseph510@gmail.com', password: '7823921117' },
+
   
 ];
   
