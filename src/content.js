@@ -5,10 +5,12 @@ import Paper from '@mui/material/Paper';
 import { AlignCenterHorizontalSimple,CaretDown, CaretLeft } from "@phosphor-icons/react";
 import TableNew from "./tablenew";
 import Table2 from "./Table2";
+import Table3 from "./Table3";
 
 const Content=()=>{
     const [visible,setvisible]= React.useState(true)
     const [visible2,setvisible2]= React.useState(true)
+    const [visible3,setvisible3]= React.useState(true)
     
        
     return(
@@ -99,6 +101,34 @@ const Content=()=>{
     </div> */}
           
           <Table2/>
+      
+    </Paper>)}
+    
+    
+                </div>
+                </div>
+
+            {/* ------------------Day 3 ---------------- */}
+            
+            <div style={{color:'white',marginLeft:'52px',fontSize:'22px',marginTop:'35px'}}>Competitive Programming</div>
+            <div>
+            <div className='module'>
+              <div style={{display:'flex',flexDirection:'row'}}>
+                <div  className="glassStyle" >
+                  <AlignCenterHorizontalSimple size={25} color="#4925cd" style={{margin:'5px',marginRight:'8px',marginLeft:'8px'}}/>
+                </div>
+                <div style={{ display: 'flex', marginLeft: '20px', justifyContent: 'center', alignItems: 'center' }}>
+                  Day 3 
+                </div>
+              </div>
+              <div style={{display:'flex', justifyContent:'center',alignItems:'center',cursor:'pointer'}} onClick={()=>setvisible3(!visible3)}>
+              {visible3 ? (<CaretDown size={20} color="#4925cd" weight="bold" />) : (<CaretLeft size={20} color="#4925cd" weight="bold" />)}
+              </div>
+          </div>
+          <div>
+                {visible3 && (<Paper className='table' sx={{backgroundColor: 'black'}}>
+   
+          <Table3/>
       
     </Paper>)}
     
