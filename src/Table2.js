@@ -68,28 +68,28 @@ const Table2 = () => {
 				<div class="table-data">Array</div>
 				<div class="table-data"><a href="https://www.youtube.com/watch?v=8XrTgXNrjkg" target='_blank'>Click here for Video</a></div>
 				<div class="table-data"><a href="https://github.com/ACMVITCC/techjam2023/tree/main/Day-2" target='_blank'>Click here for Code</a></div>
-        <div class="table-data"><a href="Documents/day1/Arrays.pptx" target='_blank' download="Arrays.pptx"> Click here to view PPT</a></div>
+        <div class="table-data"><a href="https://docs.google.com/presentation/d/1CzasNTaqIvEpg8IsvwC4D_6dg35UZihj/edit?usp=drive_link&ouid=109807022555841161079&rtpof=true&sd=true" target='_blank'> Click here to view PPT</a></div>
 				<div class="table-data">-</div>
 			</div>
 			<div class="table-row">
 				<div class="table-data">String Manipulation</div>
 				<div class="table-data"><a href="https://www.youtube.com/watch?v=38MWDM1TgwM" target='_blank'>Click here for Video</a></div>
 				<div class="table-data"><a href="https://github.com/ACMVITCC/techjam2023/tree/main/Day-2" target='_blank'>Click here for Code</a></div>
-				<div class="table-data"><a href="Documents/day1/Strings.pptx" target='_blank' download="Strings.pptx"> Click here to view PPT</a></div>
+				<div class="table-data"><a href="https://docs.google.com/presentation/d/1kdikSsf9CmZOO6-QucoyvjigwE7fOfW1/edit?usp=drive_link&ouid=109807022555841161079&rtpof=true&sd=true" target='_blank'> Click here to view PPT</a></div>
 				<div class="table-data">-</div>
 			</div>
 			<div class="table-row">
 				<div class="table-data">Functions</div>
 				<div class="table-data"><a href="https://www.youtube.com/watch?v=5KslaodVm_c" target='_blank'>Click here for Video</a></div>
 				<div class="table-data"><a href="https://github.com/ACMVITCC/techjam2023/tree/main/Day-2" target='_blank'>Click here for Code</a></div>
-				<div class="table-data"><a href="Documents/day1/Functions.pptx" target='_blank' download="Functions.pptx">Click here to view PPT</a></div>
+				<div class="table-data"><a href="https://docs.google.com/presentation/d/1UHmCT591zWxvlqkYJUkThO131L18OBxD/edit?usp=drive_link&ouid=109807022555841161079&rtpof=true&sd=true" target='_blank'>Click here to view PPT</a></div>
 				<div class="table-data"><a href="#" target='_blank'></a></div>
 			</div>
             <div class="table-row">
 				<div class="table-data">Inheritance</div>
 				<div class="table-data"><a href="https://www.youtube.com/watch?v=2rF0Two5Cfs" target='_blank'>Click here for Video</a></div>
 				<div class="table-data"><a href="https://github.com/ACMVITCC/techjam2023/tree/main/Day-2" target='_blank'>Click here for Code</a></div>
-				<div class="table-data"><a href="Documents/day1/Inheritance.pptx" target='_blank' download="Inheritance.pptx">Click here to view PPT</a></div>
+				<div class="table-data"><a href="https://docs.google.com/presentation/d/1jcjlPRC8uUPMXjoCxNdxfUCx_KdRGmis/edit?usp=drive_link&ouid=109807022555841161079&rtpof=true&sd=true" target='_blank'>Click here to view PPT</a></div>
 				<div class="table-data"><a href="#" target='_blank'>Yet to be announced</a></div>
 			</div>
 		</div>	

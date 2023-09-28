@@ -78,7 +78,7 @@ const Table3 = () => {
 				<div class="table-data">Divide & Conquer</div>
 				<div class="table-data"><a href="https://youtu.be/vnAzwUjeNDE" target='_blank'>Click here for Video</a></div>
 				<div class="table-data"><a href="https://github.com/ACMVITCC/techjam2023/tree/main/Day-3" target='_blank'>Click here for Code</a></div>
-                <div class="table-data"><a href="#" onClick={()=>downloadFile('Documents/day3/divideconquer.pptx')}>Click here to view PPT</a></div>
+                <div class="table-data"><a href="https://docs.google.com/presentation/d/1sYg-0UrGKijiP_HXyh3I_LE44Vl4VrPD/edit?usp=drive_link" target='_blank' >Click here to view PPT</a></div>
 				<div class="table-data">-</div>
 		</div>
         
@@ -86,7 +86,7 @@ const Table3 = () => {
 				<div class="table-data">Graph & Trees</div>
 				<div class="table-data"><a href="https://youtu.be/mqSQvJ3x9K0" target='_blank'>Click here for Video</a></div>
 				<div class="table-data"><a href="https://github.com/ACMVITCC/techjam2023/tree/main/Day-3" target='_blank'>Click here for Code</a></div>
-				<div class="table-data"><a href="#" onClick={()=>downloadFile('Documents/day3/GraphsTrees.pptx')}> Click here to view PPT</a></div>
+				<div class="table-data"><a href="https://docs.google.com/presentation/d/1zvbIdNZr6tIeSvfZopfbckPE3UxYQl3D/edit?usp=drive_link" target='_blank'> Click here to view PPT</a></div>
 				<div class="table-data">-</div>
 			</div>
 			
