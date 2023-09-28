@@ -2,6 +2,17 @@ import React, { useState } from 'react';
 import './table.css'
 
 const Table3 = () => {
+    const downloadFile = (path) => {
+        const filePath = path; 
+        const encodedFilePath = encodeURIComponent(filePath);
+        const link = document.createElement('a');
+        link.href = encodedFilePath;
+        link.target = '_blank';
+        link.download = 'Graphs&Trees.pptx';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      };
   const properties = [
     'name',
     'wins',
@@ -67,7 +78,7 @@ const Table3 = () => {
 				<div class="table-data">Divide & Conquer</div>
 				<div class="table-data"><a href="https://youtu.be/vnAzwUjeNDE" target='_blank'>Click here for Video</a></div>
 				<div class="table-data"><a href="https://github.com/ACMVITCC/techjam2023/tree/main/Day-3" target='_blank'>Click here for Code</a></div>
-                <div class="table-data"><a href="Documents/day3/divide&conquer.pptx" target='_blank' download="Divide&Conquer.pptx"> Click here to view PPT</a></div>
+                <div class="table-data"><a href="#" onClick={()=>downloadFile('Documents/day3/divideconquer.pptx')}>Click here to view PPT</a></div>
 				<div class="table-data">-</div>
 		</div>
         
@@ -75,7 +86,7 @@ const Table3 = () => {
 				<div class="table-data">Graph & Trees</div>
 				<div class="table-data"><a href="https://youtu.be/mqSQvJ3x9K0" target='_blank'>Click here for Video</a></div>
 				<div class="table-data"><a href="https://github.com/ACMVITCC/techjam2023/tree/main/Day-3" target='_blank'>Click here for Code</a></div>
-				<div class="table-data"><a href="Documents/day3/Graphs&Trees.pptx" target='_blank' download="Graphs&Trees.pptx"> Click here to view PPT</a></div>
+				<div class="table-data"><a href="#" onClick={()=>downloadFile('Documents/day3/GraphsTrees.pptx')}> Click here to view PPT</a></div>
 				<div class="table-data">-</div>
 			</div>
 			
