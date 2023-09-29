@@ -122,7 +122,7 @@ const Content=()=>{
                 
                   
                   <Table3/>
-                  <div style={{display:'flex',flexDirection:'row',gap:'20px',justifyContent:'center',alignItems:'center',margin:'20px',backgroundColor:'#252525'}}>
+                  <div style={{display:'flex',flexDirection:'row',gap:'20px',justifyContent:'center',alignItems:'center',padding:'20px',backgroundColor:'#252525'}}>
                   
                   <a href="https://vitchennai.acm.org/divide-and-conquer.html" target="_blank">
                   <button>
