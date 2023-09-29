@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './table.css'
-import { Link } from 'react-router-dom';
+import Arrays from './Documents/day1/Arrays.pptx'
 
 const Table2 = () => {
   const properties = [
@@ -60,7 +60,11 @@ const Table2 = () => {
 			<div class="header__item"><a id="name" class="filter__link" href="#">Topic Name</a></div>
 			<div class="header__item"><a id="wins" class="filter__link filter__link--number" href="#">Video</a></div>
 			<div class="header__item"><a id="draws" class="filter__link filter__link--number" href="#">Code</a></div>
-			<div class="header__item"><a id="losses" class="filter__link filter__link--number" href="#">PPT</a></div>
+			<div class="header__item"><a id="losses" class="filter__link filter__link--number" 
+            href={Arrays} 
+            download="Arrays"
+            target="_blank"
+            rel="noreferrer">PPT</a></div>
 			<div class="header__item"><a id="total" class="filter__link filter__link--number" href="#">Quiz</a></div>
 		</div>
 		<div class="table-content">	

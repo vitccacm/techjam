@@ -65,21 +65,21 @@ const TableNew = () => {
 			<div class="table-row">		
 				<div class="table-data">Basic of Java</div>
 				<div class="table-data"><a href="https://youtu.be/rCZWduD_kIk" target='_blank'>Click here for Video</a></div>
-				<div class="table-data"><a href="https://github.com/acmtechjam/techjam2023" target='_blank'>Click here for Code</a></div>
+				<div class="table-data"><a href="https://github.com/ACMVITCC/techjam2023/tree/main/Day1" target='_blank'>Click here for Code</a></div>
 				<div class="table-data"><a href="https://docs.google.com/presentation/d/12BGZ4XSiri6ouBr0ZkelFWiGgOxqskuF/present?slide=id.p5" target='_blank'>Click here to view PPT</a></div>
 				<div class="table-data">-</div>
 			</div>
 			<div class="table-row">
 				<div class="table-data">Operators</div>
 				<div class="table-data"><a href="https://www.youtube.com/watch?app=desktop&v=b5CEyhyralY&feature=youtu.be" target='_blank'>Click here for Video</a></div>
-				<div class="table-data"><a href="https://github.com/acmtechjam/techjam2023" target='_blank'>Click here for Code</a></div>
+				<div class="table-data"><a href="https://github.com/ACMVITCC/techjam2023/tree/main/Day1" target='_blank'>Click here for Code</a></div>
 				<div class="table-data"><a href="https://docs.google.com/presentation/d/1qDuQ9Xot5GTz7aLpYHoGB8Mug7kWGYc2/present?slide=id.p1" target='_blank'> Click here to view PPT</a></div>
 				<div class="table-data">-</div>
 			</div>
 			<div class="table-row">
 				<div class="table-data">Loop</div>
 				<div class="table-data"><a href="https://www.youtube.com/watch?app=desktop&v=QFLIvtKHq_4&feature=youtu.be" target='_blank'>Click here for Video</a></div>
-				<div class="table-data"><a href="https://github.com/acmtechjam/techjam2023" target='_blank'>Click here for Code</a></div>
+				<div class="table-data"><a href="https://github.com/ACMVITCC/techjam2023/tree/main/Day1" target='_blank'>Click here for Code</a></div>
 				<div class="table-data"><a href="https://docs.google.com/presentation/d/1OajT04KR63LYyYWt4O065lTxEze6BJk6/present?slide=id.p2" target='_blank'>Click here to view PPT</a></div>
 				<div class="table-data"><a href="#" target='_blank'>Yet to be announced</a></div>
 			</div>

@@ -90,16 +90,7 @@ const Content=()=>{
           </div>
           <div>
                 {visible2 && (<Paper className='table' sx={{backgroundColor: 'black'}}>
-    {/* <div style={{width:'100%',display:'flex',justifyContent:'center',backgroundColor:'#171717',paddingTop:'5px',paddingBottom:'30px'}}> 
-    <iframe src="https://drive.google.com/file/d/19tcYi4ULCuPohVSFvObIoe-C7VSbn4eN/preview" width="900" height="480" allow="autoplay"></iframe>
-    </div>
-    <div style={{width:'100%',display:'flex',justifyContent:'center',backgroundColor:'#171717',paddingTop:'5px',paddingBottom:'30px'}}> 
-    <iframe src="https://drive.google.com/file/d/1xQ71q_LsaUccc7fF2iM29F9PRa4jctWr/preview" width="900" height="480" allow="autoplay"></iframe>
-    </div>
-    <div style={{width:'100%',display:'flex',justifyContent:'center',backgroundColor:'#171717',paddingTop:'5px',paddingBottom:'30px'}}> 
-    <iframe src="https://drive.google.com/file/d/1zG1hOEFpB5T2QsgmCWRiVCkyv9cz6Li-/preview" width="900" height="480" allow="autoplay"></iframe>
-    </div> */}
-          
+    
           <Table2/>
       
     </Paper>)}
