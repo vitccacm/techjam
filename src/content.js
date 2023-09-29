@@ -119,13 +119,10 @@ const Content=()=>{
           </div>
           <div>
                 {visible3 && (<Paper className='table' sx={{backgroundColor: 'black'}}>
-                <div>
-                <h1 id="divide-and-conquer">Divide and Conquer</h1>
                 
-                </div>
                   
                   <Table3/>
-                  <div style={{display:'flex',flexDirection:'row',gap:'20px'}}>
+                  <div style={{display:'flex',flexDirection:'row',gap:'20px',justifyContent:'center',alignItems:'center',margin:'20px'}}>
                   
                   <a href="https://vitchennai.acm.org/divide-and-conquer.html">
                   <button>
