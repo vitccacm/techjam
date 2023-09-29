@@ -60,11 +60,7 @@ const Table2 = () => {
 			<div class="header__item"><a id="name" class="filter__link" href="#">Topic Name</a></div>
 			<div class="header__item"><a id="wins" class="filter__link filter__link--number" href="#">Video</a></div>
 			<div class="header__item"><a id="draws" class="filter__link filter__link--number" href="#">Code</a></div>
-			<div class="header__item"><a id="losses" class="filter__link filter__link--number" 
-            href={Arrays} 
-            download="Arrays"
-            target="_blank"
-            rel="noreferrer">PPT</a></div>
+			<div class="header__item"><a id="losses" class="filter__link filter__link--number" href="#">PPT</a></div>
 			<div class="header__item"><a id="total" class="filter__link filter__link--number" href="#">Quiz</a></div>
 		</div>
 		<div class="table-content">	
@@ -72,7 +68,7 @@ const Table2 = () => {
 				<div class="table-data">Array</div>
 				<div class="table-data"><a href="https://www.youtube.com/watch?v=8XrTgXNrjkg" target='_blank'>Click here for Video</a></div>
 				<div class="table-data"><a href="https://github.com/ACMVITCC/techjam2023/tree/main/Day-2" target='_blank'>Click here for Code</a></div>
-        <div class="table-data"><a href="https://docs.google.com/presentation/d/1CzasNTaqIvEpg8IsvwC4D_6dg35UZihj/edit?usp=drive_link&ouid=109807022555841161079&rtpof=true&sd=true" target='_blank'> Click here to view PPT</a></div>
+        <div class="table-data"><a href={Arrays} download="Array" target='_blank' rel="noreferrer"> Click here to view PPT</a></div>
 				<div class="table-data">-</div>
 			</div>
 			<div class="table-row">
