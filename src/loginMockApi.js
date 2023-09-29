@@ -1,6 +1,6 @@
 const users = [
   { id: 1000, username: 'acmtechjam@gmail.com', password: 'vitacmtechjam' },
-  { id: 1001, username: 'tech', password: 'tech'},
+  { id: 1001, username: 'asdf', password: 'asdf'},
 
   { id: 	1	, username: 'charviupreti@gmail.com', password: '9899112792'},
   { id: 	3	, username: 'prathyuma.v2020@vitstudent.ac.in', password: '9600188603'},
