@@ -74,7 +74,17 @@ const users = [
   { id:   69  , username: 'lakshmana.mahanand2021@vitstudent.ac.in', password: '6302604785' },
   { id:   70 , username: 'pjjoseph510@gmail.com', password: '9495107111' },
   { id:   71  , username: 'pjjoseph510@gmail.com', password: '7823921117' },
-
+  { id:   72  , username: 'shubhi.tiwari2021@vitstudent.ac.in', password: '9407276994' },
+  { id:   73  , username: 'sheshaadhri14@gmail.com', password: '7305640679' },
+  { id:   74  , username: 'shrraddhas.mishra2021@vitstudent.ac.in', password: '8377091420' },
+  { id:   75  , username: 'garv.gupta2023@vitstudent.ac.in', password: '8586969110' },
+  { id:   76  , username: 'sreelakshmimenon.k2023@vitstudent.ac.in', password: '9361433259' },
+  { id:   77  , username: 'rishika.v2023@vitstudent.ac.in', password: '9940478078' },
+  { id:   78  , username: 'govarthananb2003@gmail.com', password: '7338972828' },
+  { id:   79  , username: 'harikrishnan.sanand2023@vitstudent.ac.in', password: '9512666867' },
+  { id:   80  , username: 'sandeepganesh.d2023@vitstudent.ac.in', password: '7823921117' },
+  { id:   81  , username: 'tambesatvik.satyen2023@vitstudent.ac.in', password: '9833018641' },
+  { id:   82 , username: 'ezhilkumaran.l2023@vitstudent.ac.in', password: '9342276266' },
   
 ];
   
