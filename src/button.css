@@ -1,4 +1,4 @@
-button {
+.sbutton {
     display: flex;
     align-items: center;
     font-family: inherit;
@@ -13,20 +13,20 @@ button {
     border-radius: 16px;
   }
   
-  button svg {
+.sbutton svg {
     margin-right: 3px;
     transform: rotate(30deg);
     transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
   }
   
-  button span {
+.sbutton span {
     transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
   }
   
-  button:hover svg {
+  .sbutton:hover svg {
     transform: translateX(5px) rotate(90deg);
   }
   
-  button:hover span {
+ .sbutton:hover span {
     transform: translateX(7px);
   }
