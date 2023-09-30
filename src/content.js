@@ -8,11 +8,13 @@ import Table2 from "./Table2";
 import Table3 from "./Table3";
 import './button.css';
 import { Link, useNavigate } from "react-router-dom";
+import Table4 from "./Table4";
 
 const Content = () => {
   const [visible, setvisible] = useState(true);
   const [visible2, setvisible2] = useState(true);
   const [visible3, setvisible3] = useState(true);
+  const [visible4, setvisible4] = useState(true);
 
   return (
     <div>
@@ -90,7 +92,7 @@ const Content = () => {
               <AlignCenterHorizontalSimple size={25} color="#4925cd" style={{ margin: '5px', marginRight: '8px', marginLeft: '8px' }} />
             </div>
             <div style={{ display: 'flex', marginLeft: '20px', justifyContent: 'center', alignItems: 'center' }}>
-              Day 3
+              Day 3 - Divide & Conquer, Graph & Trees
             </div>
           </div>
           <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer' }} onClick={() => setvisible3(!visible3)}>
@@ -113,6 +115,33 @@ const Content = () => {
                   </button>
                 </a>
               </div> */}
+            </Paper>
+          )}
+        </div>
+      </div>
+
+
+      {/* day 4 */}
+
+      <div>
+        <div className='module'>
+          <div style={{ display: 'flex', flexDirection: 'row' }}>
+            <div className="glassStyle">
+              <AlignCenterHorizontalSimple size={25} color="#4925cd" style={{ margin: '5px', marginRight: '8px', marginLeft: '8px' }} />
+            </div>
+            <div style={{ display: 'flex', marginLeft: '20px', justifyContent: 'center', alignItems: 'center' }}>
+              Day 4 - Greedy, Dynamic Programming, Backtracking
+            </div>
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer' }} onClick={() => setvisible4(!visible4)}>
+            {visible4 ? (<CaretDown size={20} color="#4925cd" weight="bold" />) : (<CaretLeft size={20} color="#4925cd" weight="bold" />)}
+          </div>
+        </div>
+        <div>
+          {visible4 && (
+            <Paper className='table' sx={{ backgroundColor: 'black' }}>
+              <Table4 />
+              
             </Paper>
           )}
         </div>

@@ -28,7 +28,7 @@ const Table3 = () => {
 		<div class="table-content">	
 			<div class="table-row">		
 				<div class="table-data">Divide & Conquer</div>
-				<div class="table-data"><a style={{cursor:'pointer'}} onClick={()=>navigatePage('https://www.youtube.com/embed/vnAzwUjeNDE?si=LGBm18sRM4uE_UKy','Divide & Conquer',"sample3.txt")}>Click here for Video</a></div>
+				<div class="table-data"><a style={{cursor:'pointer'}} onClick={()=>navigatePage('https://www.youtube.com/embed/vnAzwUjeNDE?si=LGBm18sRM4uE_UKy','Divide & Conquer',"divideandconquer")}>Click here for Video</a></div>
 				<div class="table-data"><a href="https://github.com/ACMVITCC/techjam2023/tree/main/Day-3" target='_blank'>Click here for Code</a></div>
         <div class="table-data"><a href={DivideConquer} download="Divide&Conquer" target='_blank' rel="noreferrer" >Click here to view PPT</a></div>
 				<div class="table-data">-</div>
@@ -36,7 +36,7 @@ const Table3 = () => {
         
 			<div class="table-row">
 				<div class="table-data">Graph & Trees</div>
-				<div class="table-data"><a style={{cursor:'pointer'}} onClick={()=>navigatePage('https://www.youtube.com/embed/mqSQvJ3x9K0?si=vLLmmP0SAsZg062P','Graph & Trees')}>Click here for Video</a></div>
+				<div class="table-data"><a style={{cursor:'pointer'}} onClick={()=>navigatePage('https://www.youtube.com/embed/mqSQvJ3x9K0?si=vLLmmP0SAsZg062P','Graphs & Trees',"graph")}>Click here for Video</a></div>
 				<div class="table-data"><a href="https://github.com/ACMVITCC/techjam2023/tree/main/Day-3" target='_blank'>Click here for Code</a></div>
 				<div class="table-data"><a href={GraphsTrees} download="Graph&Trees" target='_blank' rel="noreferrer" > Click here to view PPT</a></div>
 				<div class="table-data">-</div>

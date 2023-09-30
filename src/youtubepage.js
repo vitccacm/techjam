@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import raw from './contentpage/sample3.txt'
+import { TermsPage } from "./text";
+import ReactMarkdown from 'react-markdown'
 
 const YoutubePage = () => {
   const location = useLocation();
@@ -8,24 +10,29 @@ const YoutubePage = () => {
   const title = location.state?.title;
   const filename = location.state?.file
   console.log('f',filename)
-  const file = require(`./contentpage/${filename}`)
-  const [text, setText] = useState("");
+  const file = require(`./${filename}.md`)
+  // const [text, setText] = useState("");
 
+  // useEffect(() => {
+  //   fetch(file)
+  //     .then((r) => r.text())
+  //     .then((text) => {
+  //       setText(text);
+  //     });
+  // }, [file]);
+
+  // const formatText = (text) => {
+  //   return text.split("\n").map((line, index) => (
+  //     <p key={index} style={{ margin: 0 }}>
+  //       {line}
+  //     </p>
+  //   ));
+  // };
+
+  const [tosText, setTosText] = useState('')
   useEffect(() => {
-    fetch(file)
-      .then((r) => r.text())
-      .then((text) => {
-        setText(text);
-      });
-  }, [file]);
-
-  const formatText = (text) => {
-    return text.split("\n").map((line, index) => (
-      <p key={index} style={{ margin: 0 }}>
-        {line}
-      </p>
-    ));
-  };
+		fetch(file).then(res => res.text()).then(text => setTosText(text))
+	})
 
   return (
     <div style={{ color: 'white', margin: '40px', marginLeft: '55px' }}>
@@ -41,9 +48,11 @@ const YoutubePage = () => {
           allowfullscreen
         ></iframe>
       </div>
-      <div style={{ marginTop: '30px' }}>
-        {formatText(text)}
+      <div style={{marginTop:'35px'}}>
+      <ReactMarkdown children={tosText} />
+        
       </div>
+      
     </div>
   );
 }
