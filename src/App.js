@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes,Route, Link} from 'react-router-dom';
 import Signin from './signin';
 import Home1 from './Home1';
 import Content from './content';
+import YoutubePage from './youtubepage';
 function App() {
   
   return (
@@ -16,6 +17,7 @@ function App() {
 
       <Route path= '/signin' element={<Signin/>}/>
       <Route path= '/content' element={<Content/>}/>
+      <Route path= '/youtube' element={<YoutubePage/>}/>
 
     </Routes>
   </Router>

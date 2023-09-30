@@ -2,8 +2,12 @@ import React, { useState } from 'react';
 import './table.css'
 import DivideConquer from './Documents/day3/divideconquer.pptx'
 import GraphsTrees from './Documents/day3/GraphsTrees.pptx'
+import { useNavigate } from 'react-router-dom';
+import raw from './contentpage/sample3.txt'
+
 
 const Table3 = () => {
+<<<<<<< HEAD
     const downloadFile = (path) => {
         const filePath = path; 
         const encodedFilePath = encodeURIComponent(filePath);
@@ -64,7 +68,15 @@ const Table3 = () => {
 
     rows.forEach(row => tableContent.appendChild(row));
   };
+=======
+  const navigate = useNavigate();
+>>>>>>> 6b5f3d92315b3b138aaae83331eeba0bac14b64e
 
+  const navigatePage=(video,title,file)=>{
+    console.log('n',file)
+      
+      navigate('/youtube', { state: { video, title,file} });
+  }
   return (
     <div style={{backgroundColor:'#171717'}}>
 <div class="containertable">
@@ -79,7 +91,7 @@ const Table3 = () => {
 		<div class="table-content">	
 			<div class="table-row">		
 				<div class="table-data">Divide & Conquer</div>
-				<div class="table-data"><a href="https://youtu.be/vnAzwUjeNDE" target='_blank'>Click here for Video</a></div>
+				<div class="table-data"><a style={{cursor:'pointer'}} onClick={()=>navigatePage('https://www.youtube.com/embed/vnAzwUjeNDE?si=LGBm18sRM4uE_UKy','Divide & Conquer',"sample3.txt")}>Click here for Video</a></div>
 				<div class="table-data"><a href="https://github.com/ACMVITCC/techjam2023/tree/main/Day-3" target='_blank'>Click here for Code</a></div>
         <div class="table-data"><a href={DivideConquer} download="Divide&Conquer" target='_blank' rel="noreferrer" >Click here to view PPT</a></div>
 				<div class="table-data">-</div>
@@ -87,7 +99,7 @@ const Table3 = () => {
         
 			<div class="table-row">
 				<div class="table-data">Graph & Trees</div>
-				<div class="table-data"><a href="https://youtu.be/mqSQvJ3x9K0" target='_blank'>Click here for Video</a></div>
+				<div class="table-data"><a style={{cursor:'pointer'}} onClick={()=>navigatePage('https://www.youtube.com/embed/mqSQvJ3x9K0?si=vLLmmP0SAsZg062P','Graph & Trees')}>Click here for Video</a></div>
 				<div class="table-data"><a href="https://github.com/ACMVITCC/techjam2023/tree/main/Day-3" target='_blank'>Click here for Code</a></div>
 				<div class="table-data"><a href={GraphsTrees} download="Graph&Trees" target='_blank' rel="noreferrer" > Click here to view PPT</a></div>
 				<div class="table-data">-</div>
