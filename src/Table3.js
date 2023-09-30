@@ -5,9 +5,8 @@ import GraphsTrees from './Documents/day3/GraphsTrees.pptx'
 import { useNavigate } from 'react-router-dom';
 import raw from './contentpage/sample3.txt'
 
-
 const Table3 = () => {
-    
+  const navigate = useNavigate();
 
   const navigatePage=(video,title,file)=>{
     console.log('n',file)
