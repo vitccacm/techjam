@@ -44,41 +44,11 @@ const Content = () => {
               <AlignCenterHorizontalSimple size={25} color="#4925cd" style={{ margin: '5px', marginRight: '8px', marginLeft: '8px' }} />
             </div>
             <div style={{ display: 'flex', marginLeft: '20px', justifyContent: 'center', alignItems: 'center' }}>
-              Day 1 - Introduction
+              Day 1 - Basics of Java
             </div>
           </div>
-<<<<<<< HEAD
-          <div>
-                {visible2 && (<Paper className='table' sx={{backgroundColor: 'black'}}>
-    
-          <Table2/>
-      
-    </Paper>)}
-    
-    
-                </div>
-                </div>
-
-            {/* ------------------Day 3 ---------------- */}
-            
-            <div style={{color:'white',marginLeft:'52px',fontSize:'22px',marginTop:'35px'}}>Competitive Programming</div>
-            <div>
-            <div className='module'>
-              <div style={{display:'flex',flexDirection:'row'}}>
-                <div  className="glassStyle" >
-                  <AlignCenterHorizontalSimple size={25} color="#4925cd" style={{margin:'5px',marginRight:'8px',marginLeft:'8px'}}/>
-                </div>
-                <div style={{ display: 'flex', marginLeft: '20px', justifyContent: 'center', alignItems: 'center' }}>
-                  Day 3 - Divide & Conquer, Graph & trees 
-                </div>
-              </div>
-              <div style={{display:'flex', justifyContent:'center',alignItems:'center',cursor:'pointer'}} onClick={()=>setvisible3(!visible3)}>
-              {visible3 ? (<CaretDown size={20} color="#4925cd" weight="bold" />) : (<CaretLeft size={20} color="#4925cd" weight="bold" />)}
-              </div>
-=======
           <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer' }} onClick={() => setvisible(!visible)}>
             {visible ? (<CaretDown size={20} color="#4925cd" weight="bold" />) : (<CaretLeft size={20} color="#4925cd" weight="bold" />)}
->>>>>>> 6b5f3d92315b3b138aaae83331eeba0bac14b64e
           </div>
         </div>
         
