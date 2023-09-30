@@ -7,7 +7,70 @@ import raw from './contentpage/sample3.txt'
 
 
 const Table3 = () => {
+<<<<<<< HEAD
+    const downloadFile = (path) => {
+        const filePath = path; 
+        const encodedFilePath = encodeURIComponent(filePath);
+        const link = document.createElement('a');
+        link.href = encodedFilePath;
+        link.target = '_blank';
+        link.download = 'Graphs&Trees.pptx';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
+  
+  const properties = [
+    'name',
+    'wins',
+    'draws',
+    'losses',
+    'total',
+  ];
+
+  const [orderClass, setOrderClass] = useState('');
+
+  const handleHeaderClick = (e, val) => {
+    e.preventDefault();
+
+    const activeLink = document.querySelector('.filter__link.filter__link--active');
+    if (activeLink && activeLink !== e.target) {
+      activeLink.classList.remove('filter__link--active');
+    }
+
+    e.target.classList.toggle('filter__link--active');
+    const isDescending = orderClass === 'desc' || orderClass === '';
+
+    if (isDescending) {
+      e.target.classList.add('asc');
+      setOrderClass('asc');
+    } else {
+      e.target.classList.add('desc');
+      setOrderClass('desc');
+    }
+
+    const parent = e.target.closest('.header__item');
+    const index = Array.from(parent.parentNode.children).indexOf(parent);
+
+    const tableContent = document.querySelector('.table-content');
+    const rows = Array.from(tableContent.querySelectorAll('.table-row'));
+
+    rows.sort((a, b) => {
+      const x = a.querySelector('.table-data').children[index].textContent;
+      const y = b.querySelector('.table-data').children[index].textContent;
+
+      if (e.target.classList.contains('filter__link--number')) {
+        return isDescending ? x - y : y - x;
+      } else {
+        return isDescending ? x.localeCompare(y) : y.localeCompare(x);
+      }
+    });
+
+    rows.forEach(row => tableContent.appendChild(row));
+  };
+=======
   const navigate = useNavigate();
+>>>>>>> 6b5f3d92315b3b138aaae83331eeba0bac14b64e
 
   const navigatePage=(video,title,file)=>{
     console.log('n',file)
