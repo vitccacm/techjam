@@ -150,36 +150,6 @@ const Content = () => {
         </div>
       </div>
 
-      {/* day 5 */}
-
-      <div>
-        <div className='module'>
-          <div style={{ display: 'flex', flexDirection: 'row' }}>
-            <div className="glassStyle">
-              <AlignCenterHorizontalSimple size={25} color="#4925cd" style={{ margin: '5px', marginRight: '8px', marginLeft: '8px' }} />
-            </div>
-            <div style={{ display: 'flex', marginLeft: '20px', justifyContent: 'center', alignItems: 'center' }}>
-              Day 5 - Greedy, Dynamic Programming, Backtracking
-            </div>
-          </div>
-          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer' }} onClick={() => setvisible4(!visible4)}>
-            {visible4 ? (<CaretDown size={20} color="#4925cd" weight="bold" />) : (<CaretLeft size={20} color="#4925cd" weight="bold" />)}
-          </div>
-        </div>
-        <div>
-          {visible4 && (
-            <Paper className='table' sx={{ backgroundColor: 'black' }}>
-              <Table4 />
-              
-            </Paper>
-          )}
-        </div>
-      </div>
-
-      
-      {/* day 6 */}
-     
-
 
     </div>
   );
