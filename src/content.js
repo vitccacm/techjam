@@ -110,7 +110,7 @@ const Content=()=>{
                   <AlignCenterHorizontalSimple size={25} color="#4925cd" style={{margin:'5px',marginRight:'8px',marginLeft:'8px'}}/>
                 </div>
                 <div style={{ display: 'flex', marginLeft: '20px', justifyContent: 'center', alignItems: 'center' }}>
-                  Day 3 
+                  Day 3 - Divide & Conquer, Graph & trees 
                 </div>
               </div>
               <div style={{display:'flex', justifyContent:'center',alignItems:'center',cursor:'pointer'}} onClick={()=>setvisible3(!visible3)}>

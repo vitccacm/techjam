@@ -14,7 +14,8 @@ const Table3 = () => {
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
-      };
+    };
+  
   const properties = [
     'name',
     'wins',
