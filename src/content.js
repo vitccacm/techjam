@@ -9,6 +9,8 @@ import Table3 from "./Table3";
 import './button.css';
 import { Link, useNavigate } from "react-router-dom";
 import Table4 from "./Table4";
+import Img from './roadmap.png'
+
 
 const Content = () => {
   const [visible, setvisible] = useState(true);
@@ -33,7 +35,8 @@ const Content = () => {
       </div>
 
       <div style={{ width: '100%', display: 'flex', justifyContent: 'center', backgroundColor: '#171717', paddingTop: '5px', paddingBottom: '30px' }}>
-        <iframe src="https://drive.google.com/file/d/1BYWJsBE8_rHLmKbMB2IT8Y6SMJygLWZE/preview" width="640" height="480" allow="autoplay"></iframe>
+        {/* <iframe src="https://drive.google.com/file/d/1BYWJsBE8_rHLmKbMB2IT8Y6SMJygLWZE/preview" width="640" height="480" allow="autoplay"></iframe> */}
+        <img src={Img} style={{height:'50vh'}}/>
       </div>
       
       <div>

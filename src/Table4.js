@@ -30,7 +30,7 @@ const Table4 = () => {
 		<div class="table-content">	
 			<div class="table-row">		
 				<div class="table-data">Greedy</div>
-				<div class="table-data"><a style={{cursor:'pointer'}} onClick={()=>navigatePage('https://www.youtube.com/embed/s6ZaRh69zV4?si=6HjL9mpkl4h6wicI','Greedy Approach',"greedy")}>Click here for Video</a></div>
+				<div class="table-data"><a style={{cursor:'pointer'}} onClick={()=>navigatePage('https://www.youtube.com/embed/s6ZaRh69zV4?si=6HjL9mpkl4h6wicI','Greedy Approach',"greedy") } target='_blank'>Click here for Video</a></div>
 				<div class="table-data"><a href="https://github.com/ACMVITCC/techjam2023/tree/main/Day-4" target='_blank'>Click here for Code</a></div>
         <div class="table-data"><a href={greedy} download="Greedy" target='_blank' rel="noreferrer" >Click here to view PPT</a></div>
 				<div class="table-data">-</div>
@@ -38,7 +38,7 @@ const Table4 = () => {
         
 			<div class="table-row">
 				<div class="table-data">Dynamic Programming</div>
-				<div class="table-data"><a style={{cursor:'pointer'}} onClick={()=>navigatePage('https://www.youtube.com/embed/_t-SJ9pGk2k?si=JSzxuu4qs689_eFB','Dynamic Programming','Dynamic Programming')}>Click here for Video</a></div>
+				<div class="table-data"><a style={{cursor:'pointer'}} onClick={()=>navigatePage('https://www.youtube.com/embed/_t-SJ9pGk2k?si=JSzxuu4qs689_eFB','Dynamic Programming','Dynamic Programming')}target = "_blank">Click here for Video</a></div>
 				<div class="table-data"><a href="https://github.com/ACMVITCC/techjam2023/tree/main/Day-4" target='_blank'>Click here for Code</a></div>
 				<div class="table-data"><a href={dynamic} download="Dynamic" target='_blank' rel="noreferrer" > Click here to view PPT</a></div>
 				<div class="table-data">-</div>
@@ -46,7 +46,7 @@ const Table4 = () => {
 
             <div class="table-row">
 				<div class="table-data">Backtracking</div>
-				<div class="table-data"><a style={{cursor:'pointer'}} onClick={()=>navigatePage('https://www.youtube.com/embed/6IHIGA66r5I?si=EQ6sn1f1nO5lUzNa','Backtracking','backtracking')}>Click here for Video</a></div>
+				<div class="table-data"><a style={{cursor:'pointer'}} onClick={()=>navigatePage('https://www.youtube.com/embed/6IHIGA66r5I?si=EQ6sn1f1nO5lUzNa','Backtracking','backtracking')} target='_blank'>Click here for Video</a></div>
 				<div class="table-data"><a href="https://github.com/ACMVITCC/techjam2023/tree/main/Day-4" target='_blank'>Click here for Code</a></div>
 				<div class="table-data"><a href={backtracking} download="Backtracking" target='_blank' rel="noreferrer" > Click here to view PPT</a></div>
 				<div class="table-data">-</div>
