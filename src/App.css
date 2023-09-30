@@ -345,3 +345,12 @@ body {
     width: 100%;
   }
 }
+
+.table-data a{
+  color: rgb(216, 216, 216);
+  text-decoration: none;
+}
+
+.table-data a:hover{
+  color: #3273f9;
+}

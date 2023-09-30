@@ -25,7 +25,7 @@ const Table4 = () => {
 			<div class="header__item"><a id="wins" class="filter__link filter__link--number">Video</a></div>
 			<div class="header__item"><a id="draws" class="filter__link filter__link--number" >Code</a></div>
 			<div class="header__item"><a id="losses" class="filter__link filter__link--number" >PPT</a></div>
-			<div class="header__item"><a id="total" class="filter__link filter__link--number" >Quiz</a></div>
+			<div class="header__item"><a id="total" class="filter__link filter__link--number" >Contest</a></div>
 		</div>
 		<div class="table-content">	
 			<div class="table-row">		
@@ -33,7 +33,7 @@ const Table4 = () => {
 				<div class="table-data"><a style={{cursor:'pointer'}} onClick={()=>navigatePage('https://www.youtube.com/embed/s6ZaRh69zV4?si=6HjL9mpkl4h6wicI','Greedy Approach',"greedy") } target='_blank'>Click here for Video</a></div>
 				<div class="table-data"><a href="https://github.com/ACMVITCC/techjam2023/tree/main/Day-4" target='_blank'>Click here for Code</a></div>
         <div class="table-data"><a href={greedy} download="Greedy" target='_blank' rel="noreferrer" >Click here to view PPT</a></div>
-				<div class="table-data">-</div>
+				<div class="table-data"><a href="https://www.hackerrank.com/techjam-java-contest" target='_blank' >HackerRank Contest</a></div>
 		</div>
         
 			<div class="table-row">
@@ -41,7 +41,7 @@ const Table4 = () => {
 				<div class="table-data"><a style={{cursor:'pointer'}} onClick={()=>navigatePage('https://www.youtube.com/embed/_t-SJ9pGk2k?si=JSzxuu4qs689_eFB','Dynamic Programming','Dynamic Programming')}target = "_blank">Click here for Video</a></div>
 				<div class="table-data"><a href="https://github.com/ACMVITCC/techjam2023/tree/main/Day-4" target='_blank'>Click here for Code</a></div>
 				<div class="table-data"><a href={dynamic} download="Dynamic" target='_blank' rel="noreferrer" > Click here to view PPT</a></div>
-				<div class="table-data">-</div>
+				<div class="table-data"><a href="https://www.hackerrank.com/techjam-java-contest" target='_blank' >HackerRank Contest</a></div>
 			</div>
 
             <div class="table-row">
@@ -49,7 +49,7 @@ const Table4 = () => {
 				<div class="table-data"><a style={{cursor:'pointer'}} onClick={()=>navigatePage('https://www.youtube.com/embed/6IHIGA66r5I?si=EQ6sn1f1nO5lUzNa','Backtracking','backtracking')} target='_blank'>Click here for Video</a></div>
 				<div class="table-data"><a href="https://github.com/ACMVITCC/techjam2023/tree/main/Day-4" target='_blank'>Click here for Code</a></div>
 				<div class="table-data"><a href={backtracking} download="Backtracking" target='_blank' rel="noreferrer" > Click here to view PPT</a></div>
-				<div class="table-data">-</div>
+				<div class="table-data"><a href="https://www.hackerrank.com/techjam-java-contest" target='_blank' >HackerRank Contest</a></div>
 			</div>
 			
 		</div>	

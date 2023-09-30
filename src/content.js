@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useRef } from "react";
 import Header from "./header";
 import Modules from "./Modules";
 import Paper from '@mui/material/Paper';
@@ -9,18 +9,71 @@ import Table3 from "./Table3";
 import './button.css';
 import { Link, useNavigate } from "react-router-dom";
 import Table4 from "./Table4";
-import Img from './roadmap.png'
-
+import Img from './roadmap.png';
+import { List } from '@phosphor-icons/react';
+import logo from './techjamlogo.png'
 
 const Content = () => {
   const [visible, setvisible] = useState(true);
   const [visible2, setvisible2] = useState(true);
   const [visible3, setvisible3] = useState(true);
   const [visible4, setvisible4] = useState(true);
+  const [showNavbar, setShowNavbar] = useState(false);
+
+  const handleShowNavbar = () => {
+    setShowNavbar(!showNavbar);
+  }
+
+  const java = useRef(null)
+  const cp = useRef(null)
+  const eh = useRef(null)
+  const cloud = useRef(null)
+  const ml = useRef(null)
+
+  const scroll = (elementref) =>{
+    window.scrollTo({
+      top: elementref.current.offsetTop,
+      behavior:'smooth',
+    })
+
+  }
 
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
+
+      <div className='navbar' style={{ color: 'white', backgroundColor: '#212121' }}>
+        <div className="container">
+          <div >
+          
+          <div className="logo" style={{display:'flex'}}>
+          <img src={logo} style={{width:'70px'}}/>
+            
+          <span>  Tech Jam</span>
+          </div>
+          </div>
+          <div className="menu-icon" onClick={handleShowNavbar}>
+            <List size={30} color='white' />
+          </div>
+          <div className={`nav-elements ${showNavbar && 'active'}`}>
+            <ul>
+              <li onClick={()=>scroll(cp)} style={{cursor:'pointer'}}>Competitive Programming
+              </li>
+              <li >Ethical Hacking
+              </li>
+              <li >
+                Machine Learning
+              </li>
+              <li onClick={()=>scroll(java)} style={{cursor:'pointer'}}>
+                Java
+              </li>
+              <li >
+                Cloud
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
       <div style={{ width: '100%', display: 'flex', justifyContent: 'center', backgroundColor: '#171717', paddingTop: '5px', paddingBottom: '30px' }}>
         <iframe
@@ -35,12 +88,11 @@ const Content = () => {
       </div>
 
       <div style={{ width: '100%', display: 'flex', justifyContent: 'center', backgroundColor: '#171717', paddingTop: '5px', paddingBottom: '30px' }}>
-        {/* <iframe src="https://drive.google.com/file/d/1BYWJsBE8_rHLmKbMB2IT8Y6SMJygLWZE/preview" width="640" height="480" allow="autoplay"></iframe> */}
-        <img src={Img} style={{height:'50vh'}}/>
+        <img src={Img} style={{ height: '50vh' }} />
       </div>
-      
+
       <div>
-        <div style={{ color: 'white', marginLeft: '52px', fontSize: '22px', marginTop: '35px' }}>Java</div>
+        <div style={{ color: 'white', marginLeft: '52px', fontSize: '22px', marginTop: '35px' }} ref={java}>Java</div>
         <div className='module'>
           <div style={{ display: 'flex', flexDirection: 'row' }}>
             <div className="glassStyle">
@@ -54,7 +106,7 @@ const Content = () => {
             {visible ? (<CaretDown size={20} color="#4925cd" weight="bold" />) : (<CaretLeft size={20} color="#4925cd" weight="bold" />)}
           </div>
         </div>
-        
+
         <div>
           {visible && (
             <Paper className='table' sx={{ backgroundColor: 'black' }}>
@@ -63,7 +115,7 @@ const Content = () => {
           )}
         </div>
       </div>
-      
+
       <div>
         <div className='module'>
           <div style={{ display: 'flex', flexDirection: 'row' }}>
@@ -86,8 +138,8 @@ const Content = () => {
           )}
         </div>
       </div>
-      
-      <div style={{ color: 'white', marginLeft: '52px', fontSize: '22px', marginTop: '35px' }}>Competitive Programming</div>
+
+      <div style={{ color: 'white', marginLeft: '52px', fontSize: '22px', marginTop: '35px' }} ref={cp}>Competitive Programming</div>
       <div>
         <div className='module'>
           <div style={{ display: 'flex', flexDirection: 'row' }}>
@@ -106,23 +158,10 @@ const Content = () => {
           {visible3 && (
             <Paper className='table' sx={{ backgroundColor: 'black' }}>
               <Table3 />
-              {/* <div style={{ display: 'flex', flexDirection: 'row', gap: '40px', justifyContent: 'center', alignItems: 'center', padding: '20px', backgroundColor: '#171717', paddingTop: '40px' }}>
-                <button className="sbutton" >
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M5 13c0-5.088 2.903-9.436 7-11.182C16.097 3.564 19 7.912 19 13c0 .823-.076 1.626-.22 2.403l1.94 1.832a.5.5 0 0 1 .095.603l-2.495 4.575a.5.5 0 0 1-.793.114l-2.234-2.234a1 1 0 0 0-.707-.293H9.414a1 1 0 0 0-.707.293l-2.234 2.234a.5.5 0 0 1-.793-.114l-2.495-4.575a.5.5 0 0 1 .095-.603l1.94-1.832C5.077 14.626 5 13.823 5 13zm1.476 6.696l.817-.817A3 3 0 0 1 9.414 18h5.172a3 3 0 0 1 2.121.879l.817.817.982-1.8-1.1-1.04a2 2 0 0 1-.593-1.82c.124-.664.187-1.345.187-2.036 0-3.87-1.995-7.3-5-8.96C8.995 5.7 7 9.13 7 13c0 .691.063 1.372.187 2.037a2 2 0 0 1-.593 1.82l-1.1 1.039.982 1.8zM12 13a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"></path></svg>
-                  <span>Learn More About Divide & Conquer</span>
-                </button>
-                <a href="https://vitchennai.acm.org/graphs-and-trees.html" target="_blank">
-                  <button className="sbutton">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M5 13c0-5.088 2.903-9.436 7-11.182C16.097 3.564 19 7.912 19 13c0 .823-.076 1.626-.22 2.403l1.94 1.832a.5.5 0 0 1 .095.603l-2.495 4.575a.5.5 0 0 1-.793.114l-2.234-2.234a1 1 0 0 0-.707-.293H9.414a1 1 0 0 0-.707.293l-2.234 2.234a.5.5 0 0 1-.793-.114l-2.495-4.575a.5.5 0 0 1 .095-.603l1.94-1.832C5.077 14.626 5 13.823 5 13zm1.476 6.696l.817-.817A3 3 0 0 1 9.414 18h5.172a3 3 0 0 1 2.121.879l.817.817.982-1.8-1.1-1.04a2 2 0 0 1-.593-1.82c.124-.664.187-1.345.187-2.036 0-3.87-1.995-7.3-5-8.96C8.995 5.7 7 9.13 7 13c0 .691.063 1.372.187 2.037a2 2 0 0 1-.593 1.82l-1.1 1.039.982 1.8zM12 13a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"></path></svg>
-                    <span>Learn More About Graph & Trees</span>
-                  </button>
-                </a>
-              </div> */}
             </Paper>
           )}
         </div>
       </div>
-
 
       {/* day 4 */}
 
@@ -144,13 +183,10 @@ const Content = () => {
           {visible4 && (
             <Paper className='table' sx={{ backgroundColor: 'black' }}>
               <Table4 />
-              
             </Paper>
           )}
         </div>
       </div>
-
-
     </div>
   );
 }

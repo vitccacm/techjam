@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import raw from './contentpage/sample3.txt'
-import { TermsPage } from "./text";
 import ReactMarkdown from 'react-markdown'
 
 const YoutubePage = () => {
@@ -10,7 +8,7 @@ const YoutubePage = () => {
   const title = location.state?.title;
   const filename = location.state?.file
   console.log('f',filename)
-  const file = require(`./${filename}.md`)
+  const file = require(`./contentpage/${filename}.md`)
   // const [text, setText] = useState("");
 
   // useEffect(() => {

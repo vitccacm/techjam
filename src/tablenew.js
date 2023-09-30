@@ -7,55 +7,7 @@ import part3 from './Documents/javaday1/part3.ppt'
 
 
 const TableNew = () => {
-  const properties = [
-    'name',
-    'wins',
-    'draws',
-    'losses',
-    'total',
-  ];
-
-  const [orderClass, setOrderClass] = useState('');
-
-  const handleHeaderClick = (e, val) => {
-    e.preventDefault();
-
-    const activeLink = document.querySelector('.filter__link.filter__link--active');
-    if (activeLink && activeLink !== e.target) {
-      activeLink.classList.remove('filter__link--active');
-    }
-
-    e.target.classList.toggle('filter__link--active');
-    const isDescending = orderClass === 'desc' || orderClass === '';
-
-    if (isDescending) {
-      e.target.classList.add('asc');
-      setOrderClass('asc');
-    } else {
-      e.target.classList.add('desc');
-      setOrderClass('desc');
-    }
-
-    const parent = e.target.closest('.header__item');
-    const index = Array.from(parent.parentNode.children).indexOf(parent);
-
-    const tableContent = document.querySelector('.table-content');
-    const rows = Array.from(tableContent.querySelectorAll('.table-row'));
-
-    rows.sort((a, b) => {
-      const x = a.querySelector('.table-data').children[index].textContent;
-      const y = b.querySelector('.table-data').children[index].textContent;
-
-      if (e.target.classList.contains('filter__link--number')) {
-        return isDescending ? x - y : y - x;
-      } else {
-        return isDescending ? x.localeCompare(y) : y.localeCompare(x);
-      }
-    });
-
-    rows.forEach(row => tableContent.appendChild(row));
-  };
-
+  
   return (
     <div style={{backgroundColor:'#171717'}}>
 <div class="containertable">
