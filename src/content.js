@@ -12,6 +12,7 @@ import Table4 from "./Table4";
 import Img from './roadmap.png';
 import { List } from '@phosphor-icons/react';
 import logo from './techjamlogo.png'
+import Table5 from "./Table5";
 
 const Content = () => {
   const [visible, setvisible] = useState(true);
@@ -19,7 +20,7 @@ const Content = () => {
   const [visible3, setvisible3] = useState(true);
   const [visible4, setvisible4] = useState(true);
   const [showNavbar, setShowNavbar] = useState(false);
-
+  const [visible5, setvisible5] = useState(true);
   const handleShowNavbar = () => {
     setShowNavbar(!showNavbar);
   }
@@ -187,6 +188,30 @@ const Content = () => {
           )}
         </div>
       </div>
+
+      {/* day 5 */}
+      <div>
+        <div className='module'>
+          <div style={{ display: 'flex', flexDirection: 'row' }}>
+            <div className="glassStyle">
+              <AlignCenterHorizontalSimple size={25} color="#4925cd" style={{ margin: '5px', marginRight: '8px', marginLeft: '8px' }} />
+            </div>
+            <div style={{ display: 'flex', marginLeft: '20px', justifyContent: 'center', alignItems: 'center' }}>
+              Day 5 - Pattern Generation, Branch & Bound, Bit Manipulation
+            </div>
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer' }} onClick={() => setvisible5(!visible5)}>
+            {visible5 ? (<CaretDown size={20} color="#4925cd" weight="bold" />) : (<CaretLeft size={20} color="#4925cd" weight="bold" />)}
+          </div>
+        </div>
+        <div>
+          {visible5 && (
+            <Paper className='table' sx={{ backgroundColor: 'black' }}>
+              <Table5/>
+            </Paper>
+          )}
+        </div>
+        </div>
     </div>
   );
 }
