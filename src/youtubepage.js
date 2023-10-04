@@ -37,8 +37,8 @@ const YoutubePage = () => {
       <h6 style={{ fontSize: '30px', marginBottom: '30px' }}>{title}</h6>
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         <iframe
-          width="560"
-          height="315"
+          width="860"
+          height="515"
           src={video}
           title="YouTube video player"
           frameborder="0"
