@@ -16,6 +16,8 @@ import Table5 from "./Table5";
 import Table6 from "./Table6";
 import Table7 from "./Table7";
 import Table8 from "./Table8";
+import Table9 from "./Table9";
+import Table10 from "./Table10";
 
 const Content = () => {
   const [visible, setvisible] = useState(true);
@@ -69,7 +71,7 @@ const Content = () => {
             <ul>
               <li onClick={()=>scroll(cp)} style={{cursor:'pointer'}}>Competitive Programming
               </li>
-              <li >Ethical Hacking
+              <li onClick={()=>scroll(eh)} style={{cursor:'pointer'}}>Ethical Hacking
               </li>
               <li onClick={()=>scroll(ml)} style={{cursor:'pointer'}}>
                 Machine Learning
@@ -295,6 +297,52 @@ const Content = () => {
           {visible8 && (
             <Paper className='table' sx={{ backgroundColor: 'black' }}>
               <Table8 />
+            </Paper>
+          )}
+        </div>
+
+
+        <div className='module'>
+          <div style={{ display: 'flex', flexDirection: 'row' }}>
+            <div className="glassStyle">
+              <AlignCenterHorizontalSimple size={25} color="#4925cd" style={{ margin: '5px', marginRight: '8px', marginLeft: '8px' }} />
+            </div>
+            <div style={{ display: 'flex', marginLeft: '20px', justifyContent: 'center', alignItems: 'center' }}>
+              Day 9 - Neural Network
+            </div>
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer' }} onClick={() => setvisible9(!visible9)}>
+            {visible9 ? (<CaretDown size={20} color="#4925cd" weight="bold" />) : (<CaretLeft size={20} color="#4925cd" weight="bold" />)}
+          </div>
+        </div>
+
+        <div>
+          {visible9 && (
+            <Paper className='table' sx={{ backgroundColor: 'black' }}>
+              <Table9 />
+            </Paper>
+          )}
+        </div>
+
+        <div style={{ color: 'white', marginLeft: '52px', fontSize: '22px', marginTop: '35px' }} ref={eh}>Ethical Hacking</div>
+        <div className='module'>
+          <div style={{ display: 'flex', flexDirection: 'row' }}>
+            <div className="glassStyle">
+              <AlignCenterHorizontalSimple size={25} color="#4925cd" style={{ margin: '5px', marginRight: '8px', marginLeft: '8px' }} />
+            </div>
+            <div style={{ display: 'flex', marginLeft: '20px', justifyContent: 'center', alignItems: 'center' }}>
+              Day 10 - Introduction
+            </div>
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer' }} onClick={() => setvisible10(!visible10)}>
+            {visible10 ? (<CaretDown size={20} color="#4925cd" weight="bold" />) : (<CaretLeft size={20} color="#4925cd" weight="bold" />)}
+          </div>
+        </div>
+
+        <div>
+          {visible10 && (
+            <Paper className='table' sx={{ backgroundColor: 'black' }}>
+              <Table10 />
             </Paper>
           )}
         </div>
