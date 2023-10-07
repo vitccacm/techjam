@@ -27,16 +27,16 @@ const Table11= () => {
 		</div>
 		<div class="table-content">	
 			<div class="table-row">		
-				<div class="table-data">Introduction</div>
-				<div class="table-data"><a style={{cursor:'pointer'}} onClick={()=>navigatePage('https://www.youtube.com/embed/FfUYXbmMwfA?si=PbqHSrkBGXbgVd2o','Introduction',"Day1") } target='_blank'>Click here for Video</a></div>
+				<div class="table-data">SQL Injection</div>
+				<div class="table-data"><a style={{cursor:'pointer'}} onClick={()=>navigatePage('https://www.youtube.com/embed/o95koZnf1nw?si=0PvfTXn_KFiTdzX_','SQL Injectonion',"Day2") } target='_blank'>Click here for Video</a></div>
 				<div class="table-data"><a >-</a></div>
         <div class="table-data"><a >-</a></div>
 				<div class="table-data"><a >-</a></div>
 		</div>
         
 			<div class="table-row">
-				<div class="table-data">Linux File Permissions</div>
-				<div class="table-data"><a style={{cursor:'pointer'}} onClick={()=>navigatePage('https://www.youtube.com/embed/pj0NjtkEd0w?si=EBTEG21x0xomimn2','Linux File Permissions','sample')}target = "_blank">Click here for Video</a></div>
+				<div class="table-data">Privelege escalation</div>
+				<div class="table-data"><a style={{cursor:'pointer'}} onClick={()=>navigatePage('https://www.youtube.com/embed/enoZvwxoIjI?si=9A_Po3rcmO2gcISU','Privelege escalation','sample')}target = "_blank">Click here for Video</a></div>
 				<div class="table-data"><a >-</a></div>
 				<div class="table-data"><a >-</a></div>
 				<div class="table-data"><a >-</a></div>

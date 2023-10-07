@@ -28,7 +28,7 @@ const Table10= () => {
 		<div class="table-content">	
 			<div class="table-row">		
 				<div class="table-data">Introduction</div>
-				<div class="table-data"><a style={{cursor:'pointer'}} onClick={()=>navigatePage('https://www.youtube.com/embed/FfUYXbmMwfA?si=PbqHSrkBGXbgVd2o','Introduction',"Day1") } target='_blank'>Click here for Video</a></div>
+				<div class="table-data"><a style={{cursor:'pointer'}} onClick={()=>navigatePage('https://www.youtube.com/embed/FfUYXbmMwfA?si=26ILBjy3roQSL30f','Introduction',"Day1") } target='_blank'>Click here for Video</a></div>
 				<div class="table-data"><a >-</a></div>
         <div class="table-data"><a >-</a></div>
 				<div class="table-data"><a >-</a></div>
@@ -36,7 +36,7 @@ const Table10= () => {
         
 			<div class="table-row">
 				<div class="table-data">Linux File Permissions</div>
-				<div class="table-data"><a style={{cursor:'pointer'}} onClick={()=>navigatePage('https://www.youtube.com/embed/pj0NjtkEd0w?si=EBTEG21x0xomimn2','Linux File Permissions','sample')}target = "_blank">Click here for Video</a></div>
+				<div class="table-data"><a style={{cursor:'pointer'}} onClick={()=>navigatePage('https://www.youtube.com/embed/_JSuj5Q-NOE?si=nCAKWmhdIU4wiXfK','Linux File Permissions','sample')}target = "_blank">Click here for Video</a></div>
 				<div class="table-data"><a >-</a></div>
 				<div class="table-data"><a >-</a></div>
 				<div class="table-data"><a >-</a></div>

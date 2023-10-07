@@ -18,6 +18,7 @@ import Table7 from "./Table7";
 import Table8 from "./Table8";
 import Table9 from "./Table9";
 import Table10 from "./Table10";
+import Table11 from "./Table11";
 
 const Content = () => {
   const [visible, setvisible] = useState(true);
@@ -31,6 +32,7 @@ const Content = () => {
   const [visible8, setvisible8] = useState(true);
   const [visible9, setvisible9] = useState(true);
   const [visible10, setvisible10] = useState(true);
+  const [visible11, setvisible11] = useState(true);
 
   const handleShowNavbar = () => {
     setShowNavbar(!showNavbar);
@@ -347,7 +349,28 @@ const Content = () => {
           )}
         </div>
       
-    
+        <div style={{ color: 'white', marginLeft: '52px', fontSize: '22px', marginTop: '35px' }} ref={eh}>Ethical Hacking</div>
+        <div className='module'>
+          <div style={{ display: 'flex', flexDirection: 'row' }}>
+            <div className="glassStyle">
+              <AlignCenterHorizontalSimple size={25} color="#4925cd" style={{ margin: '5px', marginRight: '8px', marginLeft: '8px' }} />
+            </div>
+            <div style={{ display: 'flex', marginLeft: '20px', justifyContent: 'center', alignItems: 'center' }}>
+              Day 11 - Introduction
+            </div>
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer' }} onClick={() => setvisible11(!visible11)}>
+            {visible11 ? (<CaretDown size={20} color="#4925cd" weight="bold" />) : (<CaretLeft size={20} color="#4925cd" weight="bold" />)}
+          </div>
+        </div>
+
+        <div>
+          {visible11 && (
+            <Paper className='table' sx={{ backgroundColor: 'black' }}>
+              <Table11 />
+            </Paper>
+          )}
+        </div>
 
     </div>
   );
