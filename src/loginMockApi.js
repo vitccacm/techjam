@@ -85,7 +85,7 @@ const users = [
   { id:   80  , username: 'sandeepganesh.d2023@vitstudent.ac.in', password: '7823921117' },
   { id:   81  , username: 'tambesatvik.satyen2023@vitstudent.ac.in', password: '9833018641' },
   { id:   82 , username: 'ezhilkumaran.l2023@vitstudent.ac.in', password: '9342276266' },
-  
+  { id:   83 , username: 'vitchennaitechjam', password: '*DzLYO38JzGtD@tz1' },
 ];
   
   let currentUser = null;

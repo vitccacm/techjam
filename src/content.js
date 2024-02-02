@@ -9,7 +9,7 @@ import Table3 from "./Table3";
 import './button.css';
 import { Link, useNavigate } from "react-router-dom";
 import Table4 from "./Table4";
-import Img from './roadmap.png';
+import Img from './Tech Jam Website.jpg';
 import { List } from '@phosphor-icons/react';
 import logo from './techjamlogo.png'
 import Table5 from "./Table5";
@@ -71,8 +71,8 @@ const Content = () => {
           </div>
           <div className={`nav-elements ${showNavbar && 'active'}`}>
             <ul>
-              <li onClick={()=>scroll(cp)} style={{cursor:'pointer'}}>Competitive Programming
-              </li>
+              {/* <li onClick={()=>scroll(cp)} style={{cursor:'pointer'}}>Competitive Programming
+              </li> */}
               <li onClick={()=>scroll(eh)} style={{cursor:'pointer'}}>Ethical Hacking
               </li>
               <li onClick={()=>scroll(ml)} style={{cursor:'pointer'}}>
@@ -89,7 +89,7 @@ const Content = () => {
         </div>
       </div>
 
-      <div style={{ width: '100%', display: 'flex', justifyContent: 'center', backgroundColor: '#171717', paddingTop: '5px', paddingBottom: '30px' }}>
+      {/* <div style={{ width: '100%', display: 'flex', justifyContent: 'center', backgroundColor: '#171717', paddingTop: '5px', paddingBottom: '30px' }}>
         <iframe
           width="560"
           height="315"
@@ -99,7 +99,7 @@ const Content = () => {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
         ></iframe>
-      </div>
+      </div> */}
 
       <div style={{ width: '100%', display: 'flex', justifyContent: 'center', backgroundColor: '#171717', paddingTop: '5px', paddingBottom: '30px' }}>
         <img src={Img} style={{ height: '50vh' }} />
