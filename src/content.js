@@ -153,7 +153,7 @@ const Content = () => {
         </div>
       </div>
 
-      <div style={{ color: 'white', marginLeft: '52px', fontSize: '22px', marginTop: '35px' }} ref={cp}>Competitive Programming</div>
+      {/* <div style={{ color: 'white', marginLeft: '52px', fontSize: '22px', marginTop: '35px' }} ref={cp}>Competitive Programming</div>
       <div>
         <div className='module'>
           <div style={{ display: 'flex', flexDirection: 'row' }}>
@@ -179,7 +179,7 @@ const Content = () => {
 
       {/* day 4 */}
 
-      <div>
+      {/* <div>
         <div className='module'>
           <div style={{ display: 'flex', flexDirection: 'row' }}>
             <div className="glassStyle">
@@ -200,10 +200,10 @@ const Content = () => {
             </Paper>
           )}
         </div>
-      </div>
+      </div> */}
 
       {/* day 5 */}
-      <div>
+      {/* <div>
         <div className='module'>
           <div style={{ display: 'flex', flexDirection: 'row' }}>
             <div className="glassStyle">
@@ -224,7 +224,7 @@ const Content = () => {
             </Paper>
           )}
         </div>
-        </div>
+        </div>  */}
 
          {/* day 6 */}
 
@@ -236,7 +236,7 @@ const Content = () => {
               <AlignCenterHorizontalSimple size={25} color="#4925cd" style={{ margin: '5px', marginRight: '8px', marginLeft: '8px' }} />
             </div>
             <div style={{ display: 'flex', marginLeft: '20px', justifyContent: 'center', alignItems: 'center' }}>
-              Day 6 - Introduction to Azure
+              Day 3 - Introduction to Azure
             </div>
           </div>
           <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer' }} onClick={() => setvisible6(!visible6)}>
@@ -261,7 +261,7 @@ const Content = () => {
               <AlignCenterHorizontalSimple size={25} color="#4925cd" style={{ margin: '5px', marginRight: '8px', marginLeft: '8px' }} />
             </div>
             <div style={{ display: 'flex', marginLeft: '20px', justifyContent: 'center', alignItems: 'center' }}>
-              Day 7 - Introduction to AI Bots
+              Day 4 - Introduction to AI Bots
             </div>
           </div>
           <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer' }} onClick={() => setvisible7(!visible7)}>
@@ -287,7 +287,7 @@ const Content = () => {
               <AlignCenterHorizontalSimple size={25} color="#4925cd" style={{ margin: '5px', marginRight: '8px', marginLeft: '8px' }} />
             </div>
             <div style={{ display: 'flex', marginLeft: '20px', justifyContent: 'center', alignItems: 'center' }}>
-              Day 8 - Introduction to Machine Learning
+              Day 5 - Introduction to Machine Learning
             </div>
           </div>
           <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer' }} onClick={() => setvisible8(!visible8)}>
@@ -310,7 +310,7 @@ const Content = () => {
               <AlignCenterHorizontalSimple size={25} color="#4925cd" style={{ margin: '5px', marginRight: '8px', marginLeft: '8px' }} />
             </div>
             <div style={{ display: 'flex', marginLeft: '20px', justifyContent: 'center', alignItems: 'center' }}>
-              Day 9 - Neural Network
+              Day 6 - Neural Network
             </div>
           </div>
           <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer' }} onClick={() => setvisible9(!visible9)}>
@@ -333,7 +333,7 @@ const Content = () => {
               <AlignCenterHorizontalSimple size={25} color="#4925cd" style={{ margin: '5px', marginRight: '8px', marginLeft: '8px' }} />
             </div>
             <div style={{ display: 'flex', marginLeft: '20px', justifyContent: 'center', alignItems: 'center' }}>
-              Day 10 - Introduction
+              Day 7 - Introduction
             </div>
           </div>
           <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer' }} onClick={() => setvisible10(!visible10)}>
@@ -356,7 +356,7 @@ const Content = () => {
               <AlignCenterHorizontalSimple size={25} color="#4925cd" style={{ margin: '5px', marginRight: '8px', marginLeft: '8px' }} />
             </div>
             <div style={{ display: 'flex', marginLeft: '20px', justifyContent: 'center', alignItems: 'center' }}>
-              Day 11 - Introduction
+              Day 8 - Introduction
             </div>
           </div>
           <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer' }} onClick={() => setvisible11(!visible11)}>
