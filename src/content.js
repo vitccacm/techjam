@@ -1,4 +1,4 @@
-import React, { useState,useRef } from "react";
+import React, { useState, useRef } from "react";
 import Header from "./header";
 import Modules from "./Modules";
 import Paper from '@mui/material/Paper';
@@ -44,10 +44,10 @@ const Content = () => {
   const cloud = useRef(null)
   const ml = useRef(null)
 
-  const scroll = (elementref) =>{
+  const scroll = (elementref) => {
     window.scrollTo({
       top: elementref.current.offsetTop,
-      behavior:'smooth',
+      behavior: 'smooth',
     })
 
   }
@@ -59,12 +59,12 @@ const Content = () => {
       <div className='navbar' style={{ color: 'white', backgroundColor: '#212121' }}>
         <div className="container">
           <div >
-          
-          <div className="logo" style={{display:'flex'}}>
-          <img src={logo} style={{width:'70px'}}/>
-            
-          <span>  Tech Jam</span>
-          </div>
+
+            <div className="logo" style={{ display: 'flex' }}>
+              <img src={logo} style={{ width: '70px' }} />
+
+              <span>  Tech Jam</span>
+            </div>
           </div>
           <div className="menu-icon" onClick={handleShowNavbar}>
             <List size={30} color='white' />
@@ -73,15 +73,15 @@ const Content = () => {
             <ul>
               {/* <li onClick={()=>scroll(cp)} style={{cursor:'pointer'}}>Competitive Programming
               </li> */}
-              <li onClick={()=>scroll(eh)} style={{cursor:'pointer'}}>Ethical Hacking
+              <li onClick={() => scroll(eh)} style={{ cursor: 'pointer' }}>Ethical Hacking
               </li>
-              <li onClick={()=>scroll(ml)} style={{cursor:'pointer'}}>
+              <li onClick={() => scroll(ml)} style={{ cursor: 'pointer' }}>
                 Machine Learning
               </li>
-              <li onClick={()=>scroll(java)} style={{cursor:'pointer'}}>
+              <li onClick={() => scroll(java)} style={{ cursor: 'pointer' }}>
                 Java
               </li>
-              <li onClick={()=>scroll(cloud)} style={{cursor:'pointer'}}>
+              <li onClick={() => scroll(cloud)} style={{ cursor: 'pointer' }}>
                 Cloud
               </li>
             </ul>
@@ -113,7 +113,7 @@ const Content = () => {
               <AlignCenterHorizontalSimple size={25} color="#4925cd" style={{ margin: '5px', marginRight: '8px', marginLeft: '8px' }} />
             </div>
             <div style={{ display: 'flex', marginLeft: '20px', justifyContent: 'center', alignItems: 'center' }}>
-              Day 1 - Basics of Java
+              Section-1 : Basics of Java
             </div>
           </div>
           <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer' }} onClick={() => setvisible(!visible)}>
@@ -137,7 +137,7 @@ const Content = () => {
               <AlignCenterHorizontalSimple size={25} color="#4925cd" style={{ margin: '5px', marginRight: '8px', marginLeft: '8px' }} />
             </div>
             <div style={{ display: 'flex', marginLeft: '20px', justifyContent: 'center', alignItems: 'center' }}>
-              Day 2 - Array & Function
+              Section-2 : Array & Function
             </div>
           </div>
           <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer' }} onClick={() => setvisible2(!visible2)}>
@@ -226,9 +226,9 @@ const Content = () => {
         </div>
         </div>  */}
 
-         {/* day 6 */}
+      {/* day 6 */}
 
-        <div>
+      <div>
         <div style={{ color: 'white', marginLeft: '52px', fontSize: '22px', marginTop: '35px' }} ref={cloud}>Cloud</div>
         <div className='module'>
           <div style={{ display: 'flex', flexDirection: 'row' }}>
@@ -236,7 +236,7 @@ const Content = () => {
               <AlignCenterHorizontalSimple size={25} color="#4925cd" style={{ margin: '5px', marginRight: '8px', marginLeft: '8px' }} />
             </div>
             <div style={{ display: 'flex', marginLeft: '20px', justifyContent: 'center', alignItems: 'center' }}>
-              Day 3 - Introduction to Azure
+              Section-3 : Introduction to Azure
             </div>
           </div>
           <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer' }} onClick={() => setvisible6(!visible6)}>
@@ -253,124 +253,124 @@ const Content = () => {
         </div>
       </div>
 
-       {/* day 7  */}
+      {/* day 7  */}
 
-       <div className='module'>
-          <div style={{ display: 'flex', flexDirection: 'row' }}>
-            <div className="glassStyle">
-              <AlignCenterHorizontalSimple size={25} color="#4925cd" style={{ margin: '5px', marginRight: '8px', marginLeft: '8px' }} />
-            </div>
-            <div style={{ display: 'flex', marginLeft: '20px', justifyContent: 'center', alignItems: 'center' }}>
-              Day 4 - Introduction to AI Bots
-            </div>
+      <div className='module'>
+        <div style={{ display: 'flex', flexDirection: 'row' }}>
+          <div className="glassStyle">
+            <AlignCenterHorizontalSimple size={25} color="#4925cd" style={{ margin: '5px', marginRight: '8px', marginLeft: '8px' }} />
           </div>
-          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer' }} onClick={() => setvisible7(!visible7)}>
-            {visible7 ? (<CaretDown size={20} color="#4925cd" weight="bold" />) : (<CaretLeft size={20} color="#4925cd" weight="bold" />)}
+          <div style={{ display: 'flex', marginLeft: '20px', justifyContent: 'center', alignItems: 'center' }}>
+            Section-4 : Introduction to AI Bots
           </div>
         </div>
-
-        <div>
-          {visible7 && (
-            <Paper className='table' sx={{ backgroundColor: 'black' }}>
-              <Table7 />
-            </Paper>
-          )}
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer' }} onClick={() => setvisible7(!visible7)}>
+          {visible7 ? (<CaretDown size={20} color="#4925cd" weight="bold" />) : (<CaretLeft size={20} color="#4925cd" weight="bold" />)}
         </div>
+      </div>
+
+      <div>
+        {visible7 && (
+          <Paper className='table' sx={{ backgroundColor: 'black' }}>
+            <Table7 />
+          </Paper>
+        )}
+      </div>
 
 
-        {/* day 8  */}
-        <div style={{ color: 'white', marginLeft: '52px', fontSize: '22px', marginTop: '35px' }} ref={ml}>Machine Learning</div>
+      {/* day 8  */}
+      <div style={{ color: 'white', marginLeft: '52px', fontSize: '22px', marginTop: '35px' }} ref={ml}>Machine Learning</div>
 
-       <div className='module'>
-          <div style={{ display: 'flex', flexDirection: 'row' }}>
-            <div className="glassStyle">
-              <AlignCenterHorizontalSimple size={25} color="#4925cd" style={{ margin: '5px', marginRight: '8px', marginLeft: '8px' }} />
-            </div>
-            <div style={{ display: 'flex', marginLeft: '20px', justifyContent: 'center', alignItems: 'center' }}>
-              Day 5 - Introduction to Machine Learning
-            </div>
+      <div className='module'>
+        <div style={{ display: 'flex', flexDirection: 'row' }}>
+          <div className="glassStyle">
+            <AlignCenterHorizontalSimple size={25} color="#4925cd" style={{ margin: '5px', marginRight: '8px', marginLeft: '8px' }} />
           </div>
-          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer' }} onClick={() => setvisible8(!visible8)}>
-            {visible8 ? (<CaretDown size={20} color="#4925cd" weight="bold" />) : (<CaretLeft size={20} color="#4925cd" weight="bold" />)}
-          </div>
-        </div>
-
-        <div>
-          {visible8 && (
-            <Paper className='table' sx={{ backgroundColor: 'black' }}>
-              <Table8 />
-            </Paper>
-          )}
-        </div>
-
-
-        <div className='module'>
-          <div style={{ display: 'flex', flexDirection: 'row' }}>
-            <div className="glassStyle">
-              <AlignCenterHorizontalSimple size={25} color="#4925cd" style={{ margin: '5px', marginRight: '8px', marginLeft: '8px' }} />
-            </div>
-            <div style={{ display: 'flex', marginLeft: '20px', justifyContent: 'center', alignItems: 'center' }}>
-              Day 6 - Neural Network
-            </div>
-          </div>
-          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer' }} onClick={() => setvisible9(!visible9)}>
-            {visible9 ? (<CaretDown size={20} color="#4925cd" weight="bold" />) : (<CaretLeft size={20} color="#4925cd" weight="bold" />)}
+          <div style={{ display: 'flex', marginLeft: '20px', justifyContent: 'center', alignItems: 'center' }}>
+            Section-5 : Introduction to Machine Learning
           </div>
         </div>
-
-        <div>
-          {visible9 && (
-            <Paper className='table' sx={{ backgroundColor: 'black' }}>
-              <Table9 />
-            </Paper>
-          )}
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer' }} onClick={() => setvisible8(!visible8)}>
+          {visible8 ? (<CaretDown size={20} color="#4925cd" weight="bold" />) : (<CaretLeft size={20} color="#4925cd" weight="bold" />)}
         </div>
+      </div>
 
-        <div style={{ color: 'white', marginLeft: '52px', fontSize: '22px', marginTop: '35px' }} ref={eh}>Ethical Hacking</div>
-        <div className='module'>
-          <div style={{ display: 'flex', flexDirection: 'row' }}>
-            <div className="glassStyle">
-              <AlignCenterHorizontalSimple size={25} color="#4925cd" style={{ margin: '5px', marginRight: '8px', marginLeft: '8px' }} />
-            </div>
-            <div style={{ display: 'flex', marginLeft: '20px', justifyContent: 'center', alignItems: 'center' }}>
-              Day 7 - Introduction
-            </div>
-          </div>
-          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer' }} onClick={() => setvisible10(!visible10)}>
-            {visible10 ? (<CaretDown size={20} color="#4925cd" weight="bold" />) : (<CaretLeft size={20} color="#4925cd" weight="bold" />)}
-          </div>
-        </div>
+      <div>
+        {visible8 && (
+          <Paper className='table' sx={{ backgroundColor: 'black' }}>
+            <Table8 />
+          </Paper>
+        )}
+      </div>
 
-        <div>
-          {visible10 && (
-            <Paper className='table' sx={{ backgroundColor: 'black' }}>
-              <Table10 />
-            </Paper>
-          )}
-        </div>
-      
-        <div style={{ color: 'white', marginLeft: '52px', fontSize: '22px', marginTop: '35px' }} ref={eh}>Ethical Hacking</div>
-        <div className='module'>
-          <div style={{ display: 'flex', flexDirection: 'row' }}>
-            <div className="glassStyle">
-              <AlignCenterHorizontalSimple size={25} color="#4925cd" style={{ margin: '5px', marginRight: '8px', marginLeft: '8px' }} />
-            </div>
-            <div style={{ display: 'flex', marginLeft: '20px', justifyContent: 'center', alignItems: 'center' }}>
-              Day 8 - Introduction
-            </div>
+
+      <div className='module'>
+        <div style={{ display: 'flex', flexDirection: 'row' }}>
+          <div className="glassStyle">
+            <AlignCenterHorizontalSimple size={25} color="#4925cd" style={{ margin: '5px', marginRight: '8px', marginLeft: '8px' }} />
           </div>
-          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer' }} onClick={() => setvisible11(!visible11)}>
-            {visible11 ? (<CaretDown size={20} color="#4925cd" weight="bold" />) : (<CaretLeft size={20} color="#4925cd" weight="bold" />)}
+          <div style={{ display: 'flex', marginLeft: '20px', justifyContent: 'center', alignItems: 'center' }}>
+            Section-6 : Neural Network
           </div>
         </div>
-
-        <div>
-          {visible11 && (
-            <Paper className='table' sx={{ backgroundColor: 'black' }}>
-              <Table11 />
-            </Paper>
-          )}
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer' }} onClick={() => setvisible9(!visible9)}>
+          {visible9 ? (<CaretDown size={20} color="#4925cd" weight="bold" />) : (<CaretLeft size={20} color="#4925cd" weight="bold" />)}
         </div>
+      </div>
+
+      <div>
+        {visible9 && (
+          <Paper className='table' sx={{ backgroundColor: 'black' }}>
+            <Table9 />
+          </Paper>
+        )}
+      </div>
+
+      <div style={{ color: 'white', marginLeft: '52px', fontSize: '22px', marginTop: '35px' }} ref={eh}>Ethical Hacking</div>
+      <div className='module'>
+        <div style={{ display: 'flex', flexDirection: 'row' }}>
+          <div className="glassStyle">
+            <AlignCenterHorizontalSimple size={25} color="#4925cd" style={{ margin: '5px', marginRight: '8px', marginLeft: '8px' }} />
+          </div>
+          <div style={{ display: 'flex', marginLeft: '20px', justifyContent: 'center', alignItems: 'center' }}>
+            Section-7 : Introduction
+          </div>
+        </div>
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer' }} onClick={() => setvisible10(!visible10)}>
+          {visible10 ? (<CaretDown size={20} color="#4925cd" weight="bold" />) : (<CaretLeft size={20} color="#4925cd" weight="bold" />)}
+        </div>
+      </div>
+
+      <div>
+        {visible10 && (
+          <Paper className='table' sx={{ backgroundColor: 'black' }}>
+            <Table10 />
+          </Paper>
+        )}
+      </div>
+
+      <div style={{ color: 'white', marginLeft: '52px', fontSize: '22px', marginTop: '35px' }} ref={eh}>Ethical Hacking</div>
+      <div className='module'>
+        <div style={{ display: 'flex', flexDirection: 'row' }}>
+          <div className="glassStyle">
+            <AlignCenterHorizontalSimple size={25} color="#4925cd" style={{ margin: '5px', marginRight: '8px', marginLeft: '8px' }} />
+          </div>
+          <div style={{ display: 'flex', marginLeft: '20px', justifyContent: 'center', alignItems: 'center' }}>
+            Section-8 : Introduction
+          </div>
+        </div>
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer' }} onClick={() => setvisible11(!visible11)}>
+          {visible11 ? (<CaretDown size={20} color="#4925cd" weight="bold" />) : (<CaretLeft size={20} color="#4925cd" weight="bold" />)}
+        </div>
+      </div>
+
+      <div>
+        {visible11 && (
+          <Paper className='table' sx={{ backgroundColor: 'black' }}>
+            <Table11 />
+          </Paper>
+        )}
+      </div>
 
     </div>
   );
