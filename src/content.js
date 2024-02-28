@@ -6,6 +6,7 @@ import { AlignCenterHorizontalSimple, CaretDown, CaretLeft } from "@phosphor-ico
 import TableNew from "./tablenew";
 import Table2 from "./Table2";
 import Table3 from "./Table3";
+import Table12 from "./Table12";
 import './button.css';
 import { Link, useNavigate } from "react-router-dom";
 import Table4 from "./Table4";
@@ -43,6 +44,7 @@ const Content = () => {
   const eh = useRef(null)
   const cloud = useRef(null)
   const ml = useRef(null)
+  const c = useRef(null)
 
   const scroll = (elementref) => {
     window.scrollTo({
@@ -83,6 +85,9 @@ const Content = () => {
               </li>
               <li onClick={() => scroll(cloud)} style={{ cursor: 'pointer' }}>
                 Cloud
+              </li>
+              <li onClick={() => scroll(c)} style={{ cursor: 'pointer' }}>
+                C Programming
               </li>
             </ul>
           </div>
@@ -368,6 +373,29 @@ const Content = () => {
         {visible11 && (
           <Paper className='table' sx={{ backgroundColor: 'black' }}>
             <Table11 />
+          </Paper>
+        )}
+      </div>
+
+      <div style={{ color: 'white', marginLeft: '52px', fontSize: '22px', marginTop: '35px' }} ref={eh}>C Programming</div>
+      <div className='module'>
+        <div style={{ display: 'flex', flexDirection: 'row' }}>
+          <div className="glassStyle">
+            <AlignCenterHorizontalSimple size={25} color="#4925cd" style={{ margin: '5px', marginRight: '8px', marginLeft: '8px' }} />
+          </div>
+          <div style={{ display: 'flex', marginLeft: '20px', justifyContent: 'center', alignItems: 'center' }}>
+            Section-8 : Introduction
+          </div>
+        </div>
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer' }} onClick={() => setvisible11(!visible11)}>
+          {visible11 ? (<CaretDown size={20} color="#4925cd" weight="bold" />) : (<CaretLeft size={20} color="#4925cd" weight="bold" />)}
+        </div>
+      </div>
+
+      <div>
+        {visible11 && (
+          <Paper className='table' sx={{ backgroundColor: 'black' }}>
+            <Table12 />
           </Paper>
         )}
       </div>
