@@ -34,6 +34,7 @@ const Content = () => {
   const [visible9, setvisible9] = useState(true);
   const [visible10, setvisible10] = useState(true);
   const [visible11, setvisible11] = useState(true);
+  const [visible12, setvisible12] = useState(true);
 
   const handleShowNavbar = () => {
     setShowNavbar(!showNavbar);
@@ -87,7 +88,7 @@ const Content = () => {
                 Cloud
               </li>
               <li onClick={() => scroll(c)} style={{ cursor: 'pointer' }}>
-                C Programming
+                C and CPP
               </li>
             </ul>
           </div>
@@ -361,7 +362,7 @@ const Content = () => {
             <AlignCenterHorizontalSimple size={25} color="#4925cd" style={{ margin: '5px', marginRight: '8px', marginLeft: '8px' }} />
           </div>
           <div style={{ display: 'flex', marginLeft: '20px', justifyContent: 'center', alignItems: 'center' }}>
-            Section-8 : Introduction
+            Section-8 
           </div>
         </div>
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer' }} onClick={() => setvisible11(!visible11)}>
@@ -377,23 +378,23 @@ const Content = () => {
         )}
       </div>
 
-      <div style={{ color: 'white', marginLeft: '52px', fontSize: '22px', marginTop: '35px' }} ref={eh}>C Programming</div>
+      <div style={{ color: 'white', marginLeft: '52px', fontSize: '22px', marginTop: '35px' }} ref={eh}>C and CPP</div>
       <div className='module'>
         <div style={{ display: 'flex', flexDirection: 'row' }}>
           <div className="glassStyle">
             <AlignCenterHorizontalSimple size={25} color="#4925cd" style={{ margin: '5px', marginRight: '8px', marginLeft: '8px' }} />
           </div>
           <div style={{ display: 'flex', marginLeft: '20px', justifyContent: 'center', alignItems: 'center' }}>
-            Section-8 : Introduction
+            Section-9
           </div>
         </div>
-        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer' }} onClick={() => setvisible11(!visible11)}>
-          {visible11 ? (<CaretDown size={20} color="#4925cd" weight="bold" />) : (<CaretLeft size={20} color="#4925cd" weight="bold" />)}
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer' }} onClick={() => setvisible12(!visible12)}>
+          {visible12 ? (<CaretDown size={20} color="#4925cd" weight="bold" />) : (<CaretLeft size={20} color="#4925cd" weight="bold" />)}
         </div>
       </div>
 
       <div>
-        {visible11 && (
+        {visible12 && (
           <Paper className='table' sx={{ backgroundColor: 'black' }}>
             <Table12 />
           </Paper>
