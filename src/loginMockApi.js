@@ -1,3 +1,8 @@
+const users1 = [
+  {username: 'student1',password: 'pass123',email: 'student1@gmail.com',name: 'John Doe',quizMarks: {C: 'NA',Java: 90, ML: 78,Cybersecurity: 88 } },
+  {username: 'student2',password: 'pass456',email: 'student2@gmail.com',name: 'Jane Smith',quizMarks: {C: 80,Java: 75, ML: 82,Cybersecurity: 92}}
+];
+
 const users = [
   { id: 1000, username: 'acmtechjam@gmail.com', password: 'vitacmtechjam' },
   { id: 1001, username: 'asdf', password: 'asdf'},
@@ -68,7 +73,6 @@ const users = [
   { id: 	64	, username: 'chebrolurakesh.karthik2021@vitstudent.ac.in', password: '9502053544'},
   { id: 	65	, username: 'lakshmana.mahanand2021@vitstudent.ac.in', password: '6302604785'},
   { id:   66  , username: 'pjjoseph510@gmail.com', password: '9495107111' },
-  
   { id:   67  , username: 'abee.teddy2023@vitstudent.ac.in', password: '6304856733' },
   { id:   68  , username: 'chebrolurakesh.karthik2021@vitstudent.ac.in', password: '9502053544' },
   { id:   69  , username: 'lakshmana.mahanand2021@vitstudent.ac.in', password: '6302604785' },
@@ -91,7 +95,7 @@ const users = [
   let currentUser = null;
   
   export function login(username, password) {
-    const user = users.find((u) => u.username === username && u.password === password);
+    const user = users1.find((u) => u.username === username && u.password === password);
     if (user) {
       currentUser = user;
       return user;

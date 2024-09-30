@@ -41,7 +41,6 @@ const Content = () => {
   }
 
   const java = useRef(null)
-  const cp = useRef(null)
   const eh = useRef(null)
   const cloud = useRef(null)
   const ml = useRef(null)
@@ -62,11 +61,10 @@ const Content = () => {
       <div className='navbar' style={{ color: 'white', backgroundColor: '#212121' }}>
         <div className="container">
           <div >
-
             <div className="logo" style={{ display: 'flex' }}>
               <img src={logo} style={{ width: '70px' }} />
 
-              <span>  Tech Jam</span>
+              <span>Tech Jam</span>
             </div>
           </div>
           <div className="menu-icon" onClick={handleShowNavbar}>
@@ -74,9 +72,11 @@ const Content = () => {
           </div>
           <div className={`nav-elements ${showNavbar && 'active'}`}>
             <ul>
-              {/* <li onClick={()=>scroll(cp)} style={{cursor:'pointer'}}>Competitive Programming
-              </li> */}
-              <li onClick={() => scroll(eh)} style={{ cursor: 'pointer' }}>Ethical Hacking
+              <li>
+                <Link to="/dashboard" style={{ color: 'white', textDecoration: 'none' }}>Dashboard</Link>
+              </li>
+              <li onClick={() => scroll(eh)} style={{ cursor: 'pointer' }}>
+                Ethical Hacking
               </li>
               <li onClick={() => scroll(ml)} style={{ cursor: 'pointer' }}>
                 Machine Learning
@@ -95,20 +95,8 @@ const Content = () => {
         </div>
       </div>
 
-      {/* <div style={{ width: '100%', display: 'flex', justifyContent: 'center', backgroundColor: '#171717', paddingTop: '5px', paddingBottom: '30px' }}>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/_b-lmIJBono?si=VB-VKFc3l_lvqGvX"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
-      </div> */}
-
       <div style={{ width: '100%', display: 'flex', justifyContent: 'center', backgroundColor: '#171717', paddingTop: '5px', paddingBottom: '30px' }}>
-        <img src={Img} style={{ height: '50vh' }} />
+        <img src={Img} style={{ height: '50vh' ,marginTop:'30px'}} />
       </div>
 
       <div>
@@ -158,81 +146,6 @@ const Content = () => {
           )}
         </div>
       </div>
-
-      {/* <div style={{ color: 'white', marginLeft: '52px', fontSize: '22px', marginTop: '35px' }} ref={cp}>Competitive Programming</div>
-      <div>
-        <div className='module'>
-          <div style={{ display: 'flex', flexDirection: 'row' }}>
-            <div className="glassStyle">
-              <AlignCenterHorizontalSimple size={25} color="#4925cd" style={{ margin: '5px', marginRight: '8px', marginLeft: '8px' }} />
-            </div>
-            <div style={{ display: 'flex', marginLeft: '20px', justifyContent: 'center', alignItems: 'center' }}>
-              Day 3 - Divide & Conquer, Graph & Trees
-            </div>
-          </div>
-          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer' }} onClick={() => setvisible3(!visible3)}>
-            {visible3 ? (<CaretDown size={20} color="#4925cd" weight="bold" />) : (<CaretLeft size={20} color="#4925cd" weight="bold" />)}
-          </div>
-        </div>
-        <div>
-          {visible3 && (
-            <Paper className='table' sx={{ backgroundColor: 'black' }}>
-              <Table3 />
-            </Paper>
-          )}
-        </div>
-      </div>
-
-      {/* day 4 */}
-
-      {/* <div>
-        <div className='module'>
-          <div style={{ display: 'flex', flexDirection: 'row' }}>
-            <div className="glassStyle">
-              <AlignCenterHorizontalSimple size={25} color="#4925cd" style={{ margin: '5px', marginRight: '8px', marginLeft: '8px' }} />
-            </div>
-            <div style={{ display: 'flex', marginLeft: '20px', justifyContent: 'center', alignItems: 'center' }}>
-              Day 4 - Greedy, Dynamic Programming, Backtracking
-            </div>
-          </div>
-          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer' }} onClick={() => setvisible4(!visible4)}>
-            {visible4 ? (<CaretDown size={20} color="#4925cd" weight="bold" />) : (<CaretLeft size={20} color="#4925cd" weight="bold" />)}
-          </div>
-        </div>
-        <div>
-          {visible4 && (
-            <Paper className='table' sx={{ backgroundColor: 'black' }}>
-              <Table4 />
-            </Paper>
-          )}
-        </div>
-      </div> */}
-
-      {/* day 5 */}
-      {/* <div>
-        <div className='module'>
-          <div style={{ display: 'flex', flexDirection: 'row' }}>
-            <div className="glassStyle">
-              <AlignCenterHorizontalSimple size={25} color="#4925cd" style={{ margin: '5px', marginRight: '8px', marginLeft: '8px' }} />
-            </div>
-            <div style={{ display: 'flex', marginLeft: '20px', justifyContent: 'center', alignItems: 'center' }}>
-              Day 5 - Pattern Generation, Branch & Bound, Bit Manipulation
-            </div>
-          </div>
-          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', cursor: 'pointer' }} onClick={() => setvisible5(!visible5)}>
-            {visible5 ? (<CaretDown size={20} color="#4925cd" weight="bold" />) : (<CaretLeft size={20} color="#4925cd" weight="bold" />)}
-          </div>
-        </div>
-        <div>
-          {visible5 && (
-            <Paper className='table' sx={{ backgroundColor: 'black' }}>
-              <Table5/>
-            </Paper>
-          )}
-        </div>
-        </div>  */}
-
-      {/* day 6 */}
 
       <div>
         <div style={{ color: 'white', marginLeft: '52px', fontSize: '22px', marginTop: '35px' }} ref={cloud}>Cloud</div>
@@ -355,7 +268,6 @@ const Content = () => {
         )}
       </div>
 
-      <div style={{ color: 'white', marginLeft: '52px', fontSize: '22px', marginTop: '35px' }} ref={eh}>Ethical Hacking</div>
       <div className='module'>
         <div style={{ display: 'flex', flexDirection: 'row' }}>
           <div className="glassStyle">
@@ -378,7 +290,7 @@ const Content = () => {
         )}
       </div>
 
-      <div style={{ color: 'white', marginLeft: '52px', fontSize: '22px', marginTop: '35px' }} ref={eh}>C and CPP</div>
+      <div style={{ color: 'white', marginLeft: '52px', fontSize: '22px', marginTop: '35px' }} ref={c}>C and CPP</div>
       <div className='module'>
         <div style={{ display: 'flex', flexDirection: 'row' }}>
           <div className="glassStyle">

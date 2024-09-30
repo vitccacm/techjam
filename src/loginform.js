@@ -12,8 +12,9 @@ function LoginForm() {
     const user = login(username, password);
 
     if (user) {
-      navigate('/content');
-
+      navigate('/Dashboard');
+      sessionStorage.setItem('isLoggedIn', 'true');
+      sessionStorage.setItem('username', username);
       console.log('Login successful');
     } else {
       navigate('/signin')
