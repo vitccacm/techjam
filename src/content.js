@@ -1,27 +1,138 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef,useEffect } from "react";
 import Header from "./header";
 import Modules from "./Modules";
 import Paper from '@mui/material/Paper';
 import { AlignCenterHorizontalSimple, CaretDown, CaretLeft } from "@phosphor-icons/react";
-import TableNew from "./tablenew";
-import Table2 from "./Table2";
-import Table3 from "./Table3";
-import Table12 from "./Table12";
+import Section1 from "./Section1";
+import Section2 from "./Section2";
+import Section3 from "./Section3";
+import Section4 from "./Section4";
+import Section5 from "./Section5";
+import Section6 from "./Section6";
+import Section7 from "./Section7";
+import Section8 from "./Section8";
+import Section9 from "./Section9";
 import './button.css';
-import { Link, useNavigate } from "react-router-dom";
-import Table4 from "./Table4";
+import { Link} from "react-router-dom";
 import Img from './Tech Jam Website.jpg';
 import { List } from '@phosphor-icons/react';
 import logo from './techjamlogo.png'
-import Table5 from "./Table5";
-import Table6 from "./Table6";
-import Table7 from "./Table7";
-import Table8 from "./Table8";
-import Table9 from "./Table9";
-import Table10 from "./Table10";
-import Table11 from "./Table11";
+
+// Files table, table3, table4, table5  contain some resources for Competetive Programming
 
 const Content = () => {
+  const [clickedLinks1, setClickedLinks1] = useState({
+    sec1video1: false,
+    sec1code1: false,
+    sec1ppt1: false,
+    sec1video2: false,
+    sec1code2: false,
+    sec1ppt2: false,
+    sec1video3: false,
+    sec1code3: false,
+    sec1ppt3: false,
+  });
+
+  const [clickedLinks2, setClickedLinks2] = useState({
+    sec2video1: false,
+    sec2code1: false,
+    sec2ppt1: false,
+    sec2video2: false,
+    sec2code2: false,
+    sec2ppt2: false,
+    sec2video3: false,
+    sec2code3: false,
+    sec2ppt3: false,
+    sec2video4: false,
+    sec2code4: false,
+    sec2ppt4: false,
+  });
+
+  const [clickedLinks3, setClickedLinks3] = useState({
+    sec3video1: false,
+    sec3code1: false,
+    sec3ppt1: false,
+    sec3video2: false,
+    sec3code2: false,
+    sec3ppt2: false,
+    sec3video3: false,
+    sec3code3: false,
+    sec3ppt3: false,
+    sec3video4: false,
+    sec3code4: false,
+    sec3ppt4: false,
+  });
+
+  const [clickedLinks4, setClickedLinks4] = useState({
+    sec4video1: false,
+    sec4code1: false,
+    sec4ppt1: false,
+    sec4video2: false,
+    sec4code2: false,
+    sec4ppt2: false,
+  });
+  const [clickedLinks5, setClickedLinks5] = useState({
+    sec5video1: false,
+    sec5code1: false,
+    sec5ppt1: false,
+    sec5video2: false,
+    sec5code2: false,
+    sec5ppt2: false,
+  });
+
+  const [clickedLinks6, setClickedLinks6] = useState({
+    sec6video1: false,
+    sec6code1: false,
+    sec6ppt1: false,
+    sec6video2: false,
+    sec6code2: false,
+    sec6ppt2: false,
+  });
+
+  const [clickedLinks7, setClickedLinks7] = useState({
+    sec7video1: false,
+    sec7code1: false,
+    sec7ppt1: false,
+    sec7video2: false,
+    sec7code2: false,
+    sec7ppt2: false,
+  });
+
+  const [clickedLinks8, setClickedLinks8] = useState({
+    sec8video1: false,
+    sec8code1: false,
+    sec8ppt1: false,
+    sec8video2: false,
+    sec8code2: false,
+    sec8ppt2: false,
+  });
+  const [clickedLinks9, setClickedLinks9] = useState({
+    sec9video1: false,
+    sec9code1: false,
+    sec9ppt1: false,
+    sec9video2: false,
+    sec9code2: false,
+    sec9ppt2: false,
+    sec9video3: false,
+    sec9code3: false,
+    sec9ppt3: false,
+    sec9video4: false,
+    sec9code4: false,
+    sec9ppt4: false,
+    secvideo5: false,
+    sec91code5: false,
+    sec9ppt5: false,
+    sec9video6: false,
+    sec9code6: false,
+    sec9ppt6: false,
+    sec9video7: false,
+    sec9code7: false,
+    sec9ppt7: false,
+    secvideo8: false,
+    sec91code8: false,
+    sec9ppt8: false,
+  });
+
   const [visible, setvisible] = useState(true);
   const [visible2, setvisible2] = useState(true);
   const [visible3, setvisible3] = useState(true);
@@ -35,15 +146,83 @@ const Content = () => {
   const [visible10, setvisible10] = useState(true);
   const [visible11, setvisible11] = useState(true);
   const [visible12, setvisible12] = useState(true);
+  
+  const [accessedCount, setAccessedCount] = useState(0);
+  const countRef = useRef(0);
 
+  const handleLinkClick = (link) => {
+    setClickedLinks1((prevLinks) => ({
+      ...prevLinks,
+      [link]: true, // Set the specific clicked link to true
+    }));
+    setClickedLinks2((prevLinks) => ({
+      ...prevLinks,
+      [link]: true, // Set the specific clicked link to true
+    }));
+    setClickedLinks3((prevLinks) => ({
+      ...prevLinks,
+      [link]: true, // Set the specific clicked link to true
+    }));
+    setClickedLinks4((prevLinks) => ({
+      ...prevLinks,
+      [link]: true, // Set the specific clicked link to true
+    }));
+    setClickedLinks5((prevLinks) => ({
+      ...prevLinks,
+      [link]: true, // Set the specific clicked link to true
+    }));
+    setClickedLinks6((prevLinks) => ({
+      ...prevLinks,
+      [link]: true, // Set the specific clicked link to true
+    }));
+    setClickedLinks7((prevLinks) => ({
+      ...prevLinks,
+      [link]: true, // Set the specific clicked link to true
+    }));
+    setClickedLinks8((prevLinks) => ({
+      ...prevLinks,
+      [link]: true, // Set the specific clicked link to true
+    }));
+    setClickedLinks9((prevLinks) => ({
+      ...prevLinks,
+      [link]: true, // Set the specific clicked link to true
+    }));
+
+  };
+
+
+  const combined = {
+    clickedLinks1,
+    clickedLinks2,
+    clickedLinks3,
+    clickedLinks4,
+    clickedLinks5,
+    clickedLinks6,
+    clickedLinks7,
+    clickedLinks8,
+    clickedLinks9}
+
+ useEffect(() => {
+  const count = Object.values(combined).filter((values) => values == true).length;
+  if(count != countRef.current){
+    countRef.current = count;
+    setAccessedCount(count);
+  }
+ },[combined]);
+
+  const Percentage = () => {
+    const total = Object.keys(combined).length;
+    return (accessedCount/total)*100;
+  }
+  
   const handleShowNavbar = () => {
     setShowNavbar(!showNavbar);
   }
 
   const java = useRef(null)
-  const eh = useRef(null)
   const cloud = useRef(null)
   const ml = useRef(null)
+  const eh = useRef(null)
   const c = useRef(null)
 
   const scroll = (elementref) => {
@@ -51,7 +230,6 @@ const Content = () => {
       top: elementref.current.offsetTop,
       behavior: 'smooth',
     })
-
   }
 
   return (
@@ -63,7 +241,6 @@ const Content = () => {
           <div >
             <div className="logo" style={{ display: 'flex' }}>
               <img src={logo} style={{ width: '70px' }} />
-
               <span>Tech Jam</span>
             </div>
           </div>
@@ -75,17 +252,17 @@ const Content = () => {
               <li>
                 <Link to="/dashboard" style={{ color: 'white', textDecoration: 'none' }}>Dashboard</Link>
               </li>
-              <li onClick={() => scroll(eh)} style={{ cursor: 'pointer' }}>
-                Ethical Hacking
-              </li>
-              <li onClick={() => scroll(ml)} style={{ cursor: 'pointer' }}>
-                Machine Learning
-              </li>
               <li onClick={() => scroll(java)} style={{ cursor: 'pointer' }}>
                 Java
               </li>
               <li onClick={() => scroll(cloud)} style={{ cursor: 'pointer' }}>
                 Cloud
+              </li>
+              <li onClick={() => scroll(ml)} style={{ cursor: 'pointer' }}>
+                Machine Learning
+              </li>
+              <li onClick={() => scroll(eh)} style={{ cursor: 'pointer' }}>
+                Ethical Hacking
               </li>
               <li onClick={() => scroll(c)} style={{ cursor: 'pointer' }}>
                 C and CPP
@@ -98,6 +275,20 @@ const Content = () => {
       <div style={{ width: '100%', display: 'flex', justifyContent: 'center', backgroundColor: '#171717', paddingTop: '5px', paddingBottom: '30px' }}>
         <img src={Img} style={{ height: '50vh' ,marginTop:'30px'}} />
       </div>
+
+
+      <div style={{ width: '100%', backgroundColor: '#f3f3f3', borderRadius: '8px', marginBottom: '20px' }}>
+        <div
+          style={{
+            width: `${Percentage()}%`,
+            height: '24px',
+            backgroundColor: '#4caf50',
+            borderRadius: '8px',
+            transition: 'width 0.3s ease-in-out',
+          }}
+        ></div>
+      </div>
+      <p>{Percentage().toFixed(2)}% completed</p>
 
       <div>
         <div style={{ color: 'white', marginLeft: '52px', fontSize: '22px', marginTop: '35px' }} ref={java}>Java</div>
@@ -118,7 +309,7 @@ const Content = () => {
         <div>
           {visible && (
             <Paper className='table' sx={{ backgroundColor: 'black' }}>
-              <TableNew />
+              <Section1 clickedLinks={clickedLinks1} onLinkClick={handleLinkClick} />
             </Paper>
           )}
         </div>
@@ -141,7 +332,7 @@ const Content = () => {
         <div>
           {visible2 && (
             <Paper className='table' sx={{ backgroundColor: 'black' }}>
-              <Table2 />
+              <Section2 clickedLinks={clickedLinks2} onLinkClick={handleLinkClick} />
             </Paper>
           )}
         </div>
@@ -166,7 +357,7 @@ const Content = () => {
         <div>
           {visible6 && (
             <Paper className='table' sx={{ backgroundColor: 'black' }}>
-              <Table6 />
+              <Section3 clickedLinks={clickedLinks3} onLinkClick={handleLinkClick} />
             </Paper>
           )}
         </div>
@@ -191,7 +382,7 @@ const Content = () => {
       <div>
         {visible7 && (
           <Paper className='table' sx={{ backgroundColor: 'black' }}>
-            <Table7 />
+            <Section4 clickedLinks={clickedLinks4} onLinkClick={handleLinkClick} />
           </Paper>
         )}
       </div>
@@ -217,7 +408,7 @@ const Content = () => {
       <div>
         {visible8 && (
           <Paper className='table' sx={{ backgroundColor: 'black' }}>
-            <Table8 />
+            <Section5 clickedLinks={clickedLinks5} onLinkClick={handleLinkClick} />
           </Paper>
         )}
       </div>
@@ -240,7 +431,7 @@ const Content = () => {
       <div>
         {visible9 && (
           <Paper className='table' sx={{ backgroundColor: 'black' }}>
-            <Table9 />
+            <Section6 clickedLinks={clickedLinks6} onLinkClick={handleLinkClick} />
           </Paper>
         )}
       </div>
@@ -263,7 +454,7 @@ const Content = () => {
       <div>
         {visible10 && (
           <Paper className='table' sx={{ backgroundColor: 'black' }}>
-            <Table10 />
+            <Section7 clickedLinks={clickedLinks7} onLinkClick={handleLinkClick} />
           </Paper>
         )}
       </div>
@@ -285,7 +476,7 @@ const Content = () => {
       <div>
         {visible11 && (
           <Paper className='table' sx={{ backgroundColor: 'black' }}>
-            <Table11 />
+            <Section8 clickedLinks={clickedLinks8} onLinkClick={handleLinkClick} />
           </Paper>
         )}
       </div>
@@ -308,7 +499,7 @@ const Content = () => {
       <div>
         {visible12 && (
           <Paper className='table' sx={{ backgroundColor: 'black' }}>
-            <Table12 />
+            <Section9 clickedLinks={clickedLinks9} onLinkClick={handleLinkClick} />
           </Paper>
         )}
       </div>
