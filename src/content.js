@@ -150,71 +150,120 @@ const Content = () => {
   const [accessedCount, setAccessedCount] = useState(0);
   const countRef = useRef(0);
 
-  const handleLinkClick = (link) => {
-    setClickedLinks1((prevLinks) => ({
-      ...prevLinks,
-      [link]: true, // Set the specific clicked link to true
-    }));
-    setClickedLinks2((prevLinks) => ({
-      ...prevLinks,
-      [link]: true, // Set the specific clicked link to true
-    }));
-    setClickedLinks3((prevLinks) => ({
-      ...prevLinks,
-      [link]: true, // Set the specific clicked link to true
-    }));
-    setClickedLinks4((prevLinks) => ({
-      ...prevLinks,
-      [link]: true, // Set the specific clicked link to true
-    }));
-    setClickedLinks5((prevLinks) => ({
-      ...prevLinks,
-      [link]: true, // Set the specific clicked link to true
-    }));
-    setClickedLinks6((prevLinks) => ({
-      ...prevLinks,
-      [link]: true, // Set the specific clicked link to true
-    }));
-    setClickedLinks7((prevLinks) => ({
-      ...prevLinks,
-      [link]: true, // Set the specific clicked link to true
-    }));
-    setClickedLinks8((prevLinks) => ({
-      ...prevLinks,
-      [link]: true, // Set the specific clicked link to true
-    }));
-    setClickedLinks9((prevLinks) => ({
-      ...prevLinks,
-      [link]: true, // Set the specific clicked link to true
-    }));
+  const handleLinkClick = (link, section) => {
+    switch (section) {
+      case 1:
+        setClickedLinks1((prevLinks) => ({
+          ...prevLinks,
+          [link]: true,
+        }));
+        break;
+      case 2:
+        setClickedLinks2((prevLinks) => ({
+          ...prevLinks,
+          [link]: true,
+        }));
+        break;
+      case 3:
+        setClickedLinks3((prevLinks) => ({
+          ...prevLinks,
+          [link]: true,
+        }));
+        break;
+      case 4:
+        setClickedLinks4((prevLinks) => ({
+          ...prevLinks,
+          [link]: true,
+        }));
+        break;
+      case 5:
+        setClickedLinks5((prevLinks) => ({
+          ...prevLinks,
+          [link]: true,
+        }));
+        break;
+      case 6:
+        setClickedLinks6((prevLinks) => ({
+          ...prevLinks,
+          [link]: true,
+        }));
+        break;
+      case 7:
+        setClickedLinks7((prevLinks) => ({
+          ...prevLinks,
+          [link]: true,
+        }));
+        break;
+      case 8:
+        setClickedLinks8((prevLinks) => ({
+          ...prevLinks,
+          [link]: true,
+        }));
+        break;
+      case 9:
+        setClickedLinks9((prevLinks) => ({
+          ...prevLinks,
+          [link]: true,
+        }));
+        break;
+      default:
+        console.log("Invalid section");
+    }
+  };
+  
 
+  const combinedClickedLinks = {
+    ...clickedLinks1,
+    ...clickedLinks2,
+    ...clickedLinks3,
+    ...clickedLinks4,
+    ...clickedLinks5,
+    ...clickedLinks6,
+    ...clickedLinks7,
+    ...clickedLinks8,
+    ...clickedLinks9,
   };
 
-
-  const combined = {
-    clickedLinks1,
-    clickedLinks2,
-    clickedLinks3,
-    clickedLinks4,
-    clickedLinks5,
-    clickedLinks6,
-    clickedLinks7,
-    clickedLinks8,
-    clickedLinks9}
+  const totalLinks = Object.keys(combinedClickedLinks).length;
 
  useEffect(() => {
-  const count = Object.values(combined).filter((values) => values == true).length;
-  if(count != countRef.current){
-    countRef.current = count;
-    setAccessedCount(count);
-  }
- },[combined]);
+    const count = Object.values(combinedClickedLinks).filter((value) => value === true).length;
 
-  const Percentage = () => {
-    const total = Object.keys(combined).length;
-    return (accessedCount/total)*100;
-  }
+    if (count !== countRef.current) {
+      countRef.current = count; // Update the ref
+      setAccessedCount(count); // Update state
+    }
+  }, [combinedClickedLinks]);
+
+  const percentageCompleted = ((accessedCount / totalLinks) * 100).toFixed(2);
   
+  const [currentUser, setCurrentUser] = useState(null);
+
+  useEffect(() => {
+    // Retrieve the user details from sessionStorage
+    const storedParticipant = sessionStorage.getItem('participant');
+    
+    if (storedParticipant) {
+      setCurrentUser(JSON.parse(storedParticipant)); // Parse and set the user
+    } else {
+      console.log('No user is logged in.');
+    }
+  }, []);
+
+  const updatePercentageForUser = (percentage) => {
+    if (currentUser) {
+      // Example logic to add the percentage for the current user
+      const updatedUser = {
+        ...currentUser,
+        percentage: percentage, // Add the percentage to the user object
+      };
+
+      // Update the user in sessionStorage
+      sessionStorage.setItem('participant', JSON.stringify(updatedUser));
+      setCurrentUser(updatedUser); // Update local state as well
+    }
+  };
+
   const handleShowNavbar = () => {
     setShowNavbar(!showNavbar);
   }
@@ -280,7 +329,7 @@ const Content = () => {
       <div style={{ width: '100%', backgroundColor: '#f3f3f3', borderRadius: '8px', marginBottom: '20px' }}>
         <div
           style={{
-            width: `${Percentage()}%`,
+            width: `${percentageCompleted}%`,
             height: '24px',
             backgroundColor: '#4caf50',
             borderRadius: '8px',
@@ -288,7 +337,7 @@ const Content = () => {
           }}
         ></div>
       </div>
-      <p>{Percentage().toFixed(2)}% completed</p>
+      <p>{percentageCompleted}% completed</p>
 
       <div>
         <div style={{ color: 'white', marginLeft: '52px', fontSize: '22px', marginTop: '35px' }} ref={java}>Java</div>
@@ -309,7 +358,7 @@ const Content = () => {
         <div>
           {visible && (
             <Paper className='table' sx={{ backgroundColor: 'black' }}>
-              <Section1 clickedLinks={clickedLinks1} onLinkClick={handleLinkClick} />
+              <Section1 clickedLinks={clickedLinks1} onLinkClick={(link) => handleLinkClick(link, 1)} />
             </Paper>
           )}
         </div>
@@ -332,7 +381,7 @@ const Content = () => {
         <div>
           {visible2 && (
             <Paper className='table' sx={{ backgroundColor: 'black' }}>
-              <Section2 clickedLinks={clickedLinks2} onLinkClick={handleLinkClick} />
+              <Section2 clickedLinks={clickedLinks2} onLinkClick={(link) => handleLinkClick(link, 2)} />
             </Paper>
           )}
         </div>
@@ -357,7 +406,7 @@ const Content = () => {
         <div>
           {visible6 && (
             <Paper className='table' sx={{ backgroundColor: 'black' }}>
-              <Section3 clickedLinks={clickedLinks3} onLinkClick={handleLinkClick} />
+              <Section3 clickedLinks={clickedLinks3} onLinkClick={(link) => handleLinkClick(link, 3)} />
             </Paper>
           )}
         </div>
@@ -382,7 +431,7 @@ const Content = () => {
       <div>
         {visible7 && (
           <Paper className='table' sx={{ backgroundColor: 'black' }}>
-            <Section4 clickedLinks={clickedLinks4} onLinkClick={handleLinkClick} />
+            <Section4 clickedLinks={clickedLinks4} onLinkClick={(link) => handleLinkClick(link, 4)} />
           </Paper>
         )}
       </div>
@@ -408,7 +457,7 @@ const Content = () => {
       <div>
         {visible8 && (
           <Paper className='table' sx={{ backgroundColor: 'black' }}>
-            <Section5 clickedLinks={clickedLinks5} onLinkClick={handleLinkClick} />
+            <Section5 clickedLinks={clickedLinks5} onLinkClick={(link) => handleLinkClick(link, 5)} />
           </Paper>
         )}
       </div>
@@ -431,7 +480,7 @@ const Content = () => {
       <div>
         {visible9 && (
           <Paper className='table' sx={{ backgroundColor: 'black' }}>
-            <Section6 clickedLinks={clickedLinks6} onLinkClick={handleLinkClick} />
+            <Section6 clickedLinks={clickedLinks6} onLinkClick={(link) => handleLinkClick(link, 6)} />
           </Paper>
         )}
       </div>
@@ -454,7 +503,7 @@ const Content = () => {
       <div>
         {visible10 && (
           <Paper className='table' sx={{ backgroundColor: 'black' }}>
-            <Section7 clickedLinks={clickedLinks7} onLinkClick={handleLinkClick} />
+            <Section7 clickedLinks={clickedLinks7} onLinkClick={(link) => handleLinkClick(link, 7)} />
           </Paper>
         )}
       </div>
@@ -476,7 +525,7 @@ const Content = () => {
       <div>
         {visible11 && (
           <Paper className='table' sx={{ backgroundColor: 'black' }}>
-            <Section8 clickedLinks={clickedLinks8} onLinkClick={handleLinkClick} />
+            <Section8 clickedLinks={clickedLinks8} onLinkClick={(link) => handleLinkClick(link, 8)} />
           </Paper>
         )}
       </div>
@@ -499,7 +548,7 @@ const Content = () => {
       <div>
         {visible12 && (
           <Paper className='table' sx={{ backgroundColor: 'black' }}>
-            <Section9 clickedLinks={clickedLinks9} onLinkClick={handleLinkClick} />
+            <Section9 clickedLinks={clickedLinks9} onLinkClick={(link) => handleLinkClick(link, 9)} />
           </Paper>
         )}
       </div>

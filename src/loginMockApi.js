@@ -1,6 +1,6 @@
 const users1 = [
-  {username: 'asdfg',password: 'asdfg',email: 'student1@gmail.com',name: 'John Doe',quizMarks: {C: 'NA',Java: 90, ML: 78,Cybersecurity: 88 } },
-  {username: 'student2',password: 'pass456',email: 'student2@gmail.com',name: 'Jane Smith',quizMarks: {C: 80,Java: 75, ML: 82,Cybersecurity: 92}}
+  {username: 'asdfg',password: 'asdfg',completed: 0,email: 'student1@gmail.com',name: 'John Doe',quizMarks: {C: 'NA',Java: 90, ML: 78,Cybersecurity: 88 } },
+  {username: 'student2',password: 'pass456', completed: 0,email: 'student2@gmail.com',name: 'Jane Smith',quizMarks: {C: 80,Java: 75, ML: 82,Cybersecurity: 92}}
 ];
 
 const users = [

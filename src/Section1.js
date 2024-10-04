@@ -3,7 +3,6 @@ import "./table.css";
 import part1 from "./Documents/javaday1/part1.ppt";
 import part2 from "./Documents/javaday1/part2.ppt";
 import part3 from "./Documents/javaday1/part3.ppt";
-import Content from "./content";
 
 const TableNew = ({ clickedLinks, onLinkClick }) => {
   return (

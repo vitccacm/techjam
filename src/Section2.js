@@ -5,7 +5,7 @@ import Function from "./Documents/day1/Functions.pptx";
 import Inheritance from "./Documents/day1/Inheritance.pptx";
 import Strings from "./Documents/day1/Strings.pptx";
 
-const Table2 = () => {
+const Table2 = ({ clickedLinks, onLinkClick }) => {
   const properties = ["name", "wins", "draws", "losses", "total"];
 
   const [orderClass, setOrderClass] = useState("");
