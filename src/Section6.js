@@ -5,7 +5,7 @@ import ppt2 from "./Documents/day9/Machine Learning Day 4.pptx";
 
 import { useNavigate } from "react-router-dom";
 
-const Table9 = ({ clickedLinks, onLinkClick }) => {
+const Table9 = () => {
   const navigate = useNavigate();
 
   const navigatePage = (video, title, file) => {
@@ -51,7 +51,6 @@ const Table9 = ({ clickedLinks, onLinkClick }) => {
                 <a
                   style={{ cursor: "pointer" }}
                   onClick={() =>{
-					onLinkClick('sec6video1')
                     navigatePage(
                       "https://www.youtube.com/embed/0SpGg0SdinA?si=8BaEIoLk8MqOZ9cG",
                       "Training a neural network",
@@ -67,7 +66,6 @@ const Table9 = ({ clickedLinks, onLinkClick }) => {
                 <a
                   href="https://github.com/ACMVITCC/techjam2023/tree/main/Day-9"
                   target="_blank"
-				  onClick={() => onLinkClick('sec6code1')}
                 >
                   Click for Code
                 </a>
@@ -77,7 +75,6 @@ const Table9 = ({ clickedLinks, onLinkClick }) => {
 				download="ML 3" 
 				target="_blank" 
 				rel="noreferrer"
-				onClick={() => onLinkClick('sec6ppt1')}
 				>
                   Click here to view PPT
                 </a>
@@ -93,7 +90,6 @@ const Table9 = ({ clickedLinks, onLinkClick }) => {
                 <a
                   style={{ cursor: "pointer" }}
                   onClick={() =>{
-					onLinkClick('sec6video2')
                     navigatePage(
                       "https://www.youtube.com/embed/ROKVX02A4Lc?si=s4BqKx0UZe2Vr2n7",
                       "More layer types and optimizing a network for a task",
@@ -109,7 +105,6 @@ const Table9 = ({ clickedLinks, onLinkClick }) => {
                 <a
                   href="https://github.com/ACMVITCC/techjam2023/tree/main/Day-9"
                   target="_blank"
-				  onClick={() => onLinkClick('sec6code2')}
                 >
                   Click for Code
                 </a>
@@ -119,7 +114,6 @@ const Table9 = ({ clickedLinks, onLinkClick }) => {
 				download="ML 4" 
 				target="_blank" 
 				rel="noreferrer"
-				onClick={() => onLinkClick('sec6ppt2')}
 				>
                   Click here to view PPT
                 </a>

@@ -5,7 +5,7 @@ import ppt1 from "./Documents/day7/Azure AI Chatbots & MSFT Power VA.pptx";
 
 import { useNavigate } from "react-router-dom";
 
-const Table7 = ({ clickedLinks, onLinkClick }) => {
+const Table7 =() => {
   const navigate = useNavigate();
 
   const navigatePage = (video, title, file) => {
@@ -51,24 +51,22 @@ const Table7 = ({ clickedLinks, onLinkClick }) => {
                 <a
                   style={{ cursor: "pointer" }}
                   onClick={() =>{
-					onLinkClick('sec4video1')
                     navigatePage(
                       "https://www.youtube.com/embed/07QZLM9aCaA?si=NtpIA2LQzq1_X-O-",
                       " MSFI AI Chatbot",
                       "sample"
                     );
-				}}
+				          }}
                   target="_blank"
                 >
                   Click here for Video
                 </a>
               </div>
               <div class="table-data">
-			  <a
+			        <a
                 href=""
                 target="_blank"
                 rel="noreferrer"
-                onClick={() => onLinkClick('sec4code1')}
                 >Click here for Code
                 </a>
               </div>
@@ -78,7 +76,6 @@ const Table7 = ({ clickedLinks, onLinkClick }) => {
                   download="MSFI AI Chatbot"
                   target="_blank"
                   rel="noreferrer"
-				  onClick={() => onLinkClick('sec4ppt1')}
                 >
                   Click here to view PPT
                 </a>
@@ -94,7 +91,6 @@ const Table7 = ({ clickedLinks, onLinkClick }) => {
                 <a
                   style={{ cursor: "pointer" }}
                   onClick={() =>{
-					onLinkClick('sec4video1')
                     navigatePage(
                       "https://www.youtube.com/embed/kXDKgPaQp_E?si=a3UaiH0_OobA0pJ_",
                       "Open AI",
@@ -111,7 +107,6 @@ const Table7 = ({ clickedLinks, onLinkClick }) => {
                 href=""
                 target="_blank"
                 rel="noreferrer"
-                onClick={() => onLinkClick('sec4code2')}
                 >Click here for Code
                 </a>
               </div>
@@ -121,7 +116,6 @@ const Table7 = ({ clickedLinks, onLinkClick }) => {
                   download="Open AI"
                   target="_blank"
                   rel="noreferrer"
-				  onClick={() => onLinkClick('sec4ppt2')}
                 >
                   {" "}
                   Click here to view PPT

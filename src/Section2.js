@@ -5,7 +5,7 @@ import Function from "./Documents/day1/Functions.pptx";
 import Inheritance from "./Documents/day1/Inheritance.pptx";
 import Strings from "./Documents/day1/Strings.pptx";
 
-const Table2 = ({ clickedLinks, onLinkClick }) => {
+const Table2 = () => {
   const properties = ["name", "wins", "draws", "losses", "total"];
 
   const [orderClass, setOrderClass] = useState("");
@@ -89,7 +89,6 @@ const Table2 = ({ clickedLinks, onLinkClick }) => {
                 <a
                   href="https://www.youtube.com/watch?v=8XrTgXNrjkg"
                   target="_blank"
-                  onClick={() => onLinkClick('sec2video1')}
                 >
                   Click here for Video
                 </a>
@@ -98,7 +97,6 @@ const Table2 = ({ clickedLinks, onLinkClick }) => {
                 <a
                   href="https://github.com/ACMVITCC/techjam2023/tree/main/Day-2"
                   target="_blank"
-                  onClick={() => onLinkClick('sec2code1')}
                 >
                   Click here for Code
                 </a>
@@ -109,7 +107,6 @@ const Table2 = ({ clickedLinks, onLinkClick }) => {
                   download="Array"
                   target="_blank"
                   rel="noreferrer"
-                  onClick={() => onLinkClick('sec2ppt1')}
                 >
                   {" "}
                   Click here to view PPT
@@ -123,7 +120,6 @@ const Table2 = ({ clickedLinks, onLinkClick }) => {
                 <a
                   href="https://www.youtube.com/watch?v=38MWDM1TgwM"
                   target="_blank"
-                  onClick={() => onLinkClick('sec2video2')}
                 >
                   Click here for Video
                 </a>
@@ -132,7 +128,6 @@ const Table2 = ({ clickedLinks, onLinkClick }) => {
                 <a
                   href="https://github.com/ACMVITCC/techjam2023/tree/main/Day-2"
                   target="_blank"
-                  onClick={() => onLinkClick('sec2code2')}
                 >
                   Click here for Code
                 </a>
@@ -143,7 +138,6 @@ const Table2 = ({ clickedLinks, onLinkClick }) => {
                   download="Strings"
                   target="_blank"
                   rel="noreferrer"
-                  onClick={() => onLinkClick('sec2ppt2')}
                 >
                   {" "}
                   Click here to view PPT
@@ -157,7 +151,6 @@ const Table2 = ({ clickedLinks, onLinkClick }) => {
                 <a
                   href="https://www.youtube.com/watch?v=5KslaodVm_c"
                   target="_blank"
-                  onClick={() => onLinkClick('sec2video3')}
                 >
                   Click here for Video
                 </a>
@@ -166,7 +159,6 @@ const Table2 = ({ clickedLinks, onLinkClick }) => {
                 <a
                   href="https://github.com/ACMVITCC/techjam2023/tree/main/Day-2"
                   target="_blank"
-                  onClick={() => onLinkClick('sec2code3')}
                 >
                   Click here for Code
                 </a>
@@ -177,7 +169,6 @@ const Table2 = ({ clickedLinks, onLinkClick }) => {
                   download="Function"
                   target="_blank"
                   rel="noreferrer"
-                  onClick={() => onLinkClick('sec2pp3')}
                 >
                   Click here to view PPT
                 </a>
@@ -192,7 +183,6 @@ const Table2 = ({ clickedLinks, onLinkClick }) => {
                 <a
                   href="https://www.youtube.com/watch?v=2rF0Two5Cfs"
                   target="_blank"
-                  onClick={() => onLinkClick('sec2video4')}
                 >
                   Click here for Video
                 </a>
@@ -201,7 +191,6 @@ const Table2 = ({ clickedLinks, onLinkClick }) => {
                 <a
                   href="https://github.com/ACMVITCC/techjam2023/tree/main/Day-2"
                   target="_blank"
-                  onClick={() => onLinkClick('sec2code4')}
                 >
                   Click here for Code
                 </a>
@@ -212,7 +201,6 @@ const Table2 = ({ clickedLinks, onLinkClick }) => {
                   download="Inheritance"
                   target="_blank"
                   rel="noreferrer"
-                  onClick={() => onLinkClick('sec2ppt4')}
                 >
                   Click here to view PPT
                 </a>

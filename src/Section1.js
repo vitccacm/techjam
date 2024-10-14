@@ -4,7 +4,7 @@ import part1 from "./Documents/javaday1/part1.ppt";
 import part2 from "./Documents/javaday1/part2.ppt";
 import part3 from "./Documents/javaday1/part3.ppt";
 
-const TableNew = ({ clickedLinks, onLinkClick }) => {
+const TableNew = () => {
   return (
     <div style={{ backgroundColor: "#171717" }}>
       <div class="containertable">
@@ -43,7 +43,6 @@ const TableNew = ({ clickedLinks, onLinkClick }) => {
                 <a
                   href="https://youtu.be/rCZWduD_kIk"
                   target="_blank"
-                  onClick={() => onLinkClick('sec1video1')}
                 >
                   Click here for Video
                 </a>
@@ -52,7 +51,6 @@ const TableNew = ({ clickedLinks, onLinkClick }) => {
                 <a
                   href="https://github.com/ACMVITCC/techjam2023/tree/main/Day1"
                   target="_blank"
-                  onClick={() => onLinkClick('sec1code1')}
                 >
                   Click here for Code
                 </a>
@@ -63,7 +61,6 @@ const TableNew = ({ clickedLinks, onLinkClick }) => {
                   download="basic_of_java"
                   target="_blank"
                   rel="noreferrer"
-                  onClick={() => onLinkClick('sec1ppt1')}
                 >
                   {" "}
                   Click here to view PPT
@@ -77,7 +74,6 @@ const TableNew = ({ clickedLinks, onLinkClick }) => {
                 <a
                   href="https://www.youtube.com/watch?app=desktop&v=b5CEyhyralY&feature=youtu.be"
                   target="_blank"
-                  onClick={() => onLinkClick('sec1video2')}
                 >
                   Click here for Video
                 </a>
@@ -86,7 +82,6 @@ const TableNew = ({ clickedLinks, onLinkClick }) => {
                 <a
                   href="https://github.com/ACMVITCC/techjam2023/tree/main/Day1"
                   target="_blank"
-                  onClick={() => onLinkClick('sec1code2')}
                 >
                   Click here for Code
                 </a>
@@ -97,7 +92,6 @@ const TableNew = ({ clickedLinks, onLinkClick }) => {
                   download="Operators"
                   target="_blank"
                   rel="noreferrer"
-                  onClick={() => onLinkClick('sec1ppt2')}
                 >
                   {" "}
                   Click here to view PPT
@@ -111,7 +105,6 @@ const TableNew = ({ clickedLinks, onLinkClick }) => {
                 <a
                   href="https://www.youtube.com/watch?app=desktop&v=QFLIvtKHq_4&feature=youtu.be"
                   target="_blank"
-                  onClick={() => onLinkClick('sec1video3')}
                 >
                   Click here for Video
                 </a>
@@ -120,7 +113,6 @@ const TableNew = ({ clickedLinks, onLinkClick }) => {
                 <a
                   href="https://github.com/ACMVITCC/techjam2023/tree/main/Day1"
                   target="_blank"
-                  onClick={() => onLinkClick('sec1code3')}
                 >
                   Click here for Code
                 </a>
@@ -131,7 +123,6 @@ const TableNew = ({ clickedLinks, onLinkClick }) => {
                   download="Loop"
                   target="_blank"
                   rel="noreferrer"
-                  onClick={() => onLinkClick('sec1ppt3')}
                 >
                   {" "}
                   Click here to view PPT

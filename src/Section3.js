@@ -7,7 +7,7 @@ import ppt2 from "./Documents/day6/Day-7 video-2.pptx";
 import Content from "./content";
 import { useNavigate } from "react-router-dom";
 
-const Table6 = ({ clickedLinks, onLinkClick }) => {
+const Table6 = () => {
   const navigate = useNavigate();
 
   const navigatePage = (video, title, file) => {
@@ -53,7 +53,6 @@ const Table6 = ({ clickedLinks, onLinkClick }) => {
                 <a
                   style={{ cursor: "pointer" }}
                   onClick={() => {
-                    onLinkClick('sec3video1'); // Update the clicked link status
                     navigatePage(
                       "https://www.youtube.com/embed/NQaod73usOY?si=yUYvmMt3c6RDFoOZ",
                       "Introduction to Azure",
@@ -70,7 +69,6 @@ const Table6 = ({ clickedLinks, onLinkClick }) => {
                 href=""
                 target="_blank"
                 rel="noreferrer"
-                onClick={() => onLinkClick('sec3code1')}
                 >Click here for Code
                 </a>
               </div>
@@ -80,7 +78,6 @@ const Table6 = ({ clickedLinks, onLinkClick }) => {
                   download="Introduction to Azure"
                   target="_blank"
                   rel="noreferrer"
-                  onClick={() => onLinkClick('sec3ppt1')}
                 >
                   Click here to view PPT
                 </a>
@@ -96,7 +93,6 @@ const Table6 = ({ clickedLinks, onLinkClick }) => {
                 <a
                   style={{ cursor: "pointer" }}
                   onClick={() =>{
-                    onLinkClick('sec3video2');
                     navigatePage(
                       "https://www.youtube.com/embed/m4BML53d8uQ?si=18oKV2WjI5eU1fAG",
                       "Cloud computing with Azure",
@@ -113,7 +109,6 @@ const Table6 = ({ clickedLinks, onLinkClick }) => {
                 href=""
                 target="_blank"
                 rel="noreferrer"
-                onClick={() => onLinkClick('sec3code2')}
                 >Click here for Code
                 </a>
               </div>
@@ -123,7 +118,6 @@ const Table6 = ({ clickedLinks, onLinkClick }) => {
                   download="Cloud computing with Azure"
                   target="_blank"
                   rel="noreferrer"
-                  onClick={() => onLinkClick('sec3ppt2')}
                 >
                   {" "}
                   Click here to view PPT
@@ -140,7 +134,6 @@ const Table6 = ({ clickedLinks, onLinkClick }) => {
                 <a
                   style={{ cursor: "pointer" }}
                   onClick={() =>{
-                    onLinkClick('sec3video3')
                     navigatePage(
                       "https://www.youtube.com/embed/euIqZRer6Rg?si=4xm9MlcyLhweRAVt",
                       "Azure AI Services - Introduction",
@@ -157,7 +150,6 @@ const Table6 = ({ clickedLinks, onLinkClick }) => {
                 href=""
                 target="_blank"
                 rel="noreferrer"
-                onClick={() => onLinkClick('sec3code3')}
                 >Click here for Code
                 </a>
               </div>
@@ -167,7 +159,6 @@ const Table6 = ({ clickedLinks, onLinkClick }) => {
                   download="Azure AI Services - Introduction"
                   target="_blank"
                   rel="noreferrer"
-                  onClick={() => onLinkClick('sec3ppt3')}
                 >
                   {" "}
                   Click here to view PPT
@@ -183,7 +174,6 @@ const Table6 = ({ clickedLinks, onLinkClick }) => {
                 <a
                   style={{ cursor: "pointer" }}
                   onClick={() =>{
-                    onLinkClick('sec3video4')
                     navigatePage(
                       "https://www.youtube.com/embed/6OamefPgIGY?si=9czOPtcguCiHDTVr",
                       "Introduction to Computer Vision",
@@ -199,7 +189,6 @@ const Table6 = ({ clickedLinks, onLinkClick }) => {
                 href=""
                 target="_blank"
                 rel="noreferrer"
-                onClick={() => onLinkClick('sec3code4')}
                 >Click here for Code</a>
               </div>
               <div class="table-data">
@@ -208,7 +197,6 @@ const Table6 = ({ clickedLinks, onLinkClick }) => {
                   download="Introduction to Computer Vision"
                   target="_blank"
                   rel="noreferrer"
-                  onClick={() => onLinkClick('sec3ppt4')}
                 >
                   {" "}
                   Click here to view PPT

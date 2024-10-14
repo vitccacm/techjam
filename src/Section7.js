@@ -5,7 +5,7 @@ import ppt2 from "./Documents/day9/Machine Learning Day 4.pptx";
 
 import { useNavigate } from "react-router-dom";
 
-const Table10 = ({ clickedLinks, onLinkClick }) => {
+const Table10 = () => {
   const navigate = useNavigate();
 
   const navigatePage = (video, title, file) => {
@@ -51,7 +51,6 @@ const Table10 = ({ clickedLinks, onLinkClick }) => {
                 <a
                   style={{ cursor: "pointer" }}
                   onClick={() =>{
-					onLinkClick('sec4video1')
                     navigatePage(
                       "https://www.youtube.com/embed/FfUYXbmMwfA?si=26ILBjy3roQSL30f",
                       "Introduction",
@@ -68,7 +67,6 @@ const Table10 = ({ clickedLinks, onLinkClick }) => {
                 href=""
                 target="_blank"
                 rel="noreferrer"
-                onClick={() => onLinkClick('sec7code1')}
                 >Click here for Code
                 </a>
               </div>
@@ -78,7 +76,6 @@ const Table10 = ({ clickedLinks, onLinkClick }) => {
                   download="MSFI AI Chatbot"
                   target="_blank"
                   rel="noreferrer"
-				  onClick={() => onLinkClick('sec7ppt1')}
                 >
                   Click here to view PPT
                 </a>
@@ -94,7 +91,6 @@ const Table10 = ({ clickedLinks, onLinkClick }) => {
                 <a
                   style={{ cursor: "pointer" }}
                   onClick={() =>{
-					onLinkClick('sec4video1')
                     navigatePage(
                       "https://www.youtube.com/embed/_JSuj5Q-NOE?si=nCAKWmhdIU4wiXfK",
                       "Linux File Permissions",
@@ -111,7 +107,6 @@ const Table10 = ({ clickedLinks, onLinkClick }) => {
                 href=""
                 target="_blank"
                 rel="noreferrer"
-                onClick={() => onLinkClick('sec7code2')}
                 >Click here for Code
                 </a>
               </div>
@@ -121,7 +116,6 @@ const Table10 = ({ clickedLinks, onLinkClick }) => {
                   download="MSFI AI Chatbot"
                   target="_blank"
                   rel="noreferrer"
-				  onClick={() => onLinkClick('sec7ppt2')}
                 >
                   Click here to view PPT
                 </a>

@@ -5,7 +5,7 @@ import ppt2 from "./Documents/day7/Machine Learning Day 2.pptx";
 
 import { useNavigate } from "react-router-dom";
 
-const Table8 = ({ clickedLinks, onLinkClick }) => {
+const Table8 = () => {
   const navigate = useNavigate();
 
   const navigatePage = (video, title, file) => {
@@ -53,7 +53,6 @@ const Table8 = ({ clickedLinks, onLinkClick }) => {
                 <a
                   style={{ cursor: "pointer" }}
                   onClick={() =>{
-					onLinkClick('sec5video1')
                     navigatePage(
                       "https://www.youtube.com/embed/4eyKRGi5Sdg?si=mnSQzXadHK_-QvCO",
                       "Introduction to Notebooks, Numpy, Torch",
@@ -69,17 +68,15 @@ const Table8 = ({ clickedLinks, onLinkClick }) => {
                 <a
                   href="https://github.com/ACMVITCC/techjam2023/tree/main/Day-8"
                   target="_blank"
-				  onClick={() => onLinkClick('sec5code1')}
                 >
                   Click for Code
                 </a>
               </div>
               <div class="table-data">
                 <a href={ppt1} 
-				download="ML 1" 
-				target="_blank" 
-				rel="noreferrer"
-				onClick={() => onLinkClick('sec5ppt1')}>
+				          download="ML 1" 
+				          target="_blank" 
+				          rel="noreferrer">
                   Click here to view PPT
                 </a>
               </div>
@@ -94,7 +91,6 @@ const Table8 = ({ clickedLinks, onLinkClick }) => {
                 <a
                   style={{ cursor: "pointer" }}
                   onClick={() =>{
-					onLinkClick('sec5video2')
                     navigatePage(
                       "https://www.youtube.com/embed/DX5OMLRepK0?si=D5nNedTr7ABjkSAd",
                       "Pytorch and Tensor Operations",
@@ -110,7 +106,6 @@ const Table8 = ({ clickedLinks, onLinkClick }) => {
                 <a
                   href="https://github.com/ACMVITCC/techjam2023/tree/main/Day-8"
                   target="_blank"
-				  onClick={() => onLinkClick('sec5code2')}
                 >
                   Click for Code
                 </a>
@@ -119,8 +114,7 @@ const Table8 = ({ clickedLinks, onLinkClick }) => {
                 <a href={ppt2} 
 				download="ML 2" 
 				target="_blank" 
-				rel="noreferrer"
-				onClick={() => onLinkClick('sec5ppt2')}>
+				rel="noreferrer">
                   Click here to view PPT
                 </a>
               </div>

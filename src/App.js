@@ -6,7 +6,7 @@ import Dashboard from './Dashboard';
 import Content from './content';
 import YoutubePage from './youtubepage';
 import { useRef } from 'react';
-import { QueryClient, QueryClientProvider } from 'react-query';
+import { QueryClient, QueryClientProvider } from 'react';
 
 const queryClient = new QueryClient();
 function App() {

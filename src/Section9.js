@@ -11,7 +11,7 @@ import ppt8 from "./Documents/c/structure_Draft1.pptx";
 
 import { useNavigate } from "react-router-dom";
 
-const Table11 = ({ clickedLinks, onLinkClick }) => {
+const Table11 = () => {
   const navigate = useNavigate();
 
   const navigatePage = (video, title, file) => {
@@ -55,7 +55,6 @@ const Table11 = ({ clickedLinks, onLinkClick }) => {
             <div class="table-data"><a
                   style={{ cursor: "pointer" }}
                   onClick={() =>{
-					onLinkClick('sec9video1')
                     navigatePage(
                       "https://www.youtube.com/embed/o95koZnf1nw?si=0PvfTXn_KFiTdzX_",
                       "SQL Injectonion",
@@ -71,7 +70,6 @@ const Table11 = ({ clickedLinks, onLinkClick }) => {
                 href=""
                 target="_blank"
                 rel="noreferrer"
-                onClick={() => onLinkClick('sec9code1')}
                 >Click here for Code
                 </a>
               </div>
@@ -79,8 +77,7 @@ const Table11 = ({ clickedLinks, onLinkClick }) => {
               <a href={ppt4} 
 			  download="ppt4" 
 			  target="_blank" 
-			  rel="noreferrer" 
-			  onClick={() => onLinkClick('sec9ppt1')}>
+			  rel="noreferrer" >
                 {" "}
                 Click here to view PPT
               </a>
@@ -96,7 +93,6 @@ const Table11 = ({ clickedLinks, onLinkClick }) => {
               <div class="table-data"><a
                   style={{ cursor: "pointer" }}
                   onClick={() =>{
-					onLinkClick('sec9video2')
                     navigatePage(
                       "https://www.youtube.com/embed/o95koZnf1nw?si=0PvfTXn_KFiTdzX_",
                       "SQL Injectonion",
@@ -112,12 +108,11 @@ const Table11 = ({ clickedLinks, onLinkClick }) => {
                 href=""
                 target="_blank"
                 rel="noreferrer"
-                onClick={() => onLinkClick('sec9code2')}
                 >Click here for Code
                 </a>
               </div>
               <div class="table-data">
-                <a href={ppt1} download="ppt1" target="_blank" rel="noreferrer" onClick={() => onLinkClick("sec9ppt2")}>
+                <a href={ppt1} download="ppt1" target="_blank" rel="noreferrer" >
                   {" "}
                   Click here to view PPT
                 </a>
@@ -132,7 +127,6 @@ const Table11 = ({ clickedLinks, onLinkClick }) => {
               <div class="table-data"><a
                   style={{ cursor: "pointer" }}
                   onClick={() =>{
-					onLinkClick('sec9video3')
                     navigatePage(
                       "https://www.youtube.com/embed/o95koZnf1nw?si=0PvfTXn_KFiTdzX_",
                       "SQL Injectonion",
@@ -148,12 +142,11 @@ const Table11 = ({ clickedLinks, onLinkClick }) => {
                 href=""
                 target="_blank"
                 rel="noreferrer"
-                onClick={() => onLinkClick('sec9code3')}
                 >Click here for Code
                 </a>
               </div>
               <div class="table-data">
-                <a href={ppt2} download="ppt2" target="_blank" rel="noreferrer" onClick={() => onLinkClick("sec9ppt3")}>
+                <a href={ppt2} download="ppt2" target="_blank" rel="noreferrer" >
                   {" "}
                   Click here to view PPT
                 </a>
@@ -168,7 +161,6 @@ const Table11 = ({ clickedLinks, onLinkClick }) => {
               <div class="table-data"><a
                   style={{ cursor: "pointer" }}
                   onClick={() =>{
-					onLinkClick('sec9video4')
                     navigatePage(
                       "https://www.youtube.com/embed/o95koZnf1nw?si=0PvfTXn_KFiTdzX_",
                       "SQL Injectonion",
@@ -184,12 +176,11 @@ const Table11 = ({ clickedLinks, onLinkClick }) => {
                 href=""
                 target="_blank"
                 rel="noreferrer"
-                onClick={() => onLinkClick('sec9code4')}
                 >Click here for Code
                 </a>
               </div>
               <div class="table-data">
-                <a href={ppt3} download="ppt3" target="_blank" rel="noreferrer" onClick={() => onLinkClick("sec9ppt4")}>
+                <a href={ppt3} download="ppt3" target="_blank" rel="noreferrer" >
                   {" "}
                   Click here to view PPT
                 </a>
@@ -204,7 +195,6 @@ const Table11 = ({ clickedLinks, onLinkClick }) => {
               <div class="table-data"><a
                   style={{ cursor: "pointer" }}
                   onClick={() =>{
-					onLinkClick('sec9video5')
                     navigatePage(
                       "https://www.youtube.com/embed/o95koZnf1nw?si=0PvfTXn_KFiTdzX_",
                       "SQL Injectonion",
@@ -220,12 +210,11 @@ const Table11 = ({ clickedLinks, onLinkClick }) => {
                 href=""
                 target="_blank"
                 rel="noreferrer"
-                onClick={() => onLinkClick('sec9code5')}
                 >Click here for Code
                 </a>
               </div>
               <div class="table-data">
-                <a href={ppt5} download="ppt5" target="_blank" rel="noreferrer" onClick={() => onLinkClick("sec9ppt5")}>
+                <a href={ppt5} download="ppt5" target="_blank" rel="noreferrer">
                   {" "}
                   Click here to view PPT
                 </a>
@@ -241,7 +230,6 @@ const Table11 = ({ clickedLinks, onLinkClick }) => {
               <div class="table-data"><a
                   style={{ cursor: "pointer" }}
                   onClick={() =>{
-					onLinkClick('sec9video6')
                     navigatePage(
                       "https://www.youtube.com/embed/o95koZnf1nw?si=0PvfTXn_KFiTdzX_",
                       "SQL Injectonion",
@@ -257,12 +245,11 @@ const Table11 = ({ clickedLinks, onLinkClick }) => {
                 href=""
                 target="_blank"
                 rel="noreferrer"
-                onClick={() => onLinkClick('sec9code6')}
                 >Click here for Code
                 </a>
               </div>
               <div class="table-data">
-                <a href={ppt6} download="ppt6" target="_blank" rel="noreferrer" onClick={() => onLinkClick("sec9ppt6")}>
+                <a href={ppt6} download="ppt6" target="_blank" rel="noreferrer" >
                   {" "}
                   Click here to view PPT
                 </a>
@@ -276,7 +263,6 @@ const Table11 = ({ clickedLinks, onLinkClick }) => {
               <div class="table-data"><a
                   style={{ cursor: "pointer" }}
                   onClick={() =>{
-					onLinkClick('sec9video7')
                     navigatePage(
                       "https://www.youtube.com/embed/o95koZnf1nw?si=0PvfTXn_KFiTdzX_",
                       "SQL Injectonion",
@@ -292,12 +278,11 @@ const Table11 = ({ clickedLinks, onLinkClick }) => {
                 href=""
                 target="_blank"
                 rel="noreferrer"
-                onClick={() => onLinkClick('sec9code7')}
                 >Click here for Code
                 </a>
               </div>
               <div class="table-data">
-                <a href={ppt7} download="ppt7" target="_blank" rel="noreferrer" onClick={() => onLinkClick("sec9ppt7")}>
+                <a href={ppt7} download="ppt7" target="_blank" rel="noreferrer" >
                   {" "}
                   Click here to view PPT
                 </a>
@@ -311,7 +296,6 @@ const Table11 = ({ clickedLinks, onLinkClick }) => {
               <div class="table-data"><a
                   style={{ cursor: "pointer" }}
                   onClick={() =>{
-					onLinkClick('sec9video8')
                     navigatePage(
                       "https://www.youtube.com/embed/o95koZnf1nw?si=0PvfTXn_KFiTdzX_",
                       "SQL Injectonion",
@@ -327,12 +311,11 @@ const Table11 = ({ clickedLinks, onLinkClick }) => {
                 href=""
                 target="_blank"
                 rel="noreferrer"
-                onClick={() => onLinkClick('sec9code8')}
                 >Click here for Code
                 </a>
               </div>
               <div class="table-data">
-                <a href={ppt8} download="ppt8" target="_blank" rel="noreferrer" onClick={() => onLinkClick("sec9ppt8")}>
+                <a href={ppt8} download="ppt8" target="_blank" rel="noreferrer" >
                   {" "}
                   Click here to view PPT
                 </a>
