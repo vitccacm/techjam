@@ -1,0 +1,16 @@
+.h2 {
+  text-align: center;
+  color: #f0f0f0;
+  margin: 20px 0px;
+}
+  
+.leader{
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: #1c1c1c;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  overflow: hidden;
+}
+  

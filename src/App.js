@@ -6,6 +6,7 @@ import Dashboard from "./Dashboard";
 import Content from "./content";
 import YoutubePage from "./youtubepage";
 import { useRef } from "react";
+import Leaderboard from "./leaderboard";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 const queryClient = new QueryClient();
@@ -20,6 +21,7 @@ function App() {
           <Route path="/dashboard" element={<Dashboard />} />{" "}
           {/* Dashboard now has access to QueryClient */}
           <Route path="/signin" element={<Signin />} />
+          <Route path="/leaderboard" element={<Leaderboard />} />
           <Route path="/content" element={<Content />} />
           <Route path="/youtube" element={<YoutubePage />} />
         </Routes>

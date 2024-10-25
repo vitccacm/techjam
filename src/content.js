@@ -69,8 +69,15 @@ const Content = () => {
           </div>
           <div className={`nav-elements ${showNavbar && 'active'}`}>
             <ul>
+            <li>
+                <Link to="/leaderboard" style={{ color: 'white', textDecoration: 'none' }}>
+                Leaderboard
+                </Link>
+              </li>
               <li>
-                <Link to="/dashboard" style={{ color: 'white', textDecoration: 'none' }}>Dashboard</Link>
+                <Link to="/dashboard" style={{ color: 'white', textDecoration: 'none' }}>
+                Dashboard
+                </Link>
               </li>
               <li onClick={() => scroll(java)} style={{ cursor: 'pointer' }}>
                 Java
@@ -97,19 +104,6 @@ const Content = () => {
       </div>
 
 
-      <div style={{ width: '100%', backgroundColor: '#f3f3f3', borderRadius: '8px', marginBottom: '20px' }}>
-        <div
-          style={{
-            width: `${percentageCompleted}%`,
-            height: '24px',
-            backgroundColor: '#4caf50',
-            borderRadius: '8px',
-            transition: 'width 0.3s ease-in-out',
-          }}
-        ></div>
-      </div>
-      <p>{percentageCompleted}% completed</p>
-
       <div>
         <div style={{ color: 'white', marginLeft: '52px', fontSize: '22px', marginTop: '35px' }} ref={java}>Java</div>
         <div className='module'>
@@ -129,7 +123,7 @@ const Content = () => {
         <div>
           {visible && (
             <Paper className='table' sx={{ backgroundColor: 'black' }}>
-              <Section1 clickedLinks={clickedLinks1} onLinkClick={(link) => handleLinkClick(link, 1)} />
+              <Section1/>
             </Paper>
           )}
         </div>
@@ -152,7 +146,7 @@ const Content = () => {
         <div>
           {visible2 && (
             <Paper className='table' sx={{ backgroundColor: 'black' }}>
-              <Section2 clickedLinks={clickedLinks2} onLinkClick={(link) => handleLinkClick(link, 2)} />
+              <Section2/>
             </Paper>
           )}
         </div>
@@ -177,7 +171,7 @@ const Content = () => {
         <div>
           {visible6 && (
             <Paper className='table' sx={{ backgroundColor: 'black' }}>
-              <Section3 clickedLinks={clickedLinks3} onLinkClick={(link) => handleLinkClick(link, 3)} />
+              <Section3/>
             </Paper>
           )}
         </div>
@@ -202,7 +196,7 @@ const Content = () => {
       <div>
         {visible7 && (
           <Paper className='table' sx={{ backgroundColor: 'black' }}>
-            <Section4 clickedLinks={clickedLinks4} onLinkClick={(link) => handleLinkClick(link, 4)} />
+            <Section4/>
           </Paper>
         )}
       </div>
@@ -228,7 +222,7 @@ const Content = () => {
       <div>
         {visible8 && (
           <Paper className='table' sx={{ backgroundColor: 'black' }}>
-            <Section5 clickedLinks={clickedLinks5} onLinkClick={(link) => handleLinkClick(link, 5)} />
+            <Section5/>
           </Paper>
         )}
       </div>
@@ -251,7 +245,7 @@ const Content = () => {
       <div>
         {visible9 && (
           <Paper className='table' sx={{ backgroundColor: 'black' }}>
-            <Section6 clickedLinks={clickedLinks6} onLinkClick={(link) => handleLinkClick(link, 6)} />
+            <Section6/>
           </Paper>
         )}
       </div>
@@ -274,7 +268,7 @@ const Content = () => {
       <div>
         {visible10 && (
           <Paper className='table' sx={{ backgroundColor: 'black' }}>
-            <Section7 clickedLinks={clickedLinks7} onLinkClick={(link) => handleLinkClick(link, 7)} />
+            <Section7/>
           </Paper>
         )}
       </div>
@@ -296,7 +290,7 @@ const Content = () => {
       <div>
         {visible11 && (
           <Paper className='table' sx={{ backgroundColor: 'black' }}>
-            <Section8 clickedLinks={clickedLinks8} onLinkClick={(link) => handleLinkClick(link, 8)} />
+            <Section8/>
           </Paper>
         )}
       </div>
@@ -316,10 +310,10 @@ const Content = () => {
         </div>
       </div>
 
-      <div>
+      <div style={{ marginBottom:"40px"}}>
         {visible12 && (
           <Paper className='table' sx={{ backgroundColor: 'black' }}>
-            <Section9 clickedLinks={clickedLinks9} onLinkClick={(link) => handleLinkClick(link, 9)} />
+            <Section9/>
           </Paper>
         )}
       </div>
