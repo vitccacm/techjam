@@ -21,6 +21,7 @@ import logo from './techjamlogo.png'
 // Files table, table3, table4, table5  contain some resources for Competetive Programming
 
 const Content = () => {
+  
   const [visible, setvisible] = useState(true);
   const [visible2, setvisible2] = useState(true);
   const [visible3, setvisible3] = useState(true);
