@@ -30,11 +30,11 @@ const Table6 = () => {
                 Video
               </a>
             </div>
-            <div class="header__item">
+            {/* <div class="header__item">
               <a id="draws" class="filter__link filter__link--number">
                 Code
               </a>
-            </div>
+            </div> */}
             <div class="header__item">
               <a id="losses" class="filter__link filter__link--number">
                 PPT
@@ -64,14 +64,14 @@ const Table6 = () => {
                   Click here for Video
                 </a>
               </div>
-              <div class="table-data">
+              {/* <div class="table-data">
                 <a
                 href=""
                 target="_blank"
                 rel="noreferrer"
                 >Click here for Code
                 </a>
-              </div>
+              </div> */}
               <div class="table-data">
                 <a
                   href={ppt1}
@@ -92,7 +92,7 @@ const Table6 = () => {
               <div class="table-data">
                 <a
                   style={{ cursor: "pointer" }}
-                  onClick={() =>{
+                  onClick={() => {
                     navigatePage(
                       "https://www.youtube.com/embed/m4BML53d8uQ?si=18oKV2WjI5eU1fAG",
                       "Cloud computing with Azure",
@@ -104,14 +104,14 @@ const Table6 = () => {
                   Click here for Video
                 </a>
               </div>
-              <div class="table-data">
+              {/* <div class="table-data">
               <a
                 href=""
                 target="_blank"
                 rel="noreferrer"
                 >Click here for Code
                 </a>
-              </div>
+              </div> */}
               <div class="table-data">
                 <a
                   href={ppt2}
@@ -133,7 +133,7 @@ const Table6 = () => {
               <div class="table-data">
                 <a
                   style={{ cursor: "pointer" }}
-                  onClick={() =>{
+                  onClick={() => {
                     navigatePage(
                       "https://www.youtube.com/embed/euIqZRer6Rg?si=4xm9MlcyLhweRAVt",
                       "Azure AI Services - Introduction",
@@ -145,14 +145,14 @@ const Table6 = () => {
                   Click here for Video
                 </a>
               </div>
-              <div class="table-data">
+              {/* <div class="table-data">
               <a
                 href=""
                 target="_blank"
                 rel="noreferrer"
                 >Click here for Code
                 </a>
-              </div>
+              </div> */}
               <div class="table-data">
                 <a
                   href={ppt3}
@@ -173,7 +173,7 @@ const Table6 = () => {
               <div class="table-data">
                 <a
                   style={{ cursor: "pointer" }}
-                  onClick={() =>{
+                  onClick={() => {
                     navigatePage(
                       "https://www.youtube.com/embed/6OamefPgIGY?si=9czOPtcguCiHDTVr",
                       "Introduction to Computer Vision",
@@ -184,13 +184,13 @@ const Table6 = () => {
                   Click here for Video
                 </a>
               </div>
-              <div class="table-data">
+              {/* <div class="table-data">
               <a
                 href=""
                 target="_blank"
                 rel="noreferrer"
                 >Click here for Code</a>
-              </div>
+              </div> */}
               <div class="table-data">
                 <a
                   href={ppt4}

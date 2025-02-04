@@ -28,11 +28,11 @@ const Table11 = () => {
                 Video
               </a>
             </div>
-            <div class="header__item">
+            {/* <div class="header__item">
               <a id="draws" class="filter__link filter__link--number">
                 Code
               </a>
-            </div>
+            </div> */}
             <div class="header__item">
               <a id="losses" class="filter__link filter__link--number">
                 PPT
@@ -50,28 +50,28 @@ const Table11 = () => {
               <div class="table-data">
                 <a
                   style={{ cursor: "pointer" }}
-                  onClick={() =>{
+                  onClick={() => {
                     navigatePage(
                       "https://www.youtube.com/embed/o95koZnf1nw?si=0PvfTXn_KFiTdzX_",
                       "SQL Injectonion",
                       "Day2"
-                    )
+                    );
                   }}
                   target="_blank"
                 >
                   Click here for Video
                 </a>
               </div>
-              <div class="table-data">
+              {/* <div class="table-data">
 			  <a
                 href=""
                 target="_blank"
                 rel="noreferrer"
                 >Click here for Code
                 </a>
-              </div>
+              </div> */}
               <div class="table-data">
-			  <a
+                <a
                   href={ppt1}
                   download="MSFI AI Chatbot"
                   target="_blank"
@@ -90,28 +90,28 @@ const Table11 = () => {
               <div class="table-data">
                 <a
                   style={{ cursor: "pointer" }}
-                  onClick={() =>{
+                  onClick={() => {
                     navigatePage(
                       "https://www.youtube.com/embed/enoZvwxoIjI?si=9A_Po3rcmO2gcISU",
                       "Privelege escalation",
                       "sample"
-                    )
+                    );
                   }}
                   target="_blank"
                 >
                   Click here for Video
                 </a>
               </div>
-              <div class="table-data">
+              {/* <div class="table-data">
 			  <a
                 href=""
                 target="_blank"
                 rel="noreferrer"
                 >Click here for Code
                 </a>
-              </div>
+              </div> */}
               <div class="table-data">
-			  <a
+                <a
                   href={ppt1}
                   download="MSFI AI Chatbot"
                   target="_blank"

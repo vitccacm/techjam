@@ -28,11 +28,11 @@ const Table9 = () => {
                 Video
               </a>
             </div>
-            <div class="header__item">
+            {/* <div class="header__item">
               <a id="draws" class="filter__link filter__link--number">
                 Code
               </a>
-            </div>
+            </div> */}
             <div class="header__item">
               <a id="losses" class="filter__link filter__link--number">
                 PPT
@@ -50,32 +50,28 @@ const Table9 = () => {
               <div class="table-data">
                 <a
                   style={{ cursor: "pointer" }}
-                  onClick={() =>{
+                  onClick={() => {
                     navigatePage(
                       "https://www.youtube.com/embed/0SpGg0SdinA?si=8BaEIoLk8MqOZ9cG",
                       "Training a neural network",
                       "sample"
-                    )
+                    );
                   }}
                   target="_blank"
                 >
                   Click here for Video
                 </a>
               </div>
-              <div class="table-data">
+              {/* <div class="table-data">
                 <a
                   href="https://github.com/ACMVITCC/techjam2023/tree/main/Day-9"
                   target="_blank"
                 >
                   Click for Code
                 </a>
-              </div>
+              </div> */}
               <div class="table-data">
-                <a href={ppt1} 
-				download="ML 3" 
-				target="_blank" 
-				rel="noreferrer"
-				>
+                <a href={ppt1} download="ML 3" target="_blank" rel="noreferrer">
                   Click here to view PPT
                 </a>
               </div>
@@ -89,32 +85,28 @@ const Table9 = () => {
               <div class="table-data">
                 <a
                   style={{ cursor: "pointer" }}
-                  onClick={() =>{
+                  onClick={() => {
                     navigatePage(
                       "https://www.youtube.com/embed/ROKVX02A4Lc?si=s4BqKx0UZe2Vr2n7",
                       "More layer types and optimizing a network for a task",
                       "sample"
-                    )
+                    );
                   }}
                   target="_blank"
                 >
                   Click here for Video
                 </a>
               </div>
-              <div class="table-data">
+              {/* <div class="table-data">
                 <a
                   href="https://github.com/ACMVITCC/techjam2023/tree/main/Day-9"
                   target="_blank"
                 >
                   Click for Code
                 </a>
-              </div>
+              </div> */}
               <div class="table-data">
-                <a href={ppt2} 
-				download="ML 4" 
-				target="_blank" 
-				rel="noreferrer"
-				>
+                <a href={ppt2} download="ML 4" target="_blank" rel="noreferrer">
                   Click here to view PPT
                 </a>
               </div>

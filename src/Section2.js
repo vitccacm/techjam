@@ -4,8 +4,16 @@ import Arrays from "./Documents/day1/Arrays.pptx";
 import Function from "./Documents/day1/Functions.pptx";
 import Inheritance from "./Documents/day1/Inheritance.pptx";
 import Strings from "./Documents/day1/Strings.pptx";
+import { useNavigate } from "react-router-dom";
 
 const Table2 = () => {
+  const navigate = useNavigate();
+  
+    const navigatePage = (video, title, file) => {
+      console.log("n", file);
+  
+      navigate("/youtube", { state: { video, title, file } });
+    };
   const properties = ["name", "wins", "draws", "losses", "total"];
 
   const [orderClass, setOrderClass] = useState("");
@@ -66,11 +74,11 @@ const Table2 = () => {
                 Video
               </a>
             </div>
-            <div class="header__item">
+            {/* <div class="header__item">
               <a id="draws" class="filter__link filter__link--number" href="#">
                 Code
               </a>
-            </div>
+            </div> */}
             <div class="header__item">
               <a id="losses" class="filter__link filter__link--number" href="#">
                 PPT
@@ -86,21 +94,28 @@ const Table2 = () => {
             <div class="table-row">
               <div class="table-data">Array</div>
               <div class="table-data">
-                <a
-                  href="https://www.youtube.com/watch?v=8XrTgXNrjkg"
+              <a
+                  style={{ cursor: "pointer" }}
+                  onClick={() => {
+                    navigatePage(
+                      "https://www.youtube.com/embed/8XrTgXNrjkg",
+                      "Array",
+                      "sample"
+                    );
+                  }}
                   target="_blank"
                 >
                   Click here for Video
                 </a>
               </div>
-              <div class="table-data">
+              {/* <div class="table-data">
                 <a
                   href="https://github.com/ACMVITCC/techjam2023/tree/main/Day-2"
                   target="_blank"
                 >
                   Click here for Code
                 </a>
-              </div>
+              </div> */}
               <div class="table-data">
                 <a
                   href={Arrays}
@@ -117,21 +132,28 @@ const Table2 = () => {
             <div class="table-row">
               <div class="table-data">String Manipulation</div>
               <div class="table-data">
-                <a
-                  href="https://www.youtube.com/watch?v=38MWDM1TgwM"
+              <a
+                  style={{ cursor: "pointer" }}
+                  onClick={() => {
+                    navigatePage(
+                      "https://www.youtube.com/embed/38MWDM1TgwM",
+                      "Strings",
+                      "sample"
+                    );
+                  }}
                   target="_blank"
                 >
                   Click here for Video
                 </a>
               </div>
-              <div class="table-data">
+              {/* <div class="table-data">
                 <a
                   href="https://github.com/ACMVITCC/techjam2023/tree/main/Day-2"
                   target="_blank"
                 >
                   Click here for Code
                 </a>
-              </div>
+              </div> */}
               <div class="table-data">
                 <a
                   href={Strings}
@@ -148,21 +170,28 @@ const Table2 = () => {
             <div class="table-row">
               <div class="table-data">Functions</div>
               <div class="table-data">
-                <a
-                  href="https://www.youtube.com/watch?v=5KslaodVm_c"
+              <a
+                  style={{ cursor: "pointer" }}
+                  onClick={() => {
+                    navigatePage(
+                      "https://www.youtube.com/embed/5KslaodVm_c",
+                      "Functions",
+                      "sample"
+                    );
+                  }}
                   target="_blank"
                 >
                   Click here for Video
                 </a>
               </div>
-              <div class="table-data">
+              {/* <div class="table-data">
                 <a
                   href="https://github.com/ACMVITCC/techjam2023/tree/main/Day-2"
                   target="_blank"
                 >
                   Click here for Code
                 </a>
-              </div>
+              </div> */}
               <div class="table-data">
                 <a
                   href={Function}
@@ -180,21 +209,28 @@ const Table2 = () => {
             <div class="table-row">
               <div class="table-data">Inheritance</div>
               <div class="table-data">
-                <a
-                  href="https://www.youtube.com/watch?v=2rF0Two5Cfs"
+              <a
+                  style={{ cursor: "pointer" }}
+                  onClick={() => {
+                    navigatePage(
+                      "https://www.youtube.com/embed/2rF0Two5Cfs",
+                      "Inheritance",
+                      "sample"
+                    );
+                  }}
                   target="_blank"
                 >
                   Click here for Video
-                </a>
+                </a>  
               </div>
-              <div class="table-data">
+              {/* <div class="table-data">
                 <a
                   href="https://github.com/ACMVITCC/techjam2023/tree/main/Day-2"
                   target="_blank"
                 >
                   Click here for Code
                 </a>
-              </div>
+              </div> */}
               <div class="table-data">
                 <a
                   href={Inheritance}

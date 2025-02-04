@@ -3,14 +3,21 @@ import "./table.css";
 import part1 from "./Documents/javaday1/part1.ppt";
 import part2 from "./Documents/javaday1/part2.ppt";
 import part3 from "./Documents/javaday1/part3.ppt";
-
+import { useNavigate } from "react-router-dom";
 const TableNew = () => {
+  const navigate = useNavigate();
+
+  const navigatePage = (video, title, file) => {
+    console.log("n", file);
+
+    navigate("/youtube", { state: { video, title, file } });
+  };
   return (
     <div style={{ backgroundColor: "#171717" }}>
       <div class="containertable">
         <div class="tablesc">
           <div class="table-header">
-          <div class="header__item">
+            <div class="header__item">
               <a id="name" class="filter__link" href="#">
                 Topic Name
               </a>
@@ -20,11 +27,11 @@ const TableNew = () => {
                 Video
               </a>
             </div>
-            <div class="header__item">
+            {/* <div class="header__item">
               <a id="draws" class="filter__link filter__link--number" href="#">
                 Code
               </a>
-            </div>
+            </div> */}
             <div class="header__item">
               <a id="losses" class="filter__link filter__link--number" href="#">
                 PPT
@@ -41,20 +48,27 @@ const TableNew = () => {
               <div class="table-data">Basic of Java</div>
               <div class="table-data">
                 <a
-                  href="https://youtu.be/rCZWduD_kIk"
+                  style={{ cursor: "pointer" }}
+                  onClick={() => {
+                    navigatePage(
+                      "https://www.youtube.com/embed/rCZWduD_kIk",
+                      "Basic of Java",
+                      "sample"
+                    );
+                  }}
                   target="_blank"
                 >
                   Click here for Video
                 </a>
               </div>
-              <div class="table-data">
+              {/* <div class="table-data">
                 <a
                   href="https://github.com/ACMVITCC/techjam2023/tree/main/Day1"
                   target="_blank"
                 >
                   Click here for Code
                 </a>
-              </div>
+              </div> */}
               <div class="table-data">
                 <a
                   href={part1}
@@ -72,20 +86,27 @@ const TableNew = () => {
               <div class="table-data">Operators</div>
               <div class="table-data">
                 <a
-                  href="https://www.youtube.com/watch?app=desktop&v=b5CEyhyralY&feature=youtu.be"
+                  style={{ cursor: "pointer" }}
+                  onClick={() => {
+                    navigatePage(
+                      "https://www.youtube.com/embed/b5CEyhyralY",
+                      "Operators",
+                      "sample"
+                    );
+                  }}
                   target="_blank"
                 >
                   Click here for Video
                 </a>
               </div>
-              <div class="table-data">
+              {/* <div class="table-data">
                 <a
                   href="https://github.com/ACMVITCC/techjam2023/tree/main/Day1"
                   target="_blank"
                 >
                   Click here for Code
                 </a>
-              </div>
+              </div> */}
               <div class="table-data">
                 <a
                   href={part2}
@@ -103,20 +124,27 @@ const TableNew = () => {
               <div class="table-data">Loop</div>
               <div class="table-data">
                 <a
-                  href="https://www.youtube.com/watch?app=desktop&v=QFLIvtKHq_4&feature=youtu.be"
+                  style={{ cursor: "pointer" }}
+                  onClick={() => {
+                    navigatePage(
+                      "https://www.youtube.com/embed/QFLIvtKHq_4",
+                      "Loop",
+                      "sample"
+                    );
+                  }}
                   target="_blank"
                 >
                   Click here for Video
                 </a>
               </div>
-              <div class="table-data">
+              {/* <div class="table-data">
                 <a
                   href="https://github.com/ACMVITCC/techjam2023/tree/main/Day1"
                   target="_blank"
                 >
                   Click here for Code
                 </a>
-              </div>
+              </div> */}
               <div class="table-data">
                 <a
                   href={part3}
@@ -137,9 +165,8 @@ const TableNew = () => {
           </div>
         </div>
       </div>
-
     </div>
   );
 };
 
-export default TableNew;
+export default TableNew;

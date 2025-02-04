@@ -5,7 +5,7 @@ import ppt1 from "./Documents/day7/Azure AI Chatbots & MSFT Power VA.pptx";
 
 import { useNavigate } from "react-router-dom";
 
-const Table7 =() => {
+const Table7 = () => {
   const navigate = useNavigate();
 
   const navigatePage = (video, title, file) => {
@@ -28,11 +28,11 @@ const Table7 =() => {
                 Video
               </a>
             </div>
-            <div class="header__item">
+            {/*  <div class="header__item">
               <a id="draws" class="filter__link filter__link--number">
                 Code
               </a>
-            </div>
+            </div> */}
             <div class="header__item">
               <a id="losses" class="filter__link filter__link--number">
                 PPT
@@ -50,26 +50,26 @@ const Table7 =() => {
               <div class="table-data">
                 <a
                   style={{ cursor: "pointer" }}
-                  onClick={() =>{
+                  onClick={() => {
                     navigatePage(
                       "https://www.youtube.com/embed/07QZLM9aCaA?si=NtpIA2LQzq1_X-O-",
                       " MSFI AI Chatbot",
                       "sample"
                     );
-				          }}
+                  }}
                   target="_blank"
                 >
                   Click here for Video
                 </a>
               </div>
-              <div class="table-data">
+              {/* <div class="table-data">
 			        <a
                 href=""
                 target="_blank"
                 rel="noreferrer"
                 >Click here for Code
                 </a>
-              </div>
+              </div> */}
               <div class="table-data">
                 <a
                   href={ppt1}
@@ -90,26 +90,26 @@ const Table7 =() => {
               <div class="table-data">
                 <a
                   style={{ cursor: "pointer" }}
-                  onClick={() =>{
+                  onClick={() => {
                     navigatePage(
                       "https://www.youtube.com/embed/kXDKgPaQp_E?si=a3UaiH0_OobA0pJ_",
                       "Open AI",
                       "sample"
-                    )
+                    );
                   }}
                   target="_blank"
                 >
                   Click here for Video
                 </a>
               </div>
-              <div class="table-data">
+              {/* <div class="table-data">
 			  <a
                 href=""
                 target="_blank"
                 rel="noreferrer"
                 >Click here for Code
                 </a>
-              </div>
+              </div> */}
               <div class="table-data">
                 <a
                   href={ppt2}

@@ -28,11 +28,11 @@ const Table8 = () => {
                 Video
               </a>
             </div>
-            <div class="header__item">
+            {/* <div class="header__item">
               <a id="draws" class="filter__link filter__link--number">
                 Code
               </a>
-            </div>
+            </div> */}
             <div class="header__item">
               <a id="losses" class="filter__link filter__link--number">
                 PPT
@@ -52,31 +52,28 @@ const Table8 = () => {
               <div class="table-data">
                 <a
                   style={{ cursor: "pointer" }}
-                  onClick={() =>{
+                  onClick={() => {
                     navigatePage(
                       "https://www.youtube.com/embed/4eyKRGi5Sdg?si=mnSQzXadHK_-QvCO",
                       "Introduction to Notebooks, Numpy, Torch",
                       "sample"
-                    )
+                    );
                   }}
                   target="_blank"
                 >
                   Click here for Video
                 </a>
               </div>
-              <div class="table-data">
+              {/* <div class="table-data">
                 <a
                   href="https://github.com/ACMVITCC/techjam2023/tree/main/Day-8"
                   target="_blank"
                 >
                   Click for Code
                 </a>
-              </div>
+              </div> */}
               <div class="table-data">
-                <a href={ppt1} 
-				          download="ML 1" 
-				          target="_blank" 
-				          rel="noreferrer">
+                <a href={ppt1} download="ML 1" target="_blank" rel="noreferrer">
                   Click here to view PPT
                 </a>
               </div>
@@ -90,31 +87,28 @@ const Table8 = () => {
               <div class="table-data">
                 <a
                   style={{ cursor: "pointer" }}
-                  onClick={() =>{
+                  onClick={() => {
                     navigatePage(
                       "https://www.youtube.com/embed/DX5OMLRepK0?si=D5nNedTr7ABjkSAd",
                       "Pytorch and Tensor Operations",
                       "sample"
-                    )
+                    );
                   }}
                   target="_blank"
                 >
                   Click here for Video
                 </a>
               </div>
-              <div class="table-data">
+              {/* <div class="table-data">
                 <a
                   href="https://github.com/ACMVITCC/techjam2023/tree/main/Day-8"
                   target="_blank"
                 >
                   Click for Code
                 </a>
-              </div>
+              </div> */}
               <div class="table-data">
-                <a href={ppt2} 
-				download="ML 2" 
-				target="_blank" 
-				rel="noreferrer">
+                <a href={ppt2} download="ML 2" target="_blank" rel="noreferrer">
                   Click here to view PPT
                 </a>
               </div>

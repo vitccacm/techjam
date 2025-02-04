@@ -34,11 +34,11 @@ const Table11 = () => {
                 Video
               </a>
             </div>
-            <div class="header__item">
+            {/* <div class="header__item">
               <a id="draws" class="filter__link filter__link--number">
                 Code
               </a>
-            </div>
+            </div> */}
             <div class="header__item">
               <a id="losses" class="filter__link filter__link--number">
                 PPT
@@ -52,32 +52,31 @@ const Table11 = () => {
           </div>
           <div class="table-row">
             <div class="table-data">Introduction</div>
-            <div class="table-data"><a
-                  style={{ cursor: "pointer" }}
-                  onClick={() =>{
-                    navigatePage(
-                      "https://www.youtube.com/embed/o95koZnf1nw?si=0PvfTXn_KFiTdzX_",
-                      "SQL Injectonion",
-                      "Day2"
-                    )
-                  }}
-                  target="_blank"
-                >
-                  Click here for Video
-                </a></div>
-				<div class="table-data">
+            <div class="table-data">
+              <a
+                style={{ cursor: "pointer" }}
+                onClick={() => {
+                  navigatePage(
+                    "https://www.youtube.com/embed/o95koZnf1nw?si=0PvfTXn_KFiTdzX_",
+                    "SQL Injectonion",
+                    "Day2"
+                  );
+                }}
+                target="_blank"
+              >
+                Click here for Video
+              </a>
+            </div>
+            {/* <div class="table-data">
 			  <a
                 href=""
                 target="_blank"
                 rel="noreferrer"
                 >Click here for Code
                 </a>
-              </div>
+              </div> */}
             <div class="table-data">
-              <a href={ppt4} 
-			  download="ppt4" 
-			  target="_blank" 
-			  rel="noreferrer" >
+              <a href={ppt4} download="ppt4" target="_blank" rel="noreferrer">
                 {" "}
                 Click here to view PPT
               </a>
@@ -90,29 +89,31 @@ const Table11 = () => {
           <div class="table-content">
             <div class="table-row">
               <div class="table-data">Arrays</div>
-              <div class="table-data"><a
+              <div class="table-data">
+                <a
                   style={{ cursor: "pointer" }}
-                  onClick={() =>{
+                  onClick={() => {
                     navigatePage(
                       "https://www.youtube.com/embed/o95koZnf1nw?si=0PvfTXn_KFiTdzX_",
                       "SQL Injectonion",
                       "Day2"
-                    )
+                    );
                   }}
                   target="_blank"
                 >
                   Click here for Video
-                </a></div>
-				<div class="table-data">
+                </a>
+              </div>
+              {/* <div class="table-data">
 			  <a
                 href=""
                 target="_blank"
                 rel="noreferrer"
                 >Click here for Code
                 </a>
-              </div>
+              </div> */}
               <div class="table-data">
-                <a href={ppt1} download="ppt1" target="_blank" rel="noreferrer" >
+                <a href={ppt1} download="ppt1" target="_blank" rel="noreferrer">
                   {" "}
                   Click here to view PPT
                 </a>
@@ -124,29 +125,31 @@ const Table11 = () => {
 
             <div class="table-row">
               <div class="table-data">Dynamic Memory Allocation</div>
-              <div class="table-data"><a
+              <div class="table-data">
+                <a
                   style={{ cursor: "pointer" }}
-                  onClick={() =>{
+                  onClick={() => {
                     navigatePage(
                       "https://www.youtube.com/embed/o95koZnf1nw?si=0PvfTXn_KFiTdzX_",
                       "SQL Injectonion",
                       "Day2"
-                    )
+                    );
                   }}
                   target="_blank"
                 >
                   Click here for Video
-                </a></div>
-				<div class="table-data">
+                </a>
+              </div>
+              {/* <div class="table-data">
 			  <a
                 href=""
                 target="_blank"
                 rel="noreferrer"
                 >Click here for Code
                 </a>
-              </div>
+              </div> */}
               <div class="table-data">
-                <a href={ppt2} download="ppt2" target="_blank" rel="noreferrer" >
+                <a href={ppt2} download="ppt2" target="_blank" rel="noreferrer">
                   {" "}
                   Click here to view PPT
                 </a>
@@ -158,29 +161,31 @@ const Table11 = () => {
 
             <div class="table-row">
               <div class="table-data">Functions</div>
-              <div class="table-data"><a
+              <div class="table-data">
+                <a
                   style={{ cursor: "pointer" }}
-                  onClick={() =>{
+                  onClick={() => {
                     navigatePage(
                       "https://www.youtube.com/embed/o95koZnf1nw?si=0PvfTXn_KFiTdzX_",
                       "SQL Injectonion",
                       "Day2"
-                    )
+                    );
                   }}
                   target="_blank"
                 >
                   Click here for Video
-                </a></div>
-				<div class="table-data">
+                </a>
+              </div>
+              {/* <div class="table-data">
 			  <a
                 href=""
                 target="_blank"
                 rel="noreferrer"
                 >Click here for Code
                 </a>
-              </div>
+              </div> */}
               <div class="table-data">
-                <a href={ppt3} download="ppt3" target="_blank" rel="noreferrer" >
+                <a href={ppt3} download="ppt3" target="_blank" rel="noreferrer">
                   {" "}
                   Click here to view PPT
                 </a>
@@ -192,27 +197,29 @@ const Table11 = () => {
 
             <div class="table-row">
               <div class="table-data">Divide and Conquer</div>
-              <div class="table-data"><a
+              <div class="table-data">
+                <a
                   style={{ cursor: "pointer" }}
-                  onClick={() =>{
+                  onClick={() => {
                     navigatePage(
                       "https://www.youtube.com/embed/o95koZnf1nw?si=0PvfTXn_KFiTdzX_",
                       "SQL Injectonion",
                       "Day2"
-                    )
+                    );
                   }}
                   target="_blank"
                 >
                   Click here for Video
-                </a></div>
-				<div class="table-data">
+                </a>
+              </div>
+              {/* <div class="table-data">
 			  <a
                 href=""
                 target="_blank"
                 rel="noreferrer"
                 >Click here for Code
                 </a>
-              </div>
+              </div> */}
               <div class="table-data">
                 <a href={ppt5} download="ppt5" target="_blank" rel="noreferrer">
                   {" "}
@@ -227,29 +234,31 @@ const Table11 = () => {
               <div class="table-data">
                 Logical Statements and Selection Structures
               </div>
-              <div class="table-data"><a
+              <div class="table-data">
+                <a
                   style={{ cursor: "pointer" }}
-                  onClick={() =>{
+                  onClick={() => {
                     navigatePage(
                       "https://www.youtube.com/embed/o95koZnf1nw?si=0PvfTXn_KFiTdzX_",
                       "SQL Injectonion",
                       "Day2"
-                    )
+                    );
                   }}
                   target="_blank"
                 >
                   Click here for Video
-                </a></div>
-				<div class="table-data">
+                </a>
+              </div>
+              {/* <div class="table-data">
 			  <a
                 href=""
                 target="_blank"
                 rel="noreferrer"
                 >Click here for Code
                 </a>
-              </div>
+              </div> */}
               <div class="table-data">
-                <a href={ppt6} download="ppt6" target="_blank" rel="noreferrer" >
+                <a href={ppt6} download="ppt6" target="_blank" rel="noreferrer">
                   {" "}
                   Click here to view PPT
                 </a>
@@ -260,29 +269,31 @@ const Table11 = () => {
             </div>
             <div class="table-row">
               <div class="table-data">Repetition and Loop Statements</div>
-              <div class="table-data"><a
+              <div class="table-data">
+                <a
                   style={{ cursor: "pointer" }}
-                  onClick={() =>{
+                  onClick={() => {
                     navigatePage(
                       "https://www.youtube.com/embed/o95koZnf1nw?si=0PvfTXn_KFiTdzX_",
                       "SQL Injectonion",
                       "Day2"
-                    )
+                    );
                   }}
                   target="_blank"
                 >
                   Click here for Video
-                </a></div>
-				<div class="table-data">
+                </a>
+              </div>
+              {/* <div class="table-data">
 			  <a
                 href=""
                 target="_blank"
                 rel="noreferrer"
                 >Click here for Code
                 </a>
-              </div>
+              </div> */}
               <div class="table-data">
-                <a href={ppt7} download="ppt7" target="_blank" rel="noreferrer" >
+                <a href={ppt7} download="ppt7" target="_blank" rel="noreferrer">
                   {" "}
                   Click here to view PPT
                 </a>
@@ -293,29 +304,31 @@ const Table11 = () => {
             </div>
             <div class="table-row">
               <div class="table-data">Structures and Unions</div>
-              <div class="table-data"><a
+              <div class="table-data">
+                <a
                   style={{ cursor: "pointer" }}
-                  onClick={() =>{
+                  onClick={() => {
                     navigatePage(
                       "https://www.youtube.com/embed/o95koZnf1nw?si=0PvfTXn_KFiTdzX_",
                       "SQL Injectonion",
                       "Day2"
-                    )
+                    );
                   }}
                   target="_blank"
                 >
                   Click here for Video
-                </a></div>
-				<div class="table-data">
+                </a>
+              </div>
+              {/* <div class="table-data">
 			  <a
                 href=""
                 target="_blank"
                 rel="noreferrer"
                 >Click here for Code
                 </a>
-              </div>
+              </div> */}
               <div class="table-data">
-                <a href={ppt8} download="ppt8" target="_blank" rel="noreferrer" >
+                <a href={ppt8} download="ppt8" target="_blank" rel="noreferrer">
                   {" "}
                   Click here to view PPT
                 </a>
