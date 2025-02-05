@@ -74,11 +74,6 @@ const Table2 = () => {
                 Video
               </a>
             </div>
-            {/* <div class="header__item">
-              <a id="draws" class="filter__link filter__link--number" href="#">
-                Code
-              </a>
-            </div> */}
             <div class="header__item">
               <a id="losses" class="filter__link filter__link--number" href="#">
                 PPT
@@ -108,14 +103,6 @@ const Table2 = () => {
                   Click here for Video
                 </a>
               </div>
-              {/* <div class="table-data">
-                <a
-                  href="https://github.com/ACMVITCC/techjam2023/tree/main/Day-2"
-                  target="_blank"
-                >
-                  Click here for Code
-                </a>
-              </div> */}
               <div class="table-data">
                 <a
                   href={Arrays}
@@ -146,14 +133,6 @@ const Table2 = () => {
                   Click here for Video
                 </a>
               </div>
-              {/* <div class="table-data">
-                <a
-                  href="https://github.com/ACMVITCC/techjam2023/tree/main/Day-2"
-                  target="_blank"
-                >
-                  Click here for Code
-                </a>
-              </div> */}
               <div class="table-data">
                 <a
                   href={Strings}
@@ -184,14 +163,6 @@ const Table2 = () => {
                   Click here for Video
                 </a>
               </div>
-              {/* <div class="table-data">
-                <a
-                  href="https://github.com/ACMVITCC/techjam2023/tree/main/Day-2"
-                  target="_blank"
-                >
-                  Click here for Code
-                </a>
-              </div> */}
               <div class="table-data">
                 <a
                   href={Function}
@@ -223,14 +194,6 @@ const Table2 = () => {
                   Click here for Video
                 </a>  
               </div>
-              {/* <div class="table-data">
-                <a
-                  href="https://github.com/ACMVITCC/techjam2023/tree/main/Day-2"
-                  target="_blank"
-                >
-                  Click here for Code
-                </a>
-              </div> */}
               <div class="table-data">
                 <a
                   href={Inheritance}

@@ -27,11 +27,6 @@ const TableNew = () => {
                 Video
               </a>
             </div>
-            {/* <div class="header__item">
-              <a id="draws" class="filter__link filter__link--number" href="#">
-                Code
-              </a>
-            </div> */}
             <div class="header__item">
               <a id="losses" class="filter__link filter__link--number" href="#">
                 PPT
@@ -61,14 +56,6 @@ const TableNew = () => {
                   Click here for Video
                 </a>
               </div>
-              {/* <div class="table-data">
-                <a
-                  href="https://github.com/ACMVITCC/techjam2023/tree/main/Day1"
-                  target="_blank"
-                >
-                  Click here for Code
-                </a>
-              </div> */}
               <div class="table-data">
                 <a
                   href={part1}
@@ -99,14 +86,6 @@ const TableNew = () => {
                   Click here for Video
                 </a>
               </div>
-              {/* <div class="table-data">
-                <a
-                  href="https://github.com/ACMVITCC/techjam2023/tree/main/Day1"
-                  target="_blank"
-                >
-                  Click here for Code
-                </a>
-              </div> */}
               <div class="table-data">
                 <a
                   href={part2}
@@ -137,14 +116,6 @@ const TableNew = () => {
                   Click here for Video
                 </a>
               </div>
-              {/* <div class="table-data">
-                <a
-                  href="https://github.com/ACMVITCC/techjam2023/tree/main/Day1"
-                  target="_blank"
-                >
-                  Click here for Code
-                </a>
-              </div> */}
               <div class="table-data">
                 <a
                   href={part3}

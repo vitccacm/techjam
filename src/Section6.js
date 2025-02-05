@@ -28,11 +28,6 @@ const Table9 = () => {
                 Video
               </a>
             </div>
-            {/* <div class="header__item">
-              <a id="draws" class="filter__link filter__link--number">
-                Code
-              </a>
-            </div> */}
             <div class="header__item">
               <a id="losses" class="filter__link filter__link--number">
                 PPT
@@ -62,14 +57,6 @@ const Table9 = () => {
                   Click here for Video
                 </a>
               </div>
-              {/* <div class="table-data">
-                <a
-                  href="https://github.com/ACMVITCC/techjam2023/tree/main/Day-9"
-                  target="_blank"
-                >
-                  Click for Code
-                </a>
-              </div> */}
               <div class="table-data">
                 <a href={ppt1} download="ML 3" target="_blank" rel="noreferrer">
                   Click here to view PPT
@@ -97,14 +84,6 @@ const Table9 = () => {
                   Click here for Video
                 </a>
               </div>
-              {/* <div class="table-data">
-                <a
-                  href="https://github.com/ACMVITCC/techjam2023/tree/main/Day-9"
-                  target="_blank"
-                >
-                  Click for Code
-                </a>
-              </div> */}
               <div class="table-data">
                 <a href={ppt2} download="ML 4" target="_blank" rel="noreferrer">
                   Click here to view PPT

@@ -30,11 +30,6 @@ const Table6 = () => {
                 Video
               </a>
             </div>
-            {/* <div class="header__item">
-              <a id="draws" class="filter__link filter__link--number">
-                Code
-              </a>
-            </div> */}
             <div class="header__item">
               <a id="losses" class="filter__link filter__link--number">
                 PPT
@@ -64,14 +59,6 @@ const Table6 = () => {
                   Click here for Video
                 </a>
               </div>
-              {/* <div class="table-data">
-                <a
-                href=""
-                target="_blank"
-                rel="noreferrer"
-                >Click here for Code
-                </a>
-              </div> */}
               <div class="table-data">
                 <a
                   href={ppt1}
@@ -104,14 +91,6 @@ const Table6 = () => {
                   Click here for Video
                 </a>
               </div>
-              {/* <div class="table-data">
-              <a
-                href=""
-                target="_blank"
-                rel="noreferrer"
-                >Click here for Code
-                </a>
-              </div> */}
               <div class="table-data">
                 <a
                   href={ppt2}
@@ -145,14 +124,6 @@ const Table6 = () => {
                   Click here for Video
                 </a>
               </div>
-              {/* <div class="table-data">
-              <a
-                href=""
-                target="_blank"
-                rel="noreferrer"
-                >Click here for Code
-                </a>
-              </div> */}
               <div class="table-data">
                 <a
                   href={ppt3}
@@ -184,13 +155,6 @@ const Table6 = () => {
                   Click here for Video
                 </a>
               </div>
-              {/* <div class="table-data">
-              <a
-                href=""
-                target="_blank"
-                rel="noreferrer"
-                >Click here for Code</a>
-              </div> */}
               <div class="table-data">
                 <a
                   href={ppt4}
